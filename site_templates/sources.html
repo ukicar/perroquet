@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block main %}
+<main>
+  <h1>Sources</h1>
+  <p class="lede">Fiabilité de A (acte original) à F (impossible à juger). « Connue par citation » : nous n'avons pas lu la source elle-même.</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Source</th><th>Fiab.</th><th>Nature</th><th>Consultée</th><th class="num">Rédaction</th><th class="num">Assert.</th><th>Questions</th></tr></thead>
+    <tbody>
+    {% for s in sources %}
+      <tr><td>{{ s.id|lk }}{% if s.meta.cote %}<div class="locus">{{ s.meta.cote }}</div>{% endif %}</td>
+        <td>{{ s.meta.fiabilite|fiab }}</td><td class="small">{{ s.meta.nature }}</td>
+        <td class="small">{{ voc.consultee[s.meta.consultee] if s.meta.consultee in voc.consultee else s.meta.consultee }}</td>
+        <td class="num">{{ s.meta.date_redaction or '' }}</td>
+        <td class="num">{{ (s.meta.assertions or [])|length }}</td>
+        <td class="small">{% for h in hof.get(s.id, []) %}{{ h.id|lk }}{% if not loop.last %}, {% endif %}{% endfor %}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+</main>
+{% endblock %}

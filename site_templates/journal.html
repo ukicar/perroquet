@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block main %}
+<main class="col">
+  <h1>Journal</h1>
+  <p class="lede">Enquêtes (chaque <code>/test</code>) et recherches consignées, y compris celles qui n'ont rien donné : une absence est aussi une preuve.</p>
+  <ul class="plain">
+  {% for f in journal %}
+    <li><span class="locus">{{ f.meta.date }}</span>{% if f.type == 'recherche' %}{{ f.meta.resultat|chip('resultat') }}{% else %}<span class="chip">enquête</span>{% endif %} {{ f.id|lk }}
+      {% if f.type == 'recherche' %}<span class="small muted">{{ f.meta.outil }} · {{ f.meta.perimetre }}</span>{% else %}<span class="small muted">sur {{ f.meta.hypothese|lk }}</span>{% endif %}</li>
+  {% else %}<li class="muted">Rien encore.</li>{% endfor %}
+  </ul>
+</main>
+{% endblock %}

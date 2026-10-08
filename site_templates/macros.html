@@ -1,0 +1,21 @@
+{% macro cmd(text) %}<button type="button" class="cmd" data-cmd="{{ text }}" title="Copier la commande, puis la coller dans Claude Code ou OpenCode">{{ text }}</button>{% endmacro %}
+{% macro claimcard(cid, c, src, show_src=False) %}
+<div class="claim" id="{{ c.id if not show_src else '' }}">
+  <div class="head">
+    {% if show_src %}<span class="cid">{{ cid|lk }}</span>{% else %}<span class="cid">{{ c.id }}</span>{% endif %}
+    <span>{{ c.texte }}</span>
+  </div>
+  {% if c.citation %}<blockquote class="cit">« {{ c.citation }} »</blockquote>{% endif %}
+  <div class="meta">
+    {% if c.locus %}<span class="locus">{{ c.locus }}</span>{% endif %}
+    {% if c.date %}<span class="locus">daté {{ c.date }}</span>{% endif %}
+    {% if c.preuve %}<span class="chip" title="{{ voc.preuve[c.preuve] }}">preuve {{ c.preuve }}</span>{% endif %}
+    {% if c.information %}<span class="chip" title="{{ voc.information[c.information] }}">info. {{ c.information }}</span>{% endif %}
+    {% if c.credibilite %}<span class="chip" title="{{ voc.credibilite[c.credibilite].libelle }}">crédibilité {{ c.credibilite }}</span>{% endif %}
+    {{ (c.verifie or 'non')|chip('verifie') }}
+    {% if show_src %}<span class="chip">source {{ src.fiabilite|default('?') }}</span>{% endif %}
+  </div>
+  {% if c.sujets %}<div class="small muted">Sujets : {% for s in c.sujets %}{{ s|lk }}{% if not loop.last %}, {% endif %}{% endfor %}</div>{% endif %}
+  {% if c.note %}<div class="small muted">{{ c.note }}</div>{% endif %}
+</div>
+{% endmacro %}

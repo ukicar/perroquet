@@ -1,0 +1,18 @@
+<div class="tbl-wrap"><table>
+  <thead><tr><th>Question</th><th>Statut</th><th>En tête</th><th>Confiance</th><th class="num">Hyp.</th><th class="num">Preuves</th><th class="num">À tester</th><th class="num">Contest.</th></tr></thead>
+  <tbody>
+  {% for h in hyps %}{% set s = scores[h.id] %}
+    <tr>
+      <td>{{ h.id|lk(h.nom) }}{% if h.meta.question %}<div class="small muted">{{ h.meta.question|truncate(140) }}</div>{% endif %}</td>
+      <td>{{ h.meta.statut|chip('statut_question') }}</td>
+      <td class="mono">{{ h.meta.meneur or '—' }}{% if s.meneur_calcule and h.meta.meneur and s.meneur_calcule != h.meta.meneur|string %} <span class="chip c-improbable" title="Le calcul ACH donne {{ s.meneur_calcule }}">≠ {{ s.meneur_calcule }}</span>{% endif %}</td>
+      <td>{{ h.meta.confiance|conf }}</td>
+      <td class="num">{{ (h.meta.hypotheses or [])|length }}</td>
+      <td class="num">{{ s.lignes|length }}</td>
+      <td class="num">{{ s.predictions.get('non_testee', 0) }}</td>
+      <td class="num">{{ (h.meta.contestations or [])|length }}</td>
+    </tr>
+  {% else %}<tr><td colspan="8" class="muted">Aucune question pour l'instant. Proposez une hypothèse avec <code>/hypothesis "…"</code>.</td></tr>
+  {% endfor %}
+  </tbody>
+</table></div>

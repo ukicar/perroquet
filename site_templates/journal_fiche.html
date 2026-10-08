@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block main %}
+<main class="col">
+  <div class="eyebrow"><span class="chip">{{ 'recherche' if fi.type == 'recherche' else 'enquête' }}</span> {% if m.resultat %}{{ m.resultat|chip('resultat') }}{% endif %} <code>{{ fi.id }}</code></div>
+  <h1>{{ fi.nom }}</h1>
+  <dl class="facts">
+    {% if m.date %}<dt>Date</dt><dd>{{ m.date }}</dd>{% endif %}
+    {% if m.auteur %}<dt>Par</dt><dd>{{ m.auteur }}</dd>{% endif %}
+    {% if m.hypothese %}<dt>Question</dt><dd>{{ m.hypothese|lk }}</dd>{% endif %}
+    {% if m.predictions %}<dt>Prédictions</dt><dd>{% for p in m.predictions %}{{ (m.hypothese ~ '#' ~ p)|lk(p) }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>{% endif %}
+    {% if m.outil %}<dt>Outil</dt><dd>{{ m.outil }}</dd>{% endif %}
+    {% if m.requete %}<dt>Requête</dt><dd class="mono">{{ m.requete }}</dd>{% endif %}
+    {% if m.perimetre %}<dt>Périmètre</dt><dd>{{ m.perimetre }}</dd>{% endif %}
+    {% if m.total is not none %}<dt>Résultats</dt><dd>{{ m.total }}</dd>{% endif %}
+    {% if m.hypotheses %}<dt>Questions</dt><dd>{% for h in m.hypotheses %}{{ h|lk }} {% endfor %}</dd>{% endif %}
+    {% if m.verdict_avant %}<dt>Avant</dt><dd>{{ m.verdict_avant }}</dd>{% endif %}
+    {% if m.verdict_apres %}<dt>Après</dt><dd>{{ m.verdict_apres }}</dd>{% endif %}
+  </dl>
+  {% if m.changements %}<h2>Changements</h2><ul>{% for c in m.changements %}<li>{{ c }}</li>{% endfor %}</ul>{% endif %}
+  {% if m.ajouts %}<h2>Ajouts à la base</h2><ul class="plain">{% for k, v in m.ajouts.items() %}{% for x in v or [] %}<li><span class="muted small">{{ k }}</span> {{ x|lk }}</li>{% endfor %}{% endfor %}</ul>{% endif %}
+  {% if m.recherches %}<h2>Recherches</h2><ul class="plain">{% for r in m.recherches %}<li>{{ r|lk }}</li>{% endfor %}</ul>{% endif %}
+  {% if m.sources_creees %}<h2>Sources créées</h2><ul class="plain">{% for r in m.sources_creees %}<li>{{ r|lk }}</li>{% endfor %}</ul>{% endif %}
+  {% if fi.body.strip() %}<h2>Récit</h2><div class="prose">{{ fi.body|md }}</div>{% endif %}
+  {% if m.resultats %}<h2>Résultats bruts</h2><ul class="plain small">{% for r in m.resultats %}<li>{% if r.url %}<a href="{{ r.url }}">{{ r.titre|truncate(220) }}</a>{% else %}{{ r.titre|truncate(220) }}{% endif %}{% if r.auteur %} <span class="muted">{{ r.auteur }}</span>{% endif %}{% if r.date %} <span class="locus">{{ r.date }}</span>{% endif %}</li>{% endfor %}</ul>{% endif %}
+</main>
+{% endblock %}

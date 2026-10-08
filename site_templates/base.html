@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if page == "index" %}Perroquet{% else %}{{ title }} · Perroquet{% endif %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="{{ body_class|default('') }}">
+<header class="top">
+  <a class="brand" href="index.html">Perroquet<small>Gabrielle d'Espinas · 1567</small></a>
+  <nav class="main" aria-label="Navigation principale">
+    {% for key, lab in [("index","Tableau de bord"),("graphe","Graphe"),("hypotheses","Hypothèses"),("fiches","Fiches"),("sources","Sources"),("chronologie","Chronologie"),("journal","Journal"),("audit","Audit")] %}
+    <a href="{{ key }}.html"{% if page == key %} class="on" aria-current="page"{% endif %}>{{ lab }}{% if key == "audit" and nb_err %} <span class="err">({{ nb_err }})</span>{% endif %}</a>
+    {% endfor %}
+  </nav>
+</header>
+{% block main %}{% endblock %}
+{% if page != "graphe" %}
+<footer>Généré le {{ now }} par <code>./pq build</code> · {{ nb.personne }} personnes, {{ nb.evenement }} événements, {{ nb.source }} sources, {{ nb_claims }} assertions, {{ nb.hypothese }} questions.</footer>
+{% endif %}
+<script src="app.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

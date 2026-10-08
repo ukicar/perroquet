@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% from "macros.html" import cmd, claimcard %}
+{% block main %}
+<main class="split">
+  <div style="min-width:0">
+    <div class="eyebrow">{{ fi.type|typechip }} <code>{{ fi.id }}</code></div>
+    <h1>{{ fi.nom }}</h1>
+    {% if m.variantes %}<p class="muted">Aussi : {{ m.variantes|join(' · ') }}</p>{% endif %}
+    {% if fi.body.strip() %}<div class="prose">{{ fi.body|md }}</div>{% else %}<p class="muted">Pas encore de synthèse.</p>{% endif %}
+    <div class="cmds">{{ cmd('/research ' ~ fi.id) }} {{ cmd('/hypothesis "' ~ fi.nom ~ ' …"') }}</div>
+
+    <h2>Relations</h2>
+    {% if out_rel or in_rel %}
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Relation</th><th>Avec</th><th>Confiance</th><th>Fondée sur</th></tr></thead>
+      <tbody>
+      {% for r in out_rel %}
+        <tr><td>{{ r.rel|rel }}{% if r.role %} <span class="muted">({{ r.role }})</span>{% endif %}{% if r.debut %}<div class="locus">{{ r.debut }}{% if r.fin %}–{{ r.fin }}{% endif %}</div>{% endif %}</td>
+          <td>{{ r.vers|lk }}</td><td>{{ r.confiance|conf }}</td>
+          <td class="small">{% for p in r.preuves or [] %}{{ p|lk }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% if r.hypothese %}{% if r.preuves %}<br>{% endif %}hypothèse {{ r.hypothese|lk }}{% endif %}{% if r.note %}<div class="muted">{{ r.note }}</div>{% endif %}</td></tr>
+      {% endfor %}
+      {% for e in in_rel %}{% set rd = e.rel %}
+        <tr><td>{% if rd in types %}{% endif %}{{ (e.rel|rel) if e.rel in ['epoux_de','frere_soeur_de','parent_de_sang','allie_a','adversaire_de','coreligionnaire','lie_a'] else ('← ' ~ (e.rel|rel)) }}{% if e.role %} <span class="muted">({{ e.role }})</span>{% endif %}</td>
+          <td>{{ e.src|lk }}</td><td>{{ e.confiance|conf }}</td>
+          <td class="small">{% for p in e.preuves %}{{ p|lk }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% if e.hypothese %}{% if e.preuves %}<br>{% endif %}hypothèse {{ e.hypothese|lk }}{% endif %}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+    <p class="small muted">« ← » : relation lue depuis l'autre fiche (par exemple « ← participe à » = a pour participant).</p>
+    {% else %}<p class="muted">Aucune relation enregistrée.</p>{% endif %}
+
+    <h2>Ce que disent les sources</h2>
+    {% if mentions %}
+    <div class="claims">
+      {% for cid, src, c in mentions|sort(attribute='0') %}{{ claimcard(cid, c, src.meta, show_src=True) }}{% endfor %}
+    </div>
+    {% else %}<p class="muted">Aucune assertion ne mentionne encore cette fiche.</p>{% endif %}
+  </div>
+
+  <aside class="panel">
+    <h3>Repères</h3>
+    <dl class="facts">
+      {% if m.naissance %}<dt>Naissance</dt><dd>{{ m.naissance }}</dd>{% endif %}
+      {% if m.mort %}<dt>Mort</dt><dd>{{ m.mort }}</dd>{% endif %}
+      {% if m.date %}<dt>Date</dt><dd>{{ m.date }}{% if m.fin %} → {{ m.fin }}{% endif %}</dd>{% endif %}
+      {% if span %}<dt>Attesté</dt><dd>{{ span[0] }}{% if span[1] and span[1] != span[0] %}–{{ span[1] }}{% endif %}</dd>{% endif %}
+      {% if m.armes %}<dt>Armes</dt><dd>{{ m.armes }}</dd>{% endif %}
+      {% if m.coordonnees %}<dt>Coord.</dt><dd class="mono">{{ m.coordonnees|join(', ') }}</dd>{% endif %}
+      {% if m.commune_actuelle %}<dt>Commune</dt><dd>{{ m.commune_actuelle }}</dd>{% endif %}
+    </dl>
+    {% if hof %}<div><h3>Questions ouvertes</h3><ul class="plain">{% for h in hof %}<li>{{ h.id|lk }} {{ h.meta.statut|chip('statut_question') }}</li>{% endfor %}</ul></div>{% endif %}
+    <div class="small muted">Voir dans le <a href="graphe.html#{{ fi.id }}">graphe</a>.</div>
+  </aside>
+</main>
+{% endblock %}

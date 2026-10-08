@@ -1,0 +1,103 @@
+# Valeurs autorisées. `pq check` refuse toute autre valeur.
+
+# Degré de confiance d'une relation, d'une hypothèse ou d'un verdict.
+confiance:
+  etabli:     {libelle: "établi", rang: 6, aide: "Prouvé par au moins une preuve directe vérifiée, sans contradiction non résolue."}
+  probable:   {libelle: "probable", rang: 5, aide: "Fortement soutenu, aucune preuve contraire sérieuse."}
+  plausible:  {libelle: "plausible", rang: 4, aide: "Compatible avec les preuves, rien ne le confirme directement."}
+  possible:   {libelle: "possible", rang: 3, aide: "Pas exclu, appui faible ou indirect."}
+  improbable: {libelle: "improbable", rang: 2, aide: "Des preuves vont contre."}
+  refute:     {libelle: "réfuté", rang: 1, aide: "Contredit par une preuve directe fiable."}
+
+# Fiabilité de la source (code de l'Amirauté / OTAN, adapté).
+fiabilite:
+  A: {libelle: "A — entièrement fiable", poids: 1.0, aide: "Acte original produit par l'autorité compétente (registre, minute notariale)."}
+  B: {libelle: "B — généralement fiable", poids: 0.8, aide: "Copie ancienne fidèle, édition critique, témoin contemporain direct."}
+  C: {libelle: "C — assez fiable", poids: 0.6, aide: "Érudit citant ses sources, compilation sérieuse."}
+  D: {libelle: "D — peu fiable", poids: 0.4, aide: "Compilation tardive, généalogie de famille, auteur partial."}
+  E: {libelle: "E — non fiable", poids: 0.2, aide: "Sources connues pour leurs erreurs ou inventions."}
+  F: {libelle: "F — fiabilité inconnue", poids: 0.5, aide: "Impossible à juger (site sans sources, document isolé)."}
+
+# Crédibilité d'une assertion particulière.
+credibilite:
+  1: {libelle: "1 — confirmée par d'autres sources indépendantes", poids: 1.0}
+  2: {libelle: "2 — probablement vraie", poids: 0.8}
+  3: {libelle: "3 — possiblement vraie", poids: 0.6}
+  4: {libelle: "4 — douteuse", poids: 0.4}
+  5: {libelle: "5 — improbable", poids: 0.2}
+  6: {libelle: "6 — impossible à juger", poids: 0.5}
+
+# Nature de la source par rapport aux faits.
+nature:
+  original:    "original (l'acte lui-même)"
+  copie:       "copie ou extrait d'un original"
+  edition:     "édition imprimée d'un original"
+  etude:       "étude (travail d'historien, d'érudit)"
+  compilation: "compilation (généalogie, dictionnaire, site)"
+
+genre:
+  registre: "registre d'une juridiction ou administration"
+  acte: "acte isolé (notarial, judiciaire, supplique)"
+  lettre: "lettre, correspondance"
+  memoire: "mémoires, chronique, récit contemporain"
+  preuves: "preuves de noblesse, procès-verbaux de maintenue"
+  inventaire: "inventaire d'archives, catalogue"
+  article: "article de revue, bulletin"
+  livre: "livre, monographie"
+  dictionnaire: "dictionnaire, nobiliaire, armorial"
+  site: "site internet, base généalogique en ligne"
+  manuscrit: "manuscrit (recueil, copie d'érudit)"
+  autre: "autre"
+
+consultee:
+  oui: "consultée directement"
+  partiel: "consultée en partie (extraits, OCR, images partielles)"
+  non: "connue seulement par citation"
+  inaccessible: "non accessible en ligne (salle de lecture, collection privée)"
+
+# Assertions (factoïdes)
+preuve:
+  directe: "répond directement à la question"
+  indirecte: "ne répond qu'en combinaison avec d'autres éléments"
+  negative: "absence attendue d'une mention"
+information:
+  primaire: "témoin ou auteur contemporain des faits"
+  secondaire: "rapportée, de seconde main ou postérieure"
+  inconnue: "origine de l'information inconnue"
+verifie:
+  non: "non vérifiée (extraite une seule fois, ou d'après nos notes)"
+  agent: "relue indépendamment sur la source par un second agent"
+  humain: "vérifiée par vous sur la source"
+
+# Hypothèses
+statut_question:
+  ouverte: "en cours d'examen"
+  tranchee: "tranchée (une hypothèse établie ou les autres réfutées)"
+  suspendue: "suspendue faute de sources accessibles"
+auteur_hypothese:
+  humain: "proposée par vous"
+  agent: "proposée par l'agent"
+statut_prediction:
+  non_testee: "pas encore testée"
+  confirmee: "confirmée"
+  infirmee: "infirmée"
+  indecidable: "testée, résultat indécidable ou source inaccessible"
+diagnostique:
+  haute: "un résultat trancherait"
+  moyenne: "un résultat déplacerait l'équilibre"
+  faible: "peu discriminant"
+
+# Cellules de la matrice d'analyse des hypothèses concurrentes (ACH)
+matrice:
+  CC: {libelle: "très cohérent", score: 2}
+  C:  {libelle: "cohérent", score: 1}
+  N:  {libelle: "neutre / sans rapport", score: 0}
+  I:  {libelle: "incohérent", score: -1}
+  II: {libelle: "très incohérent", score: -2}
+
+# Recherches
+resultat:
+  positif: "trouvé"
+  negatif: "rien trouvé (preuve négative)"
+  partiel: "indices partiels"
+  bloque: "accès impossible"

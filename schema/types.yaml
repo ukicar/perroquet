@@ -1,0 +1,73 @@
+# Types de fiches de la base. Chaque fiche = un fichier markdown dans base/<dossier>/<id>.md
+# avec un en-tête YAML. L'id est le nom du fichier (minuscules, chiffres, tirets).
+# `obligatoire` : champs exigés par `pq check` (en plus de id, type, nom).
+# `couleur` : couleur du nœud dans le graphe.
+
+personne:
+  dossier: personnes
+  libelle: Personne
+  libelle_pluriel: Personnes
+  couleur: "#d6453d"
+  graphe: true
+  champs: [variantes, naissance, mort, periode, relations, sujets_lies]
+famille:
+  dossier: familles
+  libelle: Famille
+  libelle_pluriel: Familles
+  couleur: "#8e44ad"
+  graphe: true
+  champs: [variantes, periode, armes, relations]
+lieu:
+  dossier: lieux
+  libelle: Lieu
+  libelle_pluriel: Lieux
+  couleur: "#1e9e5a"
+  graphe: true
+  champs: [variantes, coordonnees, commune_actuelle, relations]
+evenement:
+  dossier: evenements
+  libelle: Événement
+  libelle_pluriel: Événements
+  couleur: "#e08a1e"
+  graphe: true
+  obligatoire: [date]
+  champs: [date, fin, relations]
+institution:
+  dossier: institutions
+  libelle: Institution
+  libelle_pluriel: Institutions
+  couleur: "#2f6fd6"
+  graphe: true
+  champs: [variantes, periode, relations]
+source:
+  dossier: sources
+  libelle: Source
+  libelle_pluriel: Sources
+  couleur: "#7f8c8d"
+  graphe: true
+  obligatoire: [genre, nature, fiabilite, consultee]
+  champs: [auteur, titre, date_redaction, distance, depot, cote, ark, url, biais, citee_par, fichiers, assertions]
+hypothese:
+  dossier: hypotheses
+  libelle: Question / hypothèses
+  libelle_pluriel: Questions et hypothèses
+  couleur: "#c9a227"
+  graphe: true
+  obligatoire: [question, hypotheses, statut]
+  champs: [sujets, predictions, matrice, contestations, verdict, meneur, confiance, historique, sous_questions]
+enquete:
+  dossier: enquetes
+  libelle: Enquête
+  libelle_pluriel: Enquêtes
+  couleur: "#16a3b8"
+  graphe: false
+  obligatoire: [date, hypothese]
+  champs: [auteur, predictions, recherches, ajouts, changements, verdict_avant, verdict_apres]
+recherche:
+  dossier: recherches
+  libelle: Recherche
+  libelle_pluriel: Journal des recherches
+  couleur: "#555555"
+  graphe: false
+  obligatoire: [date, outil, resultat]
+  champs: [auteur, requete, perimetre, resultats, sources_creees, hypotheses]

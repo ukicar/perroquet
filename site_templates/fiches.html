@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block main %}
+<main>
+  <h1>Fiches</h1>
+  <div class="grid2">
+  {% for t, items in groups %}
+    <section>
+      <h2>{{ t|typechip }} {{ types[t].libelle_pluriel }} <span class="muted small">({{ items|length }})</span></h2>
+      <ul class="plain">
+      {% for f in items %}{% set sp = f.span() %}
+        <li>{{ f.id|lk }}{% if sp %} <span class="locus">{{ sp[0] }}{% if sp[1] and sp[1] != sp[0] %}–{{ sp[1] }}{% endif %}</span>{% endif %}
+          <span class="muted small">{{ f.relations()|length + (inc.get(f.id, [])|length) }} rel. · {{ men.get(f.id, [])|length }} mentions</span></li>
+      {% else %}<li class="muted">Aucune.</li>{% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+  </div>
+</main>
+{% endblock %}

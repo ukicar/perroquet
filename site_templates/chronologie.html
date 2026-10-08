@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block main %}
+<main class="col">
+  <h1>Chronologie</h1>
+  <p class="lede">Les événements et toutes les assertions datées, dans l'ordre. Chaque ligne renvoie à sa source.</p>
+  {% for y, items in years.items() %}
+    <div class="year" id="a{{ y }}">{{ y }}</div>
+    <ul class="plain">
+    {% for it in items %}
+      {% if it.kind == 'evenement' %}
+        <li><span class="locus">{{ it.date }}</span> {{ 'evenement'|typechip }} <b>{{ it.fiche.id|lk }}</b></li>
+      {% else %}
+        <li><span class="locus">{{ it.date }}</span> <span>{{ it.texte }}</span> <span class="small">{{ it.ref|lk }}</span> {{ (it.c.verifie or 'non')|chip('verifie') }}</li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  {% else %}<p class="muted">Rien de daté pour l'instant.</p>{% endfor %}
+</main>
+{% endblock %}

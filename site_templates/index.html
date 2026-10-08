@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% from "macros.html" import cmd %}
+{% block main %}
+<main>
+  <div class="eyebrow">Registre de recherche</div>
+  <h1>Gabrielle d'Espinas et l'incendie de Soueix</h1>
+  <p class="lede">Veuve d'Arnaud II de Roquemaurel, seigneur de Soueix en Couserans, tué vers le 2 février 1567. Ce registre ne contient que des faits sourcés et des hypothèses mises à l'épreuve.</p>
+  <div class="stats">
+    <div class="stat"><b>{{ nb.hypothese }}</b><span>questions</span></div>
+    <div class="stat"><b>{{ nb.source }}</b><span>sources</span></div>
+    <div class="stat"><b>{{ nb_claims }}</b><span>assertions</span></div>
+    <div class="stat"><b>{{ nb.personne }}</b><span>personnes</span></div>
+    <div class="stat"><b>{{ nb.evenement }}</b><span>événements</span></div>
+    <div class="stat"><b>{{ nb.recherche }}</b><span>recherches</span></div>
+  </div>
+  <div class="cmds">{{ cmd('/hypothesis "…"') }} {{ cmd('/research gabrielle-d-espinas') }} {{ cmd('/audit') }} {{ cmd('/sync') }}</div>
+
+  <h2>Questions en cours</h2>
+  {% include "_hyptable.html" %}
+
+  <div class="grid2">
+    <section>
+      <h2>Dernières enquêtes et recherches</h2>
+      <ul class="plain">
+      {% for f in journal %}
+        <li><span class="locus">{{ f.meta.date }}</span>{% if f.type == 'recherche' %}{{ f.meta.resultat|chip('resultat') }}{% else %}<span class="chip type-enquete">enquête</span>{% endif %} {{ f.id|lk }}</li>
+      {% else %}<li class="muted">Rien encore.</li>{% endfor %}
+      </ul>
+      <p class="small"><a href="journal.html">Tout le journal</a></p>
+    </section>
+    <section>
+      <h2>État de la méthode</h2>
+      <p>{% if nb_err %}<span class="err">{{ nb_err }} erreur(s)</span> à corriger. {% endif %}{{ nb_warn }} point(s) d'attention.</p>
+      <ul class="plain small">
+      {% for code, items in rep.warnings()|groupby('code') %}<li><b class="mono">{{ items|length }}</b> {{ items[0].message.split(' : ')[0] if code in ['predictions','sans-date','orpheline'] else items[0].message }}{% if items|length > 1 %} <span class="muted">(et similaires)</span>{% endif %}</li>{% endfor %}
+      </ul>
+      <p class="small"><a href="audit.html">Voir l'audit</a></p>
+      {% if log %}<h3>Modifications récentes</h3><ul class="plain small">{% for d, a, s in log %}<li><span class="locus">{{ d }}</span> <span class="muted">{{ a }}</span> {{ s }}</li>{% endfor %}</ul>{% endif %}
+    </section>
+  </div>
+</main>
+{% endblock %}

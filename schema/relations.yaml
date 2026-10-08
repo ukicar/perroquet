@@ -1,0 +1,27 @@
+# Vocabulaire des relations. Une relation s'écrit dans la fiche du sujet :
+#   relations:
+#     - {rel: epoux_de, vers: arnaud-ii-de-roquemaurel, preuves: [bardies-1903.a3], confiance: etabli}
+# `inverse` : libellé lu depuis la cible. `symetrique: true` : même sens dans les deux directions.
+# `de` / `vers` : types autorisés (vide = tous).
+
+epoux_de:        {libelle: "époux / épouse de", symetrique: true, de: [personne], vers: [personne]}
+enfant_de:       {libelle: "enfant de", inverse: "parent de", de: [personne], vers: [personne]}
+frere_soeur_de:  {libelle: "frère / sœur de", symetrique: true, de: [personne], vers: [personne]}
+parent_de_sang:  {libelle: "apparenté à (sang, degré à préciser)", symetrique: true, de: [personne], vers: [personne]}
+allie_a:         {libelle: "allié à (par mariage)", symetrique: true, de: [personne, famille], vers: [personne, famille]}
+membre_de:       {libelle: "membre de", inverse: "a pour membre", de: [personne], vers: [famille, institution]}
+branche_de:      {libelle: "branche de", inverse: "a pour branche", de: [famille], vers: [famille]}
+seigneur_de:     {libelle: "seigneur / dame de", inverse: "a pour seigneur", de: [personne, famille], vers: [lieu]}
+reside_a:        {libelle: "réside à", inverse: "lieu de résidence de", de: [personne, famille], vers: [lieu]}
+ne_a:            {libelle: "né(e) à", inverse: "lieu de naissance de", de: [personne], vers: [lieu]}
+mort_a:          {libelle: "mort(e) à", inverse: "lieu de décès de", de: [personne], vers: [lieu]}
+participe_a:     {libelle: "participe à", inverse: "a pour participant", de: [personne, famille, institution], vers: [evenement], role: true}
+a_lieu_a:        {libelle: "a lieu à", inverse: "lieu de", de: [evenement], vers: [lieu]}
+suite_de:        {libelle: "fait suite à", inverse: "a pour suite", de: [evenement], vers: [evenement]}
+au_service_de:   {libelle: "au service de", inverse: "a à son service", de: [personne], vers: [personne, institution, famille]}
+officier_de:     {libelle: "officier de", inverse: "a pour officier", de: [personne], vers: [institution]}
+situe_dans:      {libelle: "situé dans", inverse: "contient", de: [lieu, institution], vers: [lieu]}
+heritier_de:     {libelle: "héritier / héritière de", inverse: "a pour héritier", de: [personne, famille], vers: [personne, famille]}
+adversaire_de:   {libelle: "adversaire de", symetrique: true, de: [personne, famille, institution], vers: [personne, famille, institution]}
+coreligionnaire: {libelle: "même confession que", symetrique: true, de: [personne], vers: [personne]}
+lie_a:           {libelle: "lié à (à préciser)", symetrique: true}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "macros.html" import cmd %}
+{% block main %}
+<main>
+  <h1>Questions et hypothèses</h1>
+  <p class="lede">Chaque question oppose plusieurs hypothèses. Celle qui mène est celle que les preuves contredisent le moins.</p>
+  <div class="cmds">{{ cmd('/hypothesis "…"') }}</div>
+  {% include "_hyptable.html" %}
+</main>
+{% endblock %}

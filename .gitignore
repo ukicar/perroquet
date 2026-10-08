@@ -1,0 +1,17 @@
+# Large and derived files: never in git (see AGENTS.md rule 7)
+cache/
+site/
+.venv/
+__pycache__/
+*.pyc
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.webp
+*.djvu
+*.zip
+.DS_Store
+site_publish/

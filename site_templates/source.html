@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% from "macros.html" import cmd, claimcard %}
+{% block main %}
+<main class="split">
+  <div style="min-width:0">
+    <div class="eyebrow">{{ 'source'|typechip }} {{ m.fiabilite|fiab }} <code>{{ fi.id }}</code></div>
+    <h1>{{ fi.nom }}</h1>
+    {% if m.titre and m.titre != fi.nom %}<p class="lede">{% if m.auteur %}{{ m.auteur }}, {% endif %}<i>{{ m.titre }}</i>{% if m.date_redaction %}, {{ m.date_redaction }}{% endif %}</p>{% endif %}
+    {% if fi.body.strip() %}<h2>Critique de la source</h2><div class="prose">{{ fi.body|md }}</div>{% endif %}
+    <div class="cmds">{{ cmd('/verify ' ~ fi.id) }} {{ cmd('/source ' ~ fi.id) }}</div>
+
+    <h2>Assertions extraites <span class="muted small">({{ claims|length }})</span></h2>
+    {% if claims %}
+    <div class="claims">
+      {% for c in claims %}
+        {{ claimcard(fi.id ~ '.' ~ c.id, c, m) }}
+        {% set hs = hof_claim(c.id) %}
+        {% if hs %}<div class="small muted" style="margin-top:-8px">Utilisée dans : {% for h in hs %}{{ h.id|lk }}{% if not loop.last %}, {% endif %}{% endfor %}</div>{% endif %}
+      {% endfor %}
+    </div>
+    {% else %}<p class="muted">Aucune assertion extraite. {{ cmd('/source ' ~ fi.id) }}</p>{% endif %}
+  </div>
+
+  <aside class="panel">
+    <h3>Classification</h3>
+    <dl class="facts">
+      <dt>Fiabilité</dt><dd>{{ m.fiabilite }} — {{ voc.fiabilite[m.fiabilite].libelle.split('— ')[-1] if m.fiabilite in voc.fiabilite else '?' }}</dd>
+      <dt>Nature</dt><dd>{{ voc.nature[m.nature] if m.nature in voc.nature else m.nature }}</dd>
+      <dt>Genre</dt><dd>{{ voc.genre[m.genre] if m.genre in voc.genre else m.genre }}</dd>
+      <dt>Consultée</dt><dd>{{ voc.consultee[m.consultee] if m.consultee in voc.consultee else m.consultee }}</dd>
+      {% if m.auteur %}<dt>Auteur</dt><dd>{{ m.auteur }}</dd>{% endif %}
+      {% if m.date_redaction %}<dt>Rédaction</dt><dd>{{ m.date_redaction }}</dd>{% endif %}
+      {% if m.distance is not none %}<dt>Distance</dt><dd>{{ m.distance }} ans après les faits</dd>{% endif %}
+      {% if m.depot %}<dt>Dépôt</dt><dd>{{ m.depot }}</dd>{% endif %}
+      {% if m.cote %}<dt>Cote</dt><dd class="mono">{{ m.cote }}</dd>{% endif %}
+      {% if m.ark %}<dt>Ark</dt><dd class="mono"><a href="https://gallica.bnf.fr/ark:/12148/{{ m.ark }}">{{ m.ark }}</a></dd>{% endif %}
+      {% if m.url %}<dt>En ligne</dt><dd><a href="{{ m.url }}">{{ m.url|truncate(48, True) }}</a></dd>{% endif %}
+      {% if m.biais %}<dt>Biais</dt><dd>{{ m.biais }}</dd>{% endif %}
+    </dl>
+    {% if m.citee_par %}<div><h3>Connue par</h3><ul class="plain">{% for c in m.citee_par %}<li>{{ c|lk }}</li>{% endfor %}</ul></div>{% endif %}
+    {% if m.fichiers %}<div><h3>Fichiers locaux</h3><ul class="plain small">{% for f in m.fichiers %}<li><span class="mono">{{ f.chemin }}</span>{% if f.recuperation %} <span class="chip">{{ f.recuperation }}</span>{% endif %}</li>{% endfor %}</ul>
+      <p class="small muted">Hors de git, dans <code>cache/</code>. <code>./pq fetch</code> les récupère.</p></div>{% endif %}
+    {% if hof %}<div><h3>Utilisée par</h3><ul class="plain">{% for h in hof %}<li>{{ h.id|lk }}</li>{% endfor %}</ul></div>{% endif %}
+  </aside>
+</main>
+{% endblock %}

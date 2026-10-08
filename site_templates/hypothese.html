@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% from "macros.html" import cmd %}
+{% block main %}
+<main>
+  <div class="eyebrow">{{ 'hypothese'|typechip }} {{ m.statut|chip('statut_question') }} <code>{{ fi.id }}</code></div>
+  <h1>{{ m.question or fi.nom }}</h1>
+  {% if m.sujets %}<p class="muted small">Porte sur : {% for s in m.sujets %}{{ s|lk }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+
+  {% if m.verdict %}<div class="verdict"><b>Verdict actuel</b>{% if m.meneur %} : {{ m.meneur }} mène{% endif %} {{ m.confiance|conf }}<br>{{ m.verdict }}</div>{% endif %}
+  {% if s.meneur_calcule and m.meneur and s.meneur_calcule != m.meneur|string %}
+  <p class="small"><span class="chip c-improbable">à revoir</span> Le calcul donne {{ s.meneur_calcule }} en tête (moins d'incohérences), le verdict déclare {{ m.meneur }}.</p>
+  {% endif %}
+
+  <div class="cmds">
+    {{ cmd('/test ' ~ fi.id) }} {{ cmd('/clues ' ~ fi.id) }} {{ cmd('/challenge ' ~ fi.id) }}
+  </div>
+  <p class="cmd-hint">Copiez une commande et collez-la dans votre agent pour faire avancer la question.</p>
+
+  <h2>Hypothèses concurrentes</h2>
+  {% set maxinc = (s.hypotheses.values()|map(attribute='incoherence')|max) if s.hypotheses else 0 %}
+  {% set maxsou = (s.hypotheses.values()|map(attribute='soutien')|max) if s.hypotheses else 0 %}
+  <div class="hyps">
+    {% for h in m.hypotheses %}{% set sc = s.hypotheses[h.id|string] %}
+    <div class="hyp{% if m.meneur and h.id|string == m.meneur|string %} lead{% endif %}" id="{{ h.id }}">
+      <div class="hid"><span>{{ h.id }}{% if m.meneur and h.id|string == m.meneur|string %} · en tête{% endif %}</span><span>{{ 'proposée par vous' if h.auteur == 'humain' else 'proposée par l\'agent' }}</span></div>
+      <div class="enonce">{{ h.enonce }}</div>
+      <div>{{ h.confiance|conf }}</div>
+      <div class="score-row" title="Somme pondérée des preuves qui contredisent l'hypothèse. Le plus bas mène.">Incohérence <div class="bar inc"><span style="width: {{ (100 * sc.incoherence / maxinc) if maxinc else 0 }}%"></span></div><b>{{ sc.incoherence }}</b></div>
+      <div class="score-row" title="Somme pondérée des preuves compatibles.">Soutien <div class="bar sou"><span style="width: {{ (100 * sc.soutien / maxsou) if maxsou else 0 }}%"></span></div><b>{{ sc.soutien }}</b></div>
+      {% if h.note %}<div class="small muted">{{ h.note }}</div>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <h2>Matrice des preuves</h2>
+  <p class="small muted prose">Chaque ligne est une preuve, pondérée par la fiabilité de la source et la crédibilité de l'assertion.
+  CC très cohérent, C cohérent, N neutre, I incohérent, II très incohérent. Les lignes grisées notent toutes les hypothèses
+  de la même façon : elles ne départagent rien. {{ s.non_diagnostiques }} sur {{ s.lignes|length }}.</p>
+  {% if s.lignes %}
+  <div class="tbl-wrap"><table class="ach">
+    <thead><tr><th>Preuve</th><th class="num">Poids</th>{% for h in m.hypotheses %}<th class="num" style="text-align:center">{{ h.id }}</th>{% endfor %}</tr></thead>
+    <tbody>
+    {% for row in s.lignes %}{% set r = claim(row.preuve) %}
+      <tr class="{{ '' if row.diagnostique else 'nondiag' }}">
+        <td>
+          {{ row.preuve|lk }}{% if not row.diagnostique %} <span class="chip">non diagnostique</span>{% endif %}
+          {% if r and r[0] == 'assertion' %}
+            <div class="small">{{ r[2].texte }}</div>
+            {% if r[2].citation %}<details><summary>citation</summary><blockquote class="cit">« {{ r[2].citation }} »</blockquote><span class="locus">{{ r[2].locus }}</span></details>{% endif %}
+          {% elif r and r[0] == 'fiche' and r[1].type == 'recherche' %}
+            <div class="small">Recherche {{ r[1].meta.resultat|chip('resultat') }} : {{ r[1].meta.requete }}</div>
+          {% endif %}
+          {% if row.note %}<div class="small muted">{{ row.note }}</div>{% endif %}
+        </td>
+        <td class="num">{{ row.poids }}</td>
+        {% for h in m.hypotheses %}{% set v = row.cellules[h.id|string] %}<td class="cell m-{{ v }}" title="{{ voc.matrice[v].libelle if v in voc.matrice else v }}">{{ v }}</td>{% endfor %}
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  {% else %}<p class="muted">Aucune preuve évaluée pour l'instant. Lancez <code>/test {{ fi.id }}</code>.</p>{% endif %}
+
+  <h2>Prédictions à tester</h2>
+  <p class="small muted prose">Ce qu'on devrait trouver si une hypothèse est vraie, et où le chercher. Les prédictions très diagnostiques tranchent la question.</p>
+  {% if m.predictions %}
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Id</th><th>Hyp.</th><th>Attendu</th><th>Où chercher</th><th>Diagn.</th><th>Statut</th><th></th></tr></thead>
+    <tbody>
+    {% for p in m.predictions %}
+      <tr id="{{ p.id }}">
+        <td class="mono">{{ p.id }}</td>
+        <td class="mono">{% if p.h is string %}{{ p.h }}{% else %}{{ p.h|join(', ') }}{% endif %}</td>
+        <td>{{ p.attendu }}{% if p.resultat %}<div class="small muted">Résultat : {{ p.resultat }}</div>{% endif %}
+          {% for e in p.enquetes or [] %}<div class="small">{{ e|lk }}</div>{% endfor %}
+          {% for e in p.preuves or [] %}<div class="small">{{ e|lk }}</div>{% endfor %}</td>
+        <td class="small">{{ p.ou_chercher }}</td>
+        <td>{{ p.diagnostique }}</td>
+        <td>{{ (p.statut or 'non_testee')|chip('statut_prediction') }}</td>
+        <td>{% if (p.statut or 'non_testee') == 'non_testee' %}{{ cmd('/test ' ~ fi.id ~ ' ' ~ p.id) }}{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  {% else %}<p class="muted">Aucune prédiction. <code>/clues {{ fi.id }}</code> en propose.</p>{% endif %}
+
+  <div class="grid2">
+    <section>
+      <h2>Contestations</h2>
+      {% if m.contestations %}
+      <ol class="timeline">
+        {% for c in m.contestations %}
+        <li><div class="when">{{ c.date }} · {{ c.par }}</div>
+          {% if c.objections %}<b>Objections</b><ul>{% for o in c.objections %}<li>{{ o }}</li>{% endfor %}</ul>{% endif %}
+          {% if c.alternatives %}<b>Autres explications</b><ul>{% for o in c.alternatives %}<li>{{ o }}</li>{% endfor %}</ul>{% endif %}
+          {% if c.reponse %}<div><b>Réponse</b> : {{ c.reponse }}</div>{% endif %}
+          {% if c.effet %}<div class="small muted">Effet : {{ c.effet }}</div>{% endif %}
+        </li>
+        {% endfor %}
+      </ol>
+      {% else %}<p class="muted">Jamais contestée. {{ cmd('/challenge ' ~ fi.id) }}</p>{% endif %}
+    </section>
+    <section>
+      <h2>Historique</h2>
+      {% if m.historique %}
+      <ol class="timeline">
+        {% for h in m.historique|reverse %}<li><div class="when">{{ h.date }}</div>{{ h.changement }}{% if h.cause %}<div class="small muted">{{ h.cause }}</div>{% endif %}</li>{% endfor %}
+      </ol>
+      {% endif %}
+      {% if enquetes %}<h3>Enquêtes</h3><ul class="plain">{% for e in enquetes|sort(attribute='id', reverse=True) %}<li><span class="locus">{{ e.meta.date }}</span> {{ e.id|lk }}</li>{% endfor %}</ul>{% endif %}
+      {% if recherches %}<h3>Recherches liées</h3><ul class="plain">{% for r in recherches %}<li>{{ r.meta.resultat|chip('resultat') }} {{ r.id|lk }}</li>{% endfor %}</ul>{% endif %}
+    </section>
+  </div>
+
+  {% if m.sous_questions %}<h2>Sous-questions</h2><ul class="plain">{% for q in m.sous_questions %}<li>{{ q|lk }}</li>{% endfor %}</ul>{% endif %}
+
+  {% if fi.body.strip() %}<h2>Raisonnement</h2><div class="prose">{{ fi.body|md }}</div>{% endif %}
+</main>
+{% endblock %}
