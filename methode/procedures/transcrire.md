@@ -1,11 +1,7 @@
----
-description: Transcrire un manuscrit ou registre ancien en double lecture indépendante (paléographie), puis comparer et réconcilier, et verser les passages utiles comme assertions.
----
-<!-- GÉNÉRÉ par `./pq adapters` depuis methode/commandes/transcribe.md : ne pas modifier ici, modifier methode/commandes/transcribe.md. -->
+<!-- Procédure interne : utilisée par les commandes, pas une commande en soi. -->
+# Procédure : transcrire en double lecture
 
-# /transcribe : transcription en double lecture
-
-Cible : **$ARGUMENTS**.
+Cible : la source ou le fichier à transcrire, et les pages.
 
 1. **Préparer.** Le document doit être dans `cache/` (sinon `./pq fetch` ou téléchargement). Crée un dossier
    texte `transcriptions/<nom>/` avec `transcript/` et `verify/`, et copie-y `transcriptions/1567/CONVENTIONS.md`

@@ -7,7 +7,7 @@
     <h1>{{ fi.nom }}</h1>
     {% if m.variantes %}<p class="muted">Aussi : {{ m.variantes|join(' · ') }}</p>{% endif %}
     {% if fi.body.strip() %}<div class="prose">{{ fi.body|md }}</div>{% else %}<p class="muted">Pas encore de synthèse.</p>{% endif %}
-    <div class="cmds">{{ cmd('/research ' ~ fi.id) }} {{ cmd('/hypothesis "' ~ fi.nom ~ ' …"') }}</div>
+    <div class="cmds">{{ cmd('/explore ' ~ fi.id) }} {{ cmd('/hypothesis "' ~ fi.nom ~ ' …"') }}</div>
 
     <h2>Relations</h2>
     {% if out_rel or in_rel %}

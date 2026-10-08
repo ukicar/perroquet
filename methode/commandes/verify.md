@@ -1,5 +1,5 @@
 ---
-description: Faire vérifier une assertion ou toute une source par une relecture indépendante de la source (second agent), et mettre à jour le statut de vérification.
+description: Faire relire sur l'original, par un second agent indépendant, les citations d'une source ou d'une fiche. Seules les citations ainsi relues peuvent fonder un fait « établi ».
 argument: "<source-id.aN | source-id | fiche-id>"
 ---
 # /verify : relecture indépendante

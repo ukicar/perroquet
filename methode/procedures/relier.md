@@ -1,11 +1,7 @@
----
-description: Relier deux fiches par une relation typée (époux, enfant, membre de, participe à, seigneur de…), avec ses preuves ou l'hypothèse qui la porte.
----
-<!-- GÉNÉRÉ par `./pq adapters` depuis methode/commandes/link.md : ne pas modifier ici, modifier methode/commandes/link.md. -->
+<!-- Procédure interne : utilisée par les commandes, pas une commande en soi. -->
+# Procédure : relier deux fiches
 
-# /link : relier deux fiches
-
-Demande : **$ARGUMENTS**.
+Demande : ce que la commande appelante veut créer ou relier.
 
 1. Identifie les deux fiches (ids exacts, `grep -ril`). Crée-les si besoin (`./pq fiche`).
 2. Choisis la relation dans `schema/relations.yaml` (respecte les types autorisés `de` / `vers`). Si aucune ne

@@ -12,7 +12,7 @@
   {% endif %}
 
   <div class="cmds">
-    {{ cmd('/test ' ~ fi.id) }} {{ cmd('/clues ' ~ fi.id) }} {{ cmd('/challenge ' ~ fi.id) }}
+    {{ cmd('/test ' ~ fi.id) }} {{ cmd('/next ' ~ fi.id) }} {{ cmd('/challenge ' ~ fi.id) }}
   </div>
   <p class="cmd-hint">Copiez une commande et collez-la dans votre agent pour faire avancer la question.</p>
 
@@ -81,7 +81,7 @@
     {% endfor %}
     </tbody>
   </table></div>
-  {% else %}<p class="muted">Aucune prédiction. <code>/clues {{ fi.id }}</code> en propose.</p>{% endif %}
+  {% else %}<p class="muted">Aucune prédiction. <code>/next {{ fi.id }}</code> en propose.</p>{% endif %}
 
   <div class="grid2">
     <section>

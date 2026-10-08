@@ -4,7 +4,7 @@
 <main class="col">
   <h1>Audit de méthode</h1>
   <p class="lede">Les erreurs empêchent la synchronisation. Les avertissements signalent où la preuve est faible ou le travail à reprendre.</p>
-  <div class="cmds">{{ cmd('/audit') }}</div>
+  <div class="cmds">{{ cmd('/next') }}</div>
   {% if rep.errors() %}<h2 class="err">Erreurs ({{ rep.errors()|length }})</h2>
     {% for i in rep.errors() %}<div class="issue"><div class="where">{{ i.fichier }}</div>{{ i.message }}</div>{% endfor %}{% endif %}
   {% set labels = {'predictions':'Prédictions non testées','jamais-contestee':'Questions jamais contestées','etabli-non-verifie':'« Établi » sans preuve vérifiée','meneur':'Meneur à revoir','matrice-vide':'Matrices vides','non-diagnostique':'Aucune preuve diagnostique','orpheline':'Fiches isolées','sans-date':'Fiches sans date','sans-synthese':'Fiches sans synthèse','sans-citation':'Assertions sans citation','source-vide':'Sources sans assertion','doublon-possible':'Doublons possibles'} %}

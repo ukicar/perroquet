@@ -9,8 +9,11 @@ dans le site HTML (`./pq view`).
 **Langue** : tout ce que tu écris dans la base est en **français**. Les citations de sources restent
 **verbatim**, dans leur langue et graphie d'origine (moyen français compris), sans modernisation.
 
-La méthode est décrite pour les humains dans [METHODE.md](METHODE.md). Les procédures des commandes sont
-dans `methode/commandes/`, les rôles des sous-agents dans `methode/roles/`. Les dossiers `.claude/` et
+La méthode est décrite pour les humains dans [METHODE.md](METHODE.md). Les neuf commandes des utilisateurs
+(`/hypothesis`, `/test`, `/challenge`, `/next`, `/source`, `/explore`, `/verify`, `/sync`, plus `/view`) sont
+dans `methode/commandes/` ; les procédures internes qu'elles appellent (créer une fiche, relier, transcrire,
+fichiers lourds, publier le lien) dans `methode/procedures/` ; les rôles des sous-agents dans `methode/roles/`.
+Quand l'utilisateur demande en langage courant une de ces actions, suis la procédure correspondante. Les dossiers `.claude/` et
 `.opencode/` sont **générés** par `./pq adapters` : ne jamais les modifier à la main.
 
 ## Règles absolues

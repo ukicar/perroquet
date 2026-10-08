@@ -1,12 +1,15 @@
 ---
+name: explore
 description: Explorer librement les sources autour d'une personne, d'une famille, d'un lieu ou d'un événement, enrichir sa fiche et proposer des questions à partir des trous et des contradictions.
-argument: "<id de fiche ou nom>"
+argument-hint: <id de fiche ou nom>
 ---
-# /research : explorer autour d'une fiche
+<!-- GÉNÉRÉ par `./pq adapters` depuis methode/commandes/explore.md : ne pas modifier ici, modifier methode/commandes/explore.md. -->
+
+# /explore : explorer autour d'une personne, d'un lieu, d'un événement
 
 Sujet : **$ARGUMENTS**.
 
-1. **Trouver ou créer la fiche.** `grep -ril "<nom>" base/` ; si rien, `./pq fiche <type> "<nom>"` (le type
+1. **Trouver ou créer la fiche.** `grep -ril "<nom>" base/` ; si rien, crée-la (procédure `methode/procedures/fiche.md`) (le type
    se déduit : personne, famille, lieu, evenement, institution). Vérifie les doublons possibles (variantes de
    graphie) avant de créer.
 2. **Faire le point.** Lis la fiche, ses relations, les assertions qui la mentionnent

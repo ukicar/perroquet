@@ -1,6 +1,6 @@
 ---
 name: verify
-description: Faire vérifier une assertion ou toute une source par une relecture indépendante de la source (second agent), et mettre à jour le statut de vérification.
+description: Faire relire sur l'original, par un second agent indépendant, les citations d'une source ou d'une fiche. Seules les citations ainsi relues peuvent fonder un fait « établi ».
 argument-hint: <source-id.aN | source-id | fiche-id>
 ---
 <!-- GÉNÉRÉ par `./pq adapters` depuis methode/commandes/verify.md : ne pas modifier ici, modifier methode/commandes/verify.md. -->

@@ -1,11 +1,7 @@
----
-description: Créer une fiche (personne, famille, lieu, événement, institution) et la relier aux fiches existantes, preuves à l'appui.
----
-<!-- GÉNÉRÉ par `./pq adapters` depuis methode/commandes/fiche.md : ne pas modifier ici, modifier methode/commandes/fiche.md. -->
+<!-- Procédure interne : utilisée par les commandes, pas une commande en soi. -->
+# Procédure : créer une fiche et la relier
 
-# /fiche : créer une fiche et la relier
-
-Demande : **$ARGUMENTS**.
+Demande : ce que la commande appelante veut créer ou relier.
 
 1. Vérifie qu'elle n'existe pas sous une autre graphie (`grep -ril` sur le nom et ses variantes). Si elle
    existe, propose de la compléter au lieu d'en créer une.

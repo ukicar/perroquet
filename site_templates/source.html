@@ -7,7 +7,7 @@
     <h1>{{ fi.nom }}</h1>
     {% if m.titre and m.titre != fi.nom %}<p class="lede">{% if m.auteur %}{{ m.auteur }}, {% endif %}<i>{{ m.titre }}</i>{% if m.date_redaction %}, {{ m.date_redaction }}{% endif %}</p>{% endif %}
     {% if fi.body.strip() %}<h2>Critique de la source</h2><div class="prose">{{ fi.body|md }}</div>{% endif %}
-    <div class="cmds">{{ cmd('/verify ' ~ fi.id) }} {{ cmd('/source ' ~ fi.id) }}</div>
+    <div class="cmds">{{ cmd('/verify ' ~ fi.id) }}</div>
 
     <h2>Assertions extraites <span class="muted small">({{ claims|length }})</span></h2>
     {% if claims %}

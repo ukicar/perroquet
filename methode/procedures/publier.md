@@ -1,7 +1,5 @@
----
-description: Publier le site de la base sur un lien privé claude.ai pour le partager (Claude seulement ; sinon chacun le génère localement).
----
-# /publish : lien privé de partage
+<!-- Procédure interne : utilisée par les commandes, pas une commande en soi. -->
+# Procédure : mettre à jour le lien partagé (Claude seulement)
 
 Cette commande dépend de Claude (outil Artifact). Dans un autre agent, explique que chacun peut générer le
 site localement (`./pq view`) après `/sync`.
