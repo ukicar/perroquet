@@ -183,6 +183,11 @@ table.ach td.cell { text-align: center; font-family: var(--mono); font-weight: 5
 .m-II { background: var(--gueules-soft); color: var(--gueules); font-weight: 700 !important; }
 tr.nondiag td { opacity: 0.55; }
 details > summary { cursor: pointer; color: var(--azur); font-size: 14px; }
+details.aide { margin: 6px 0 4px; padding: 10px 14px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); }
+details.aide > summary { font-size: 16px; }
+details.aide .prose { max-width: none; }
+details.aide table { margin: 6px 0 14px; }
+details.aide h1 { display: none; }
 
 .timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; border-left: 2px solid var(--rule); }
 .timeline li { padding-left: 16px; position: relative; }

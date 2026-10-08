@@ -225,8 +225,10 @@ class Site:
 
         hyps = sorted(b.of_type("hypothese"), key=lambda h: (h.get("statut") != "ouverte", h.nom))
         journal = sorted(b.of_type("enquete") + b.of_type("recherche"), key=lambda f: (str(f.get("date")), f.id), reverse=True)
+        from .adapters import aide_text
+        aide = self.md.render(aide_text())
         write("index.html", "index.html", page="index", title="Perroquet", hyps=hyps, scores=scores,
-              journal=journal[:12], log=self.git_log(), rep=rep)
+              journal=journal[:12], log=self.git_log(), rep=rep, aide=Markup(aide))
         write("hypotheses.html", "hypotheses.html", page="hypotheses", title="Questions et hypothèses", hyps=hyps, scores=scores)
         groups = [(t, sorted(b.of_type(t), key=lambda f: f.nom.lower())) for t in ENTITY_TYPES]
         write("fiches.html", "fiches.html", page="fiches", title="Fiches", groups=groups, inc=inc, men=men)

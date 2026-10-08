@@ -15,6 +15,11 @@
   </div>
   <div class="cmds">{{ cmd('/hypothesis "…"') }} {{ cmd('/next') }} {{ cmd('/explore gabrielle-d-espinas') }} {{ cmd('/sync') }}</div>
 
+  <details class="aide"{% if not hyps %} open{% endif %}>
+    <summary>Les commandes : laquelle utiliser, et quand</summary>
+    <div class="prose">{{ aide }}</div>
+  </details>
+
   <h2>Questions en cours</h2>
   {% include "_hyptable.html" %}
 

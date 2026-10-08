@@ -86,6 +86,10 @@ comment chaque conclusion a été atteinte, et par qui.
 
 ## Les commandes
 
+<!-- aide:debut -->
+Dans Claude Code ou OpenCode, ouvert sur le dossier `perroquet`. Neuf commandes suffisent ; tout le reste, l'agent le fait
+seul. Vous pouvez aussi simplement lui parler : il suit les mêmes règles.
+
 **Le cycle de recherche** : on part d'une idée, on la met à l'épreuve, on la fait attaquer.
 
 | Commande | Quand l'utiliser |
@@ -113,6 +117,9 @@ comment chaque conclusion a été atteinte, et par qui.
 Créer une fiche, relier deux personnes, transcrire, télécharger un scan : l'agent le fait de lui-même pendant
 ces commandes (procédures dans `methode/procedures/`). Vous pouvez aussi le demander en une phrase
 (« ajoute que Guillaume est le frère d'Arnaud, d'après le dossier d'Hozier »).
+
+Cette liste : `/aide` dans l'agent, `./pq aide` dans un terminal, ou le tableau de bord du site.
+<!-- aide:fin -->
 
 ## Ce qui ne figure pas ici
 

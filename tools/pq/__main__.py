@@ -68,6 +68,7 @@ def main(argv=None):
     p = sub.add_parser("fiche", help="créer une fiche")
     p.add_argument("type"); p.add_argument("nom"); p.add_argument("--id"); p.add_argument("--force", action="store_true")
     sub.add_parser("adapters", help="régénérer les commandes pour Claude Code et OpenCode")
+    sub.add_parser("aide", help="liste des commandes à taper dans l'agent")
     p = sub.add_parser("sync", help="valider, commit, pull --rebase, push")
     p.add_argument("-m", "--message"); p.add_argument("--force", action="store_true"); p.add_argument("-v", "--verbose", action="store_true")
     sub.add_parser("stats", help="chiffres de la base")
@@ -102,6 +103,9 @@ def main(argv=None):
     if args.cmd == "fiche":
         from .fiche import run
         run(Base(), args); return 0
+    if args.cmd == "aide":
+        from .adapters import aide_text
+        print(aide_text()); return 0
     if args.cmd == "adapters":
         from .adapters import run
         run(); return 0
