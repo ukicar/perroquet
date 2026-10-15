@@ -30,7 +30,7 @@ predictions:
   - id: P3
     h: H2
     attendu: "Une pièce de mai-juin 1567 (rôle de la taxe, procédure contre Tachard, délibérations consulaires) nomme le chef « Tilladet l'aisné », « seigneur de Tilladet et de Caussens » ou Antoine de Cassagnet."
-    ou_chercher: "Rôle du 4 avril 1568 (Lestrade 1900, p. 42-45, et original à Muret) ; arrêt du parlement de Toulouse contre Martin Tachard (6 juillet 1567 ; AD Haute-Garonne 1 B 3457, Tournelle, juin-juillet 1567, d'après catalogue-ad31.a2) ; Lafaille, Annales de Toulouse, t. II."
+    ou_chercher: "Rôle du 4 avril 1568 (Lestrade 1900, p. 42-45, et original à Muret) ; arrêt du parlement de Toulouse contre Martin Tachard (7 ou 6 juillet 1567 ; AD Haute-Garonne 1 B 3457, Tournelle, juin-juillet 1567, d'après catalogue-ad31.a2) ; Lafaille, Annales de Toulouse, t. II."
     diagnostique: haute
     statut: non_testee
     resultat: null

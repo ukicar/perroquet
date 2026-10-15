@@ -12,7 +12,7 @@ hypotheses:
 predictions:
   - id: P1
     h: H1
-    attendu: "La procédure du parlement de Toulouse contre Tachard (interrogatoire du 8 juin, arrêt du 6 juillet 1567) nomme le capitaine qui le livra « sieur de Saint-Orens », « Tilladet le jeune » ou « colonel des légionnaires »."
+    attendu: "La procédure du parlement de Toulouse contre Tachard (interrogatoire du 8 juin, arrêt du 7 (ou 6) juillet 1567) nomme le capitaine qui le livra « sieur de Saint-Orens », « Tilladet le jeune » ou « colonel des légionnaires »."
     ou_chercher: "AD Haute-Garonne, 1 B 3457, arrêts criminels de la Tournelle du 2 juin à juillet 1567 (catalogue-ad31.a2 ; voir r-2026-10-06-ad31-arret-du-24-mai-1567-lacunes) ; vérifier si le registre est numérisé."
     diagnostique: haute
     statut: non_testee
@@ -33,16 +33,16 @@ predictions:
     ou_chercher: "Crespin, Histoire des martyrs, éd. Benoit, t. III, p. 648-649 (relecture complète) ; Archives curieuses, 1re s., t. VI, p. 341-343."
     diagnostique: moyenne
     statut: non_testee
-    resultat: null
+    resultat: "8 oct. 2026 : Crespin relu en entier, éd. de 1570 et de 1619 : seul « le sieur de Tilladet & autres Capitaines » est nommé, et Tachard est amené à Tilladet (crespin-1570.a11, a13). Rien pour H3 de ce côté ; restent le Discours complet et la procédure."
     enquetes: []
 matrice:
   - {preuve: discours-des-troubles-de-pamiers.a3, H1: C, H2: C, H3: I, note: "Les Cabannes furent attaquées par les mêmes troupes, « quand ils eurent exécuté leur commission » : le chef est celui de l'expédition (voir commandant-en-couserans-1567)."}
   - {preuve: lestrade-1900.a2, H1: C, H2: I, H3: I, note: "Le chef des compagnies de l'expédition est Saint-Orens ; combiné à la ligne précédente, cela désigne François. Inférence en deux temps."}
   - {preuve: discours-des-troubles-de-pamiers.a2, H1: C, H2: C, H3: I, note: "« sous la charge du capitaine Tilladet », sans prénom."}
   - {preuve: discours-des-troubles-de-pamiers.a8, H1: C, H2: C, H3: I, note: "« Tilladet le mena en triomphe par Foix », sans prénom."}
-  - {preuve: crespin-histoire-des-martyrs.a1, H1: C, H2: C, H3: I, note: "« le sieur de Tilladet & autres Capitaines » chefs et conducteurs, sans prénom."}
-  - {preuve: crespin-histoire-des-martyrs.a3, H1: C, H2: C, H3: I, note: "Tachard amené « audit Tilladet », sans prénom."}
-  - {preuve: crespin-histoire-des-martyrs.a5, H1: C, H2: C, H3: I, note: "Tachard conduit à Toulouse « par le commandement dudit Tilladet » le 6 juin, sans prénom."}
+  - {preuve: crespin-1570.a11, H1: C, H2: C, H3: I, note: "1570 : « le sieur de Tilladet & autres Capitaines » chefs et conducteurs, sans prénom (1619 recopie)."}
+  - {preuve: crespin-1570.a13, H1: C, H2: C, H3: I, note: "1570 : Tachard amené « audit Tilladet », sans prénom."}
+  - {preuve: crespin-1570.a15, H1: C, H2: C, H3: I, note: "1570 : Tachard conduit à Toulouse « par le commādement dudit Tilladet » le 6 juin, sans prénom."}
   - {preuve: olhagaray-1629.a1, H1: C, H2: C, H3: I, note: "Prisonniers « menez au capitaine Tilladet », sans prénom."}
   - {preuve: castillon-histoire-du-comte-de-foix.a1, H1: N, H2: N, H3: N, note: "Cite Olhagaray : non indépendant, non compté."}
   - {preuve: benoit-1910.a1, H1: N, H2: N, H3: N, note: "Cite Olhagaray : non indépendant, non compté."}
@@ -56,13 +56,14 @@ confiance: plausible
 verdict: "Le Tilladet des Cabannes est plausiblement François de Cassagnet, seigneur de Saint-Orens. Aucun récit ne donne son prénom ; on l'identifie en combinant le Discours de Pamiers (les mêmes troupes, une fois leur commission exécutée) et la requête des villes du Comminges, qui nomme Saint-Orens chef de l'expédition. La conclusion dépend donc de commandant-en-couserans-1567 et ne peut pas être plus forte qu'elle."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche du 7 octobre 2026"}
+  - {date: "2026-10-08", changement: "lignes Crespin rapportées à l'édition de 1570 ; P3 en partie examinée ; aucun changement de confiance", cause: "lecture de crespin-1570"}
 sous_questions: [commandant-en-couserans-1567, date-du-raid-des-cabannes]
 ---
 ## La question
 
 Les récits protestants de la surprise des Cabannes nomment toujours « Tilladet », jamais un prénom : le Discours des
-troubles de Pamiers ([[discours-des-troubles-de-pamiers.a2]], [[discours-des-troubles-de-pamiers.a8]]), Crespin
-([[crespin-histoire-des-martyrs.a1]], [[crespin-histoire-des-martyrs.a3]], [[crespin-histoire-des-martyrs.a5]]) et
+troubles de Pamiers ([[discours-des-troubles-de-pamiers.a2]], [[discours-des-troubles-de-pamiers.a8]]), Crespin, dès
+l'édition de 1570 ([[crespin-1570.a11]], [[crespin-1570.a13]], [[crespin-1570.a15]]) et
 Olhagaray ([[olhagaray-1629.a1]]), que Castillon et Benoit recopient ([[castillon-histoire-du-comte-de-foix.a1]],
 [[benoit-1910.a1]]). Toutes ces lignes sont compatibles avec les deux frères : elles ne départagent pas H1 et H2,
 elles écartent seulement H3.

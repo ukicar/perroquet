@@ -12,7 +12,7 @@ hypotheses:
 predictions:
   - id: P1
     h: [H1, H2]
-    attendu: "La procédure du parlement contre Tachard (interrogatoire du 8 juin, arrêt du 6 juillet 1567) rappelle la date de sa capture aux Cabannes."
+    attendu: "La procédure du parlement contre Tachard (interrogatoire du 8 juin, arrêt du 7 (ou 6) juillet 1567) rappelle la date de sa capture aux Cabannes."
     ou_chercher: "AD Haute-Garonne, 1 B 3457, arrêts criminels de la Tournelle du 2 juin à juillet 1567 (catalogue-ad31.a2)."
     diagnostique: haute
     statut: non_testee
@@ -36,22 +36,24 @@ predictions:
     preuves: [r-2026-10-07-gallica-lafaille-hgl]
     enquetes: []
 matrice:
-  - {preuve: crespin-histoire-des-martyrs.a2, H1: C, H2: I, H3: N, note: "Crespin : arrivée aux Cabannes le matin du 25 mai 1567."}
+  - {preuve: crespin-1570.a12, H1: C, H2: I, H3: N, note: "Crespin, éd. de 1570 : « vn matin XXV. de May en l'an M.D.LXVII. ». Le texte de 1619 (crespin-histoire-des-martyrs.a2) le recopie : non compté en plus."}
   - {preuve: discours-des-troubles-de-pamiers.a5, H1: I, H2: C, H3: N, note: "Discours de Pamiers (1567, contemporain) : surprise à l'aube du 26 mai 1567."}
   - {preuve: castillon-histoire-du-comte-de-foix.a2, H1: C, H2: N, H3: N, note: "Castillon (XIXe s.) donne le 25 mai, probablement d'après Crespin ou Olhagaray : non indépendant, pas compté contre H2."}
-  - {preuve: crespin-histoire-des-martyrs.a5, H1: C, H2: C, H3: C, note: "« un vendredi 6 de juin » : le 6 juin 1567 (julien) est bien un vendredi (calcul d'agent). La chronologie de Crespin est précise, mais cela ne départage pas le 25 du 26."}
+  - {preuve: crespin-1570.a15, H1: C, H2: C, H3: C, note: "« vn vēdredy VI. de Iuin » (1570) : le 6 juin 1567 (julien) est bien un vendredi (calcul d'agent). La chronologie de Crespin est précise, mais cela ne départage pas le 25 du 26."}
 contestations: []
 meneur: H3
 confiance: possible
 verdict: "Indéterminable en l'état (H3) : les témoins se contredisent. Crespin date la surprise du 25 mai 1567, le Discours des troubles de Pamiers, imprimé la même année, du 26. Castillon, qui dit le 25, dépend probablement de Crespin ou d'Olhagaray. Seule la procédure contre Tachard au parlement de Toulouse pourrait trancher."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche du 7 octobre 2026"}
+  - {date: "2026-10-08", changement: "lignes Crespin rapportées à l'édition de 1570 ; aucun changement de confiance", cause: "lecture de crespin-1570 (a12, a15) : même date que 1619, qui en dépend"}
 sous_questions: []
 ---
 ## Les deux dates
 
-- Crespin, *Histoire des martyrs* : les troupes arrivent aux Cabannes « le matin » du 25 mai 1567
-  ([[crespin-histoire-des-martyrs.a2]]).
+- Crespin, *Histoire des vrays tesmoins* (1570, dernière édition publiée par lui) : la troupe arrive aux Cabanes
+  « vn matin XXV. de May » 1567 ([[crespin-1570.a12]]) ; le texte de 1619 dit de même ([[crespin-histoire-des-martyrs.a2]]),
+  mais il recopie celui de 1570.
 - *Discours des troubles advenus en la ville de Pamiers* (1567) : surprise « à l'aube » du 26 mai 1567, par quatre ou
   cinq cents arquebusiers et quarante chevaux ([[discours-des-troubles-de-pamiers.a5]]).
 - Castillon d'Aspet, citant Olhagaray, donne le 25 mai ([[castillon-histoire-du-comte-de-foix.a2]]). Olhagaray (1629)
@@ -60,7 +62,7 @@ sous_questions: []
 ## Calendrier (calcul d'agent)
 
 En calendrier julien, le 25 mai 1567 est un dimanche et le 26 un lundi. Le « vendredi 6 de juin » de Crespin, jour du
-transfert de Tachard à Toulouse ([[crespin-histoire-des-martyrs.a5]]), tombe bien un vendredi, ce qui montre que ses
+transfert de Tachard à Toulouse ([[crespin-1570.a15]]), tombe bien un vendredi, ce qui montre que ses
 dates du procès sont soignées. Mais cela ne dit rien de la date du raid. Une marche de nuit commencée le 25 et une
 surprise à l'aube du 26 réconcilieraient les deux textes (H3). C'est une simple possibilité, qu'aucune source n'appuie.
 

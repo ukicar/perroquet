@@ -115,6 +115,7 @@ h3 { font-family: var(--body); font-weight: 700; font-size: 17px; margin: 18px 0
 .c-humain { background: var(--sinople-soft); color: var(--sinople); }
 .c-agent { background: var(--azur-soft); color: var(--azur); }
 .c-non { background: var(--neutre-soft); color: var(--muted); }
+.c-inconnu { background: transparent; color: var(--muted); box-shadow: inset 0 0 0 1px var(--rule); font-style: italic; }
 .fiab { font-family: var(--mono); font-weight: 500; }
 .type-personne { color: var(--t-personne); } .type-evenement { color: var(--t-evenement); }
 .type-lieu { color: var(--t-lieu); } .type-hypothese { color: var(--t-hypothese); }
@@ -251,4 +252,85 @@ body.graph .top { padding-inline: 16px; max-width: none; }
   .stage { height: 72vh; border-right: 0; border-bottom: 1px solid var(--rule); }
   body.graph { padding-inline: 0; }
 }
+/* biography: uninterrupted prose, certainty and evidence in the margin (sidenotes) */
+.bio-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 6px; font-size: 14px; color: var(--ink-2); margin: 4px 0 26px; max-width: 980px; }
+.bio { max-width: 1010px; }
+.bio p, .bio h2, .bio h3, .bio ul, .bio ol, .bio blockquote { width: calc(100% - 330px); }
+.bio p { font-family: var(--display); font-size: 19.5px; line-height: 1.62; margin: 0 0 18px; hyphens: auto; text-wrap: pretty; }
+.bio h2 { margin-top: 36px; }
+.bio p a { color: inherit; text-decoration-color: color-mix(in srgb, var(--azur) 55%, transparent); }
+.bio p a:hover { color: var(--azur); }
+.bio .sn-t { display: none; }
+.bio .sn-m {
+  display: inline-block; width: 7px; height: 7px; border-radius: 50%; padding: 0;
+  background: currentColor; vertical-align: 0.55em; margin: 0 1px 0 2px; cursor: default;
+}
+.bio .sn-m.c-inconnu { background: transparent; box-shadow: inset 0 0 0 1.5px currentColor; }
+.bio .sn {
+  float: right; clear: right; width: 290px; margin: 4px -330px 14px 0;
+  font-family: var(--body); font-size: 13px; line-height: 1.4; font-style: normal; color: var(--ink-2);
+  border-left: 2px solid var(--rule); padding: 1px 0 1px 10px; hyphens: manual; transition: border-color .15s, background .15s;
+}
+.bio .sn .chip { font-size: 11.5px; padding: 0 7px; margin-right: 3px; }
+.bio .sn a { color: var(--azur); }
+.bio .sn-q { font-size: 12px; white-space: nowrap; }
+.bio .sn-m:hover + .sn-t + .sn, .bio .sn:hover { border-left-color: var(--azur); }
+.bio .sn-m:has(+ .sn-t + .sn:hover) { outline: 2px solid var(--azur); outline-offset: 2px; }
+@media (min-width: 1001px) {
+  .bio.bio-js { position: relative; }
+  .bio.bio-js .sn { position: absolute; right: 0; float: none; margin: 0; }
+}
+.bio-croises h2 { font-size: 22px; }
+.bio-cards { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.bio-cards a {
+  display: flex; flex-direction: column; gap: 2px; height: 100%; padding: 10px 14px; text-decoration: none; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); transition: border-color .15s;
+}
+.bio-cards a:hover { border-color: var(--azur); }
+.bio-cards b { font-family: var(--display); font-weight: 400; font-size: 18px; line-height: 1.25; }
+.bio-cards li.main a { border-left: 3px solid var(--or); }
+.bio-vedette {
+  display: flex; flex-direction: column; gap: 4px; max-width: 680px; margin: 8px 0 6px; padding: 16px 20px;
+  text-decoration: none; color: var(--ink-2); background: var(--surface); border: 1px solid var(--rule);
+  border-left: 4px solid var(--or); border-radius: var(--radius);
+}
+.bio-vedette:hover { border-color: var(--azur); border-left-color: var(--or); }
+.bio-vedette b { font-family: var(--display); font-weight: 400; font-size: 28px; color: var(--ink); line-height: 1.15; }
+.bio-group h2 a { font-family: var(--body); margin-left: 6px; }
+.bio p a.bio-lk { text-decoration-style: solid; text-decoration-color: var(--or); text-decoration-thickness: 1.5px; }
+.bio-go { font-weight: 500; }
+.bio-colophon { margin-top: 30px; max-width: 680px; }
+@media (max-width: 1000px) {
+  .bio p, .bio h2, .bio h3, .bio ul, .bio ol, .bio blockquote { width: auto; max-width: 68ch; }
+  .bio p { font-size: 18.5px; }
+  .bio .sn-m { width: 10px; height: 10px; cursor: pointer; vertical-align: 0.4em; }
+  .bio .sn { display: none; }
+  .bio .sn-t:checked + .sn {
+    display: block; float: none; width: auto; margin: 8px 0 10px; padding: 8px 10px;
+    background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--azur); border-radius: var(--radius);
+  }
+  .bio-legend::after { content: "Touchez un point pour lire la note."; flex-basis: 100%; color: var(--muted); font-size: 13px; }
+}
+
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* À faire sur place */
+.lieux { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 8px 0 18px; font-size: 15px; }
+.depot { margin-top: 28px; scroll-margin-top: 16px; }
+.taches { display: grid; gap: 10px; }
+.tache { padding: 12px 14px; border: 1px solid var(--rule); border-left: 4px solid var(--rule); border-radius: var(--radius); background: var(--surface); scroll-margin-top: 16px; }
+.tache.prio-haute { border-left-color: var(--gueules); }
+.tache.prio-moyenne { border-left-color: var(--or); }
+.tache:target { box-shadow: 0 0 0 2px var(--azur-soft); }
+.tache-head { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; }
+.tache-titre { font-weight: 500; }
+.tache .cote { font-family: var(--mono); font-size: 13px; color: var(--ink-2); }
+.tache-action { margin: 6px 0 4px; }
+.c-haute { background: var(--gueules-soft); color: var(--gueules); }
+.c-moyenne { background: var(--or-soft); color: var(--or); }
+.c-basse { background: var(--neutre-soft); color: var(--muted); }
+.c-demandee { background: var(--azur-soft); color: var(--azur); }
+.c-faite { background: var(--sinople-soft); color: var(--sinople); }
+.faites { margin-top: 28px; }
+a.stat { color: inherit; text-decoration: none; }
+.debut { padding-left: 1.4em; } .debut li { margin: 4px 0; }

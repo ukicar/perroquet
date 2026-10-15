@@ -33,7 +33,8 @@ Pour **chaque** hypothèse, 1 à 3 prédictions : ce qu'on devrait trouver si el
 prédiction est :
 - **observable** dans une source identifiable (fonds, cote, édition, ark, type d'acte) ;
 - **diagnostique** : son résultat ne serait pas le même sous les autres hypothèses (`diagnostique: haute`) ;
-- réaliste : accessible en ligne, ou alors signalée comme salle de lecture dans `ou_chercher`.
+- réaliste : accessible en ligne, ou alors signalée comme salle de lecture dans `ou_chercher` ; dans ce cas,
+  note aussi la démarche (`methode/procedures/demarche.md`) pour qu'elle figure sur la page « À faire sur place ».
 Pense aussi aux prédictions **négatives** (« si H2, on ne devrait jamais trouver … »).
 Ids : P1, P2… ; `statut: non_testee`.
 

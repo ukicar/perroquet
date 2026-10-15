@@ -48,12 +48,14 @@ matrice:
   - {preuve: bardies-1903.a6, H1: C, H2: C, H3: C, note: "Les preuves de 1763 décrivent la même supplique dans les mêmes termes."}
   - {preuve: bardies-1903.a1, H1: C, H2: C, H3: N, note: "Condamnation à mort le 24 mai 1567 : une rémission ou une révision s'y rattache ; une évocation n'a de sens qu'avant ou contre un jugement à venir."}
   - {preuve: demembrement-vicomte-couserans.a6, H1: CC, H2: C, H3: C, note: "Condamné à mort en 1567, Soulan agit librement chez lui en juin 1571 : cas typique d'un coupable gracié (ou amnistié)."}
+  - {preuve: catalogue-ad09.a1, H1: C, H2: C, H3: C, note: "Le procès de Gabrielle contre Soulan court jusqu'en 1603 : la supplique n'a pas éteint l'affaire ; ses pièces (1 J 94) peuvent dire ce qu'elle demandait. Non diagnostique en l'état."}
 contestations: []
 meneur: H1
 confiance: possible
 verdict: "L'abrégé de 1677 ne dit que l'existence d'une supplique de 1567 « sur le sujet » de l'incendie et du meurtre, signifiée à Guillaume en mars 1570 ou 1571. La rémission (H1) explique le mieux que Soulan, condamné à mort, agisse librement en 1571, mais rien n'exclut une révision ou une évocation : la question reste ouverte."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
+  - {date: "2026-10-08", changement: "ligne ajoutée (non diagnostique) ; confiance inchangée", cause: "propagation : catalogue-ad09.a1"}
 sous_questions: [mort-de-soulan]
 ---
 ## La pièce

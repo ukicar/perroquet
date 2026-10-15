@@ -44,9 +44,10 @@ matrice:
 contestations: []
 meneur: H1
 confiance: plausible
-verdict: "Aucun document ne dit la religion de Gabrielle. Les indices qui touchent son foyer (prêtres tués au château, poursuite avec le procureur général) et sa famille probable (confrérie de Lézat) vont dans le sens d'une catholique ; seul Monluc, qui parle des Roquemaurel et non d'elle, les dit réformés. H1 est plausible, sans plus."
+verdict: "Aucun document ne dit la religion de Gabrielle. Les indices qui touchent son foyer (prêtres tués au château, poursuite avec le procureur général) et sa famille probable (les Espinas de Lézat, parrains et marraines au baptême catholique de la paroisse, confrérie de Notre-Dame de Bethléem) vont dans le sens d'une catholique ; seul Monluc, qui parle des Roquemaurel et non d'elle, les dit réformés. H1 est plausible, sans plus."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
+  - {date: "2026-10-08", changement: "verdict réécrit ; confiance inchangée", cause: "propagation : registres-paroissiaux-lezat.a5, origine-de-gabrielle"}
 sous_questions: [religion-des-roquemaurel, origine-de-gabrielle]
 ---
 ## Indices

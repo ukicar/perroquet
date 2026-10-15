@@ -24,7 +24,7 @@ git : ils vivent dans `cache/`, propre à chaque machine.
 ## Travailler
 
 <!-- aide:debut -->
-Dans Claude Code ou OpenCode, ouvert sur le dossier `perroquet`. Neuf commandes suffisent ; tout le reste, l'agent le fait
+Dans Claude Code ou OpenCode, ouvert sur le dossier `perroquet`. Dix commandes suffisent ; tout le reste, l'agent le fait
 seul. Vous pouvez aussi simplement lui parler : il suit les mêmes règles.
 
 **Le cycle de recherche** : on part d'une idée, on la met à l'épreuve, on la fait attaquer.
@@ -48,8 +48,9 @@ seul. Vous pouvez aussi simplement lui parler : il suit les mêmes règles.
 
 | Commande | Quand l'utiliser |
 |---|---|
+| `/sync-gallica` | Quand Gallica a bloqué nos recherches (cela arrive souvent). L'agent reprend tout ce qui a été mis en attente : recherches, pages à lire. Si Gallica bloque encore, il le dit et on réessaie plus tard. |
 | `/sync` | Au début et à la fin de chaque séance : récupère le travail de l'autre personne, envoie le vôtre, met à jour le site et le lien partagé. |
-| `/view` | Pour ouvrir le site : graphe, hypothèses, fiches, chronologie. |
+| `/view` | Pour ouvrir le site : graphe, hypothèses, fiches, chronologie, et la page **À faire sur place** (archives à visiter, demandes à envoyer, classées par lieu). |
 
 Créer une fiche, relier deux personnes, transcrire, télécharger un scan : l'agent le fait de lui-même pendant
 ces commandes (procédures dans `methode/procedures/`). Vous pouvez aussi le demander en une phrase

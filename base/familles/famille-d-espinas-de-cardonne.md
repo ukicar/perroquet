@@ -15,23 +15,66 @@ armes: 'Selon les sources : « d''argent, à un Pin de sinople, en chef de gueul
   Pièces fugitives) ; « d''argent au pin de sinople, au chef de gueules chargé d''une croix d''argent » (site de la famille
   de Roquemaurel).'
 relations:
-  - {rel: seigneur_de, vers: cardonne, preuves: [bremond-1863.a2, aubais-pieces-fugitives.a2], confiance: probable}
+  - {rel: seigneur_de, vers: cardonne, preuves: [bremond-1863.a2, aubais-pieces-fugitives.a2, bnf-fr-32552.a2], confiance: probable}
   - {rel: seigneur_de, vers: gouzens, preuves: [bremond-1863.a2, lapasse-1868.a1, minovez-1997.a1], confiance: probable}
-  - {rel: reside_a, vers: lezat-sur-leze, preuves: [registres-paroissiaux-lezat.a3, revue-de-gascogne-1920.a2], confiance: probable}
+  - {rel: reside_a, vers: lezat-sur-leze, preuves: [registres-paroissiaux-lezat.a3, registres-paroissiaux-lezat.a5, revue-de-gascogne-1920.a2], confiance: probable}
 ---
-Famille noble des diocèses de Rieux et de Mirepoix, dont la filiation imprimée par Aubais part de
-[[pierre-espinas]], seigneur de Cardonne, confrère à Lézat en 1528 [[aubais-pieces-fugitives.a2]]. Gabriel et
-Jean-Auguste Espinas furent maintenus nobles le 2 août 1669 [[catalogue-de-caux-1676.a1]] et leurs descendants
-confirmés seigneurs de Cardonne et de Gouzens en 1697 [[bremond-1863.a2]]. La famille est présente à Lézat de 1589
-à 1735 [[registres-paroissiaux-lezat.a3]] ; un François d'Espinas, seigneur de Gouzens, épouse Hilaire de Lapasse
-en 1645 [[lapasse-1868.a1]], des Despinas sont inhumés à Castagnac de 1685 à 1729
-[[registres-paroissiaux-castagnac.a1]] [[registres-paroissiaux-castagnac.a3]], et un Jean-Jacques Despinasse,
-seigneur de Gouzens, siège à Muret en 1789 [[bremond-1863.a4]]. Les armes varient selon les sources (pin, aubépin
-ou azerolier de sinople) [[catalogue-de-caux-1676.a3]] [[bremond-1863.a3]] [[aubais-pieces-fugitives.a1]].
+Famille noble de Lézat, au diocèse de Rieux, présente aussi au diocèse de Mirepoix et en Volvestre. Au XVIe siècle,
+elle compte au moins deux branches : celle des seigneurs de **Cardonne**, la seule que suivent les preuves de noblesse,
+et celle des seigneurs de **Caladroy**, connue par une généalogie récente et par les registres de Lézat.
 
-L'histoire familiale des Roquemaurel y rattache [[gabrielle-d-espinas]] [[site-roquemaurel.a11]], mais aucun
-document vu ne nomme de fille Espinas au XVIe siècle : le lien reste une hypothèse à tester (testament de Pierre
-en 1560, preuves de 1669). Les notes tiennent pour une coquille la date de 1509 qu'Aubais imprime pour le mariage
-de Claire Espinas avec François Galauba [[aubais-pieces-fugitives.a11]], mariage confirmé par Villain sans date
-[[villain-france-moderne.a1]]. Des familles « d'Espinas » et « de Lespinasse » de Montesquieu-Volvestre au XVIIIe
-siècle [[ad31-serie-c-vingtiemes-rieux.a1]] sont peut-être apparentées.
+## Les Espinas de Cardonne
+
+La filiation produite devant Bezons en 1669 est connue par deux témoins : la liste des titres copiée au Cabinet des
+titres (BnF fr. 32552) et la notice imprimée d'Aubais. Elle part de [[pierre-espinas]], nommé confrère de Notre-Dame
+de Bethléem à Lézat le dernier juillet 1528 [[bnf-fr-32552.a3]] [[aubais-pieces-fugitives.a2]], dont le testament du
+4 janvier 1560 mentionne ses fils [[achille-espinas]] et [[francois-espinas-fils-de-pierre]] et « Pierre son neveu »
+[[bnf-fr-32552.a2]] ([[pierre-espinas-neveu]]). Deux lignes en descendent :
+
+- l'aînée, par Achille, seigneur de Cardonne, marié en 1566 [[inventaire-archives-ginestet.a1]] ;
+  [[francois-espinas-seigneur-de-cardonne]], qui teste le 2 mai 1585 en faveur de [[jean-bertrand-espinas]]
+  [[bnf-fr-32552.a5]] ; puis [[gabriel-espinas]], émancipé le 25 janvier 1645 (le 26 chez Aubais)
+  [[bnf-fr-32552.a4]] [[aubais-pieces-fugitives.a10]], demeurant au diocèse de Mirepoix ;
+- la cadette, par François, « 1er du nom », qui teste le pénultième février 1599 [[bnf-fr-32552.a6]], père d'un
+  second François [[aubais-pieces-fugitives.a6]], père de [[jean-auguste-espinas]], demeurant au diocèse de Rieux.
+
+Gabriel et Jean-Auguste sont maintenus nobles le 2 août 1669 ([[maintenue-des-espinas-de-cardonne-1669]])
+[[bnf-fr-32552.a1]] [[catalogue-de-caux-1676.a1]] ; leur production subsisterait aux AD Tarn-et-Garonne
+[[rcgl-9-1980.a2]]. Leurs descendants sont confirmés seigneurs de Cardonne et de Gouzens en 1697 [[bremond-1863.a2]].
+Comme toute preuve de noblesse, ces titres ne retiennent que les mâles : aucune fille n'y figure.
+
+## La branche de Caladroy
+
+Selon la généalogie de Jacques de Roquemaurel (2026), [[jean-d-espinas-caladroy]], seigneur de Caladroy à Lézat, mari
+d'Antonie de Montesquieu, a une fille Catherine baptisée en 1561 [[roquemaurel-familles-du-midi.a5]] et un fils
+[[martin-d-espinas]] [[roquemaurel-familles-du-midi.a1]]. Le registre original de Lézat confirme en 1589 « noble martin
+despinac » avec un fils Jean et une fille Claire [[registres-paroissiaux-lezat.a5]] [[registres-paroissiaux-lezat.a6]].
+Ce fils, [[jean-arnaud-d-espinas]], succède en 1603 à son père et « à sa tante », et reprend les droits nés de l'arrêt
+obtenu en 1567 par Gabrielle d'Espinas [[roquemaurel-familles-du-midi.a2]] ; un Jean d'Espinas plaide encore en
+1607-1610 sur les biens de Soulan [[catalogue-ad09.a2]]. Le rattachement de cette branche à Pierre de Cardonne (par un
+frère ou un fils) est affirmé par l'auteur sans preuve. Gondal parle des « d'Espinas, seigneurs de Caladroy et de
+Cardonne » sans les distinguer [[gondal-1969.a2]], et fait d'un Jehan d'Espinas le seigneur de Cardonne en 1569
+[[gondal-1969.a1]] ([[jean-d-espinas-1569]]), peut-être Jean de Caladroy.
+
+## Gabrielle d'Espinas
+
+L'histoire familiale des Roquemaurel rattachait [[gabrielle-d-espinas]] aux Espinas de Cardonne [[site-roquemaurel.a11]],
+d'où l'hypothèse qu'elle soit fille de Pierre ([[origine-de-gabrielle#H1]]). Depuis l'arrêt de 1603 cité par la
+généalogie de 2026 (AD Ariège 1 J 94, cote confirmée par le catalogue [[catalogue-ad09.a1]], acte non vu), la piste en
+tête est la branche de Caladroy : fille ou sœur de Jean de Caladroy ([[origine-de-gabrielle#H5]]), Pierre n'étant plus
+que possible ([[origine-de-gabrielle]]). La Gabrielle d'Espinas que la généalogie donne pour marraine à Lézat le 6 août
+1589 n'a pas été retrouvée à cette date sur le registre [[registres-paroissiaux-lezat.a8]].
+
+## Autres mentions
+
+La famille est présente à Lézat de 1589 à 1735 [[registres-paroissiaux-lezat.a3]] ; une damoiselle « ant. despinas »
+y est marraine en 1589 [[registres-paroissiaux-lezat.a7]]. Un François d'Espinas, seigneur de Gouzens, épouse Hilaire
+de Lapasse en 1645 [[lapasse-1868.a1]] ; une Domenge d'Espinasse épouse Jean de Médrano [[revue-de-gascogne-1880.a1]],
+mariage que Gondal place en 1629 [[gondal-1969.a2]] ; des Despinas sont inhumés à Castagnac de 1685 à 1729
+[[registres-paroissiaux-castagnac.a1]] [[registres-paroissiaux-castagnac.a3]] ; un Jean-Jacques Despinasse, seigneur de
+Gouzens, siège à Muret en 1789 [[bremond-1863.a4]]. Au XVIIIe siècle, un château de Cardonne est dit « juridiction de
+Montesquieu-Volvestre » [[inventaire-ad09-serie-b-1894.a1]], et des d'Espinas et Lespinasse figurent à
+Montesquieu-Volvestre [[ad31-serie-c-vingtiemes-rieux.a1]], peut-être apparentés. Les notes tiennent pour une coquille
+la date de 1509 qu'Aubais imprime pour le mariage de Claire Espinas avec François Galauba [[aubais-pieces-fugitives.a11]],
+mariage confirmé par Villain sans date [[villain-france-moderne.a1]]. Les armes varient selon les sources (pin, aubépin
+ou azerolier de sinople) [[catalogue-de-caux-1676.a3]] [[bremond-1863.a3]] [[aubais-pieces-fugitives.a1]].

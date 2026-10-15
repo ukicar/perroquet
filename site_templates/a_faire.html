@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block main %}
+<main class="col">
+  <h1>À faire sur place</h1>
+  <p class="lede">Ce que l'agent ne peut pas faire : aller en salle de lecture, écrire à un service d'archives, emprunter un livre,
+  contacter un particulier. Classé par lieu, pour préparer une visite. Les démarches décisives sont en tête de chaque lieu.</p>
+  {% if top %}
+  <h2>Par où commencer</h2>
+  <p class="small muted">Les démarches décisives, en tête celles qui font avancer le plus de questions.</p>
+  <ol class="debut">
+    {% for d in top %}<li><a href="#{{ d.id }}">{{ d.nom }}</a> <span class="small muted">· {{ depots[d.meta.depot].libelle if d.meta.depot in depots else d.meta.depot }} · {{ d.meta.pour|length }} question{{ 's' if d.meta.pour|length > 1 }}</span></li>{% endfor %}
+  </ol>
+  {% endif %}
+
+  {% if groups %}
+  <h2>Par lieu</h2>
+  <nav class="lieux" aria-label="Lieux">
+    {% for key, dep, items in groups %}<a href="#{{ key }}">{{ dep.libelle }} <span class="muted">({{ items|length }})</span></a>{% endfor %}
+  </nav>
+  {% endif %}
+
+  {% for key, dep, items in groups %}
+  <section class="depot" id="{{ key }}">
+    <h2>{{ dep.libelle }}{% if dep.ville %} <span class="muted small">· {{ dep.ville }}</span>{% endif %}</h2>
+    {% if dep.acces or dep.url %}<p class="small muted">{{ dep.acces }}{% if dep.url %} <a href="{{ dep.url }}">{{ dep.url }}</a>{% endif %}</p>{% endif %}
+    <div class="taches">
+      {% for d in items %}{% include "_tache.html" %}{% endfor %}
+    </div>
+  </section>
+  {% else %}
+  <p class="muted">Rien à faire sur place pour l'instant.</p>
+  {% endfor %}
+
+  {% if gallica %}
+  <section class="depot" id="gallica">
+    <h2>En attente de Gallica <span class="muted small">({{ gallica|length }})</span></h2>
+    <p class="small muted">Gallica a bloqué ces recherches et lectures. Rien à faire sur place : quand Gallica répond de nouveau,
+    tapez <code>/sync-gallica</code> dans l'agent (ou <code>./pq gallica</code> dans un terminal pour savoir s'il répond).</p>
+    <ul class="plain">
+      {% for j in gallica %}<li><a href="{{ j.id }}.html">{{ j.nom }}</a> <span class="small muted">· {{ 'recherche' if j.meta.outil in ('gallica', 'gallica-texte') else 'lecture' }}{% if j.meta.pour %} · {{ j.meta.pour|length }} prédiction{{ 's' if j.meta.pour|length > 1 }}{% endif %}</span></li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if done %}
+  <details class="faites">
+    <summary>Démarches faites ou abandonnées ({{ done|length }})</summary>
+    <ul class="plain">
+      {% for d in done %}<li>{{ d.meta.statut|chip('statut_demarche') }} <span class="locus">{{ d.meta.date_faite or '' }}</span> {{ d.id|lk }} <span class="small muted">{{ d.meta.resultat or '' }}</span></li>{% endfor %}
+    </ul>
+  </details>
+  {% endif %}
+  <p class="small muted">Quand une démarche est faite, dites-le à l'agent (« j'ai vu C 87 à Montauban, voici les photos ») : il versera la source et marquera la démarche comme faite.</p>
+</main>
+{% endblock %}

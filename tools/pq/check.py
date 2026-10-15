@@ -1,6 +1,6 @@
 """Validation (errors block a sync) and method audit (warnings guide the research)."""
-import os, subprocess
-from .model import REPO, ID_RE, RESERVED, as_list, norm_name
+import os, re, subprocess
+from .model import REPO, ID_RE, RESERVED, LINK_RE, MARGE_RE, as_list, norm_name
 from . import ach
 
 BINARY_EXT = (".pdf", ".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp", ".zip", ".djvu", ".gif")
@@ -109,6 +109,22 @@ def check(base, with_git=True):
             for k, v in (aj.items() if isinstance(aj, dict) else []):
                 for x in as_list(v):
                     _ref(rep, base, x, w, f"ajouts.{k} : ")
+        elif fi.type == "demarche":
+            _enum(rep, voc, "depots", fi.get("depot"), w)
+            _enum(rep, voc, "statut_demarche", fi.get("statut"), w)
+            _enum(rep, voc, "priorite", fi.get("priorite"), w)
+            _enum(rep, voc, "mode", fi.get("mode"), w)
+            for k in ("pour", "sources"):
+                for x in as_list(fi.get(k)):
+                    _ref(rep, base, x, w, f"{k} : ")
+            if fi.get("statut") == "faite" and not fi.get("resultat"):
+                rep.add(WARN, w, "démarche faite sans résultat noté (champ resultat)", "demarche-sans-resultat")
+        elif fi.type == "gallica":
+            _enum(rep, voc, "statut_gallica", fi.get("statut"), w)
+            for x in as_list(fi.get("pour")) + as_list(fi.get("hyp")) + as_list(fi.get("recherche")):
+                _ref(rep, base, x, w, "gallica : ")
+            if fi.get("statut") == "faite" and not (fi.get("recherche") or fi.get("resultat")):
+                rep.add(WARN, w, "tâche Gallica faite sans recherche ni résultat notés", "gallica-sans-resultat")
         elif fi.type == "recherche":
             _enum(rep, voc, "resultat", fi.get("resultat"), w)
             for k in ("sources_creees", "hypotheses"):
@@ -119,6 +135,7 @@ def check(base, with_git=True):
             if not base.resolve(l):
                 rep.add(ERR, w, f"lien [[{l}]] introuvable", "lien")
 
+    _check_biographie(rep, base)
     _audit(rep, base)
     if with_git:
         _check_git(rep)
@@ -209,6 +226,44 @@ def _check_hypothese(rep, base, fi):
             _ref(rep, base, x, w, f"{k} : ")
 
 
+def _check_biographie(rep, base):
+    """base/biographies/<id>.md : liens valides, notes marginales résolues, chaque paragraphe annoté et sourcé."""
+    for pid, (meta, body) in sorted(base.biographies.items()):
+        w = f"base/biographies/{pid}.md"
+        if not ID_RE.match(pid):
+            rep.add(ERR, w, "nom de fichier invalide (minuscules, chiffres, tirets)", "id")
+        if pid not in base.fiches:
+            rep.add(ERR, w, f"aucune fiche {pid} : le nom du fichier doit être l'id de la personne", "ref")
+        _check_biographie_texte(rep, base, w, body)
+
+
+def _norm_quote(t):
+    return re.sub(r"\s+", " ", str(t).replace("’", "'")).strip()
+
+
+def _check_biographie_texte(rep, base, w, body):
+    corpus = [_norm_quote(c.get(k)) for _, c in base.claims.values() for k in ("citation", "texte") if c.get(k)]
+    for q in re.findall(r"«\s*(.+?)\s*»", re.sub(r"\[\[[^\]]*\]\]", "", body), re.S):
+        nq = _norm_quote(q)
+        if nq and not any(nq in c for c in corpus):
+            rep.add(WARN, w, f"citation « {nq[:60]} » introuvable telle quelle dans les assertions", "citation-biographie")
+    for m in LINK_RE.finditer(body):
+        ref = m.group(1).strip() + (("#" + m.group(2)) if m.group(2) else "")
+        if not base.resolve(ref):
+            rep.add(ERR, w, f"lien [[{ref}]] introuvable", "lien")
+    for m in MARGE_RE.finditer(body):
+        tag, note = m.group(1), m.group(2)
+        if not base.marge(tag):
+            rep.add(ERR, w, f"note marginale {{{{{tag}|…}}}} : ni une confiance ({', '.join(base.schema.voc['confiance'])}, "
+                            f"inconnu) ni une question ou hypothèse existante", "marge")
+        elif tag not in base.schema.voc.get("marge", {}) and not LINK_RE.search(note):
+            rep.add(WARN, w, f"note marginale {{{{{tag}|{note.strip()[:40]}…}}}} sans aucune preuve [[…]]", "marge-sans-preuve")
+    for para in body.split("\n\n"):
+        p = para.strip()
+        if p and not p.startswith("#") and not MARGE_RE.search(p):
+            rep.add(WARN, w, f"paragraphe sans note marginale : « {p[:50]}… »", "marge-absente")
+
+
 def _audit(rep, base):
     mentions = base.mentions()
     mentioned = set().union(*mentions.values()) if mentions else set()
@@ -246,6 +301,8 @@ def _audit(rep, base):
                 rep.add(WARN, fi.rel, "aucune date (naissance/mort/periode/date) : invisible sur la frise", "sans-date")
             if not fi.body.strip():
                 rep.add(WARN, fi.rel, "pas de synthèse rédigée", "sans-synthese")
+            if fi.type == "personne" and fi.id not in base.biographies:
+                rep.add(WARN, fi.rel, "pas de biographie (base/biographies/)", "sans-biographie")
 
     # possible duplicates
     seen = {}

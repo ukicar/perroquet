@@ -50,12 +50,19 @@ matrice:
   - {preuve: ad31-1b-74.a9, H1: N, H2: N, H3: N, note: "Gabrielle n'est pas nommée, mais l'entrée ne nomme que les parties à l'opposition : silence attendu."}
   - {preuve: site-roquemaurel.a19, H1: C, H2: C, H3: N, note: "Le décret adjuge à Guillaume la moitié de la part de Soulan : la famille du mari se paie sur les biens de Soulan, sans dire si la veuve en profite."}
   - {preuve: r-2026-10-06-ad31-2b-sacs-a-proces-soueix, H1: N, H2: N, H3: N, note: "Rien dans les sacs indexés ; indexation partielle."}
+  - {preuve: roquemaurel-familles-du-midi.a2, H1: C, H2: C, H3: I, note: "En 1603, son neveu et héritier reprend encore devant le Parlement les droits nés de l'arrêt de 1567 : la créance n'était pas éteinte."}
+  - {preuve: roquemaurel-familles-du-midi.a7, H1: C, H2: C, H3: I, note: "En 1607, Marguerite de Béon, détentrice des biens de Soulan, plaide contre ce neveu : le procès de 1610 oppose sans doute l'héritier de Gabrielle aux Béon-Soulan."}
+  - {preuve: catalogue-ad09.a1, H1: C, H2: C, H3: I, note: "Le procès de Gabrielle contre Soulan court de 1567 à 1603 : la créance n'était pas réglée avant 1603."}
+  - {preuve: catalogue-ad09.a2, H1: C, H2: C, H3: I, note: "En 1607-1610, Jean d'Espinas et la vicomtesse de Soulan plaident sur les places de Soulan et de Lescure : sans doute le procès de 1610."}
 contestations: []
 meneur: H1
 confiance: possible
-verdict: "Rien ne montre Gabrielle recevant un sou des 18 000 livres ; la seule trace postérieure est un procès sur ses 3 000 livres encore pendant en 1610, que le site familial donne sans source. Le paiement partiel par la vente par décret (H1) reste une inférence des notes, que le calcul place devant H2 faute de contradiction, mais la question est indécise."
+verdict: "Rien ne montre Gabrielle recevant les sommes de 1567. Son procès contre Soulan court de 1567 à 1603 (AD Ariège 1 J 94) ; en 1603 son neveu et héritier Jean d'Espinas reprend encore les droits nés de l'arrêt, et de 1607 à 1610 la vicomtesse de Soulan, détentrice des biens du meurtrier, plaide contre lui : la créance n'était donc pas éteinte (H3 affaiblie). Paiement partiel sur la vente par décret (H1) ou rien (H2) restent indécis ; les pièces de 1 J 94 trancheront."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
+  - {date: "2026-10-08", changement: "deux lignes ajoutées ; H3 affaiblie, confiance inchangée", cause: "roquemaurel-familles-du-midi.a2, a7 (arrêt de 1603, procès de 1607)"}
+  - {date: "2026-10-08", changement: "deux lignes ajoutées ; H3 encore affaiblie", cause: "catalogue-ad09.a1, a2"}
+  - {date: "2026-10-08", changement: "verdict réécrit ; confiance inchangée", cause: "propagation : catalogue-ad09.a1-a2, roquemaurel-familles-du-midi.a2, a7"}
 sous_questions: [localisation-de-l-arret-du-24-mai-1567, enregistrement-du-decret-de-1575]
 ---
 ## Ce que l'on sait

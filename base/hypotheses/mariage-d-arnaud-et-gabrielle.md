@@ -42,9 +42,10 @@ matrice:
 contestations: []
 meneur: H1
 confiance: possible
-verdict: "La date « vers 1541 » des arbres en ligne n'a aucun appui et s'accorde mal avec la génération des Espinas de Cardonne. Les notes placent le mariage dans les années 1550-1560 par inférence ; rien ne permet d'exclure un mariage plus tardif. H1 est possible, sans preuve directe."
+verdict: "La date « vers 1541 » des arbres en ligne n'a aucun appui. Si Gabrielle est fille de Jean d'Espinas de Caladroy (marié vers 1540, selon une estimation), le mariage ne peut guère être antérieur au milieu des années 1550 ; si elle est sa sœur, il peut être plus ancien. Les notes le placent dans les années 1550-1560 par inférence : H1 est possible, sans preuve directe ; le contrat reste à trouver (notaires de Lézat ou du Couserans, AD Ariège 1 J 94)."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
+  - {date: "2026-10-08", changement: "verdict réécrit ; confiance inchangée", cause: "propagation : origine-de-gabrielle (branche de Caladroy, H5-H6)"}
 sous_questions: [origine-de-gabrielle]
 ---
 ## Ce que l'on a

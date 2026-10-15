@@ -51,6 +51,7 @@ assertions:
   information: primaire
   credibilite: 2
   verifie: non
+  note: "Inexact pour 1 B 60 : le registre va en fait jusqu'au 31 mai 1567, prononcés jusqu'au 2 juin (ad31-1b-60.a1)."
 - id: a4
   texte: Les arrêts en double de la Grand Chambre sont cotés 1 B 1976-2296 ; 1 B 2103 couvre 1567 (avril-mai), non
     numérisé.

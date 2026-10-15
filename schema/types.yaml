@@ -71,3 +71,19 @@ recherche:
   graphe: false
   obligatoire: [date, outil, resultat]
   champs: [auteur, requete, perimetre, resultats, sources_creees, hypotheses]
+demarche:
+  dossier: demarches
+  libelle: Démarche sur place
+  libelle_pluriel: À faire sur place
+  couleur: "#b5651d"
+  graphe: false
+  obligatoire: [depot, action, statut, priorite]
+  champs: [cote, mode, pourquoi, pour, sources, url, resultat, date_faite]
+gallica:
+  dossier: gallica
+  libelle: Tâche Gallica en attente
+  libelle_pluriel: En attente de Gallica
+  couleur: "#6a5acd"
+  graphe: false
+  obligatoire: [statut, action]
+  champs: [outil, termes, options, ark, vues, hyp, pour, tentatives, recherche, resultat]

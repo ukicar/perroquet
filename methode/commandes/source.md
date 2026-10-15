@@ -23,5 +23,8 @@ Source : **$ARGUMENTS**. Applique le rôle `methode/roles/critique-des-sources.m
    et `relier.md`). Si une
    assertion touche une question ouverte, ajoute la ligne de matrice correspondante et recalcule
    (`./pq score`), avec une ligne d'`historique` si le verdict bouge.
-6. `./pq check`, `./pq build`. Réponds : la classification, le nombre d'assertions, les fiches et questions
+6. Reprends la biographie de chaque personne dont un fait a changé (`methode/procedures/biographie.md`).
+7. `./pq check`, `./pq build`. Réponds : la classification, le nombre d'assertions, les fiches et questions
    touchées.
+
+**Propagation (obligatoire avant de répondre)** : `./pq impact` sur ce qui a été ajouté ou modifié, puis mise à jour de chaque fichier listé (`methode/procedures/propager.md`).

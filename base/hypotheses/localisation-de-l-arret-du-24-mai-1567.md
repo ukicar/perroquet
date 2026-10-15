@@ -51,12 +51,16 @@ matrice:
   - {preuve: catalogue-ad31.a2, H1: C, H2: I, H3: C, note: "Pas de registre de la Tournelle pour avril-mai 1567."}
   - {preuve: catalogue-ad31.a3, H1: N, H2: I, H3: C, note: "Lacune du registre de Grand Chambre sur parchemin entre le 13 mai et le 2 juin 1567."}
   - {preuve: catalogue-ad31.a4, H1: C, H2: N, H3: N, note: "Le registre des arrêts en double d'avril-mai 1567 (1 B 2103) subsiste, non numérisé."}
+  - {preuve: ad31-1b-60.a1, H1: C, H2: C, H3: N, note: "Le registre civil couvre bien le 24 mai 1567 mais ne reproduit pas les arrêts criminels : l'arrêt doit être cherché dans le criminel (registre manquant d'avril-mai) ou en double (1 B 2103)."}
+  - {preuve: catalogue-ad09.a1, H1: N, H2: N, H3: C, note: "AD Ariège 1 J 94 contient le procès de Gabrielle contre Soulan, 1567-1603 : un exemplaire ou un extrait de l'arrêt peut s'y trouver, hors des AD Haute-Garonne (va dans le sens de Bardies)."}
 contestations: []
 meneur: H1
 confiance: possible
-verdict: "Le registre criminel d'avril-mai 1567 et le registre de Grand Chambre de la même période manquent ; seul subsiste, non numérisé, le registre des arrêts en double 1 B 2103. Bardies place la découverte d'Azémar hors des archives départementales, Vuillier cite les AD Haute-Garonne : les preuves ne départagent pas H1 et H3, et seule la lecture de 1 B 2103 tranchera. H1 est retenue comme piste de travail des notes."
+verdict: "Le registre criminel d'avril-mai 1567 et le registre de Grand Chambre de la même période manquent ; le registre civil 1 B 60, qui va en fait jusqu'au 2 juin, ne contient pas l'arrêt. Subsistent, non numérisés, le registre des arrêts en double 1 B 2103 (AD Haute-Garonne) et les pièces du procès de Gabrielle, 1567-1603, aux AD Ariège (1 J 94), où un exemplaire de l'arrêt peut se trouver. H1 et H3 restent à égalité : lire 1 B 2103 et 1 J 94."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
+  - {date: "2026-10-08", changement: "ligne ajoutée", cause: "ad31-1b-60.a1 (registre civil lu jusqu'au 31 mai 1567)"}
+  - {date: "2026-10-08", changement: "ligne ajoutée ; confiance inchangée", cause: "propagation : catalogue-ad09.a1 (1 J 94)"}
 sous_questions: []
 ---
 ## Les registres où l'arrêt devrait être

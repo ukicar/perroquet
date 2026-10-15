@@ -1,0 +1,5 @@
+{% if demarches %}
+<h2>À faire sur place <span class="muted small">({{ demarches|length }})</span></h2>
+<div class="taches">{% for d in demarches %}{% include "_tache.html" %}{% endfor %}</div>
+<p class="small"><a href="a-faire.html">Toutes les démarches, par lieu</a></p>
+{% endif %}

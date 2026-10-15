@@ -33,3 +33,5 @@ aussi dans `historique` avec sa cause.
 
 `./pq check`, `./pq build`. Réponds en 6–10 lignes : les objections les plus fortes, ce qui a changé, et ce
 qu'il faudrait trouver pour trancher.
+
+**Propagation (obligatoire avant de répondre)** : `./pq impact` sur ce qui a été ajouté ou modifié, puis mise à jour de chaque fichier listé (`methode/procedures/propager.md`).

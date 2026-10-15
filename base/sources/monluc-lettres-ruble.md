@@ -414,5 +414,42 @@ assertions:
   credibilite: 6
   verifie: non
   note: paraphrase des notes du 6-7 oct. 2026 ; citation à relever sur la source
+- id: a31
+  texte: Avant de demander des troupes, Monluc avait envoyé le vice-sénéchal La Chappelle, avec ordre au sénéchal de Toulouse de lui prêter main-forte ; les officiers et la noblesse lui conseillèrent de repartir, car il fallait un camp.
+  citation: "Je y avois envoyé monsieur de la Chappelle, vice-séneschal, et escrit au séneschal de Thoulouze luy bailler main-forte, ne pensant point qu'ilz eussent tant de forces ; mais comme il a esté en ces cartiers-là, voz officiers et la noblesse luy ont conseillé de s'en retourner et qu'il y faut un camp pour les deffaire."
+  locus: t. V, lettre 160 (Agen, 14 févr. 1567), p. 79
+  sujets:
+  - blaise-de-monluc
+  - expedition-de-monluc-en-couserans-1567
+  date: 1567-02
+  preuve: indirecte
+  information: primaire
+  credibilite: 2
+  verifie: agent
+- id: a32
+  texte: Selon Monluc, le Parlement de Toulouse avait déjà fait ajourner les parties ; les Roquemaurel avaient toujours comparu, Fontrailles et Soulan jamais.
+  citation: "La court de parlement de Thoulouze y a faict tout ce qu'il a esté poussible par ajournement et toutes autres provisions nécessaires pour le debvoir de la justice. Les Roquemaurelz se sont toujours présentés et les autres non, mais toujours uzé de voye et de faict, et jusques icy en sont sortis force meurtres."
+  locus: t. V, lettre 160 (Agen, 14 févr. 1567), p. 78
+  sujets:
+  - parlement-de-toulouse
+  - famille-de-roquemaurel
+  - jean-francois-de-mauleon
+  date: 1567-02
+  preuve: indirecte
+  information: secondaire
+  credibilite: 2
+  verifie: agent
+- id: a33
+  texte: Monluc écrit que le sénéchal de Toulouse, qu'il avait chargé d'accorder les parties, se disait sûr de faire entendre raison aux Roquemaurel mais non à Fontrailles et Soulan, « encores qu'ilz fussent ses parens ».
+  citation: "il m'a tousjours respondu qu'il s'asseuroit bien qu'il feroit faire aux Rocquemaurelz toutes choses de raison, mais non aux dicts Fonteraille et Solan, encores qu'ilz fussent ses parens."
+  locus: t. V, lettre 160 (Agen, 14 févr. 1567), p. 78-79
+  sujets:
+  - blaise-de-monluc
+  - famille-de-roquemaurel
+  date: 1567-02
+  preuve: indirecte
+  information: secondaire
+  credibilite: 2
+  verifie: agent
 ---
 Lettres de Blaise de Monluc publiées par A. de Ruble (Société de l'histoire de France, 5 vol., 1864–1872) ; la lettre 160 à Charles IX (Agen, 14 février 1567, t. V, p. 77-82) est le seul témoignage contemporain connu sur l'incendie de Soueix. Monluc écrit une douzaine de jours après les faits, d'après ce qu'on lui a « mandé », et ne nomme pas la veuve ; il dit les Roquemaurel protestants, ce que contredisent d'autres sources et l'index de Ruble. Les notes et l'index de Ruble (t. V) sont précieux mais attribuent de façon incohérente les mentions de « Tilladet » à Antoine ou à François de Cassagnet. Consultée par l'OCR d'archive.org.

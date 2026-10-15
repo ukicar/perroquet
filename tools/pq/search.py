@@ -154,10 +154,20 @@ def log(outil, res, hyp=None, objet=None):
 
 def run(args):
     t = args.outil
-    if t == "gallica":
-        res = gallica(args.termes, index=args.index, maximum=args.max, cql=args.cql)
-    elif t == "gallica-texte":
-        res = gallica_texte(args.termes[0], args.termes[1:])
+    if t in ("gallica", "gallica-texte"):
+        from .gallica import is_block, queue
+        try:
+            res = (gallica(args.termes, index=args.index, maximum=args.max, cql=args.cql) if t == "gallica"
+                   else gallica_texte(args.termes[0], args.termes[1:]))
+        except requests.RequestException as e:
+            if not is_block(e):
+                raise
+            opts = {"index": args.index, "cql": args.cql, "max": args.max} if t == "gallica" else None
+            gid = queue(t, args.termes, hyp=args.hyp, objet=args.objet, options=opts,
+                        cause=f"{type(e).__name__} {getattr(e.response, 'status_code', '') or ''}".strip())
+            print(f"Gallica refuse la requête ({getattr(e.response, 'status_code', type(e).__name__)}) : recherche mise en attente "
+                  f"dans base/gallica/{gid}.md. Elle sera relancée par `./pq gallica --run` (ou /sync-gallica).")
+            raise SystemExit(2)
     elif t == "archive":
         res = archive(args.termes, maximum=args.max)
     elif t == "archive-texte":

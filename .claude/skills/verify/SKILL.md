@@ -20,3 +20,5 @@ Cible : **$ARGUMENTS** (une assertion, toutes les assertions d'une source, ou to
    - source inaccessible → laisse `verifie: non`, note pourquoi.
 4. Ne mets **jamais** `verifie: humain` toi-même : c'est l'utilisateur qui le décide.
 5. `./pq check`, `./pq build`. Réponds : vérifiées, corrigées, impossibles.
+
+**Propagation (obligatoire avant de répondre)** : `./pq impact` sur ce qui a été ajouté ou modifié, puis mise à jour de chaque fichier listé (`methode/procedures/propager.md`).

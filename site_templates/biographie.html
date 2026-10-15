@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% from "macros.html" import cmd %}
+{% block main %}
+<main class="bio-page">
+  <div class="eyebrow"><a href="biographies.html">Biographies</a>{% if span %} · {{ span[0] }}{% if span[1] and span[1] != span[0] %}–{{ span[1] }}{% endif %}{% endif %} · fiche {{ sujet.id|lk(sujet.nom) }}</div>
+  <h1>{{ bmeta.titre or sujet.nom }}</h1>
+  {% if bmeta.sous_titre %}<p class="lede">{{ bmeta.sous_titre }}</p>{% endif %}
+  <div class="bio-legend">
+    <span>En marge, le degré de certitude de chaque passage et ses preuves :</span>
+    {% for k in echelle %}{{ k|margechip }}{% endfor %}
+  </div>
+  <article class="bio">{{ bio }}</article>
+  {% if croises %}
+  <nav class="bio-croises" aria-label="Autres vies">
+    <h2>Croisés dans ce récit</h2>
+    <ul class="bio-cards">
+      {% for f in croises %}{% set s = f.span() %}
+      <li><a href="biographie-{{ f.id }}.html"><b>{{ f.nom }}</b>{% if s %}<span class="locus">{{ s[0] }}{% if s[1] and s[1] != s[0] %}–{{ s[1] }}{% endif %}</span>{% endif %}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+  <p class="small muted bio-colophon">Texte rédigé à partir de la base (<code>base/biographies/{{ sujet.id }}.md</code>){% if bmeta.mise_a_jour %}, mis à jour le {{ bmeta.mise_a_jour }}{% endif %} · {{ nb_notes }} notes marginales. Rien n'y est affirmé qui ne soit dans une fiche ; une note liée à une question suit la confiance actuelle de celle-ci.</p>
+  <div class="cmds">{{ cmd('/explore ' ~ sujet.id) }}</div>
+</main>
+{% endblock %}

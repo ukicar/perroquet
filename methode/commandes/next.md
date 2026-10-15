@@ -33,4 +33,5 @@ ajoute-la à la fiche (`statut: non_testee`) avec une ligne d'`historique` : c'e
 ## 4. Répondre
 Une liste classée de 3 à 7 actions, de la plus utile à la moins utile, chacune en deux lignes avec sa commande :
 `/test <question> P2`, `/challenge <question>`, `/verify <source>`, `/explore <fiche>`, ou une démarche à faire
-soi-même (salle de lecture, compte Geneanet). Puis `./pq build`.
+soi-même (salle de lecture, compte Geneanet). Toute démarche à faire sur place proposée ici est aussi notée dans
+`base/demarches/` (`methode/procedures/demarche.md`) ; renvoie à la page « À faire sur place » du site. Puis `./pq build`.

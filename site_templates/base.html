@@ -13,8 +13,8 @@
 <header class="top">
   <a class="brand" href="index.html">Perroquet<small>Gabrielle d'Espinas · 1567</small></a>
   <nav class="main" aria-label="Navigation principale">
-    {% for key, lab in [("index","Tableau de bord"),("graphe","Graphe"),("hypotheses","Hypothèses"),("fiches","Fiches"),("sources","Sources"),("chronologie","Chronologie"),("journal","Journal"),("audit","Audit")] %}
-    <a href="{{ key }}.html"{% if page == key %} class="on" aria-current="page"{% endif %}>{{ lab }}{% if key == "audit" and nb_err %} <span class="err">({{ nb_err }})</span>{% endif %}</a>
+    {% for key, lab in [("index","Tableau de bord")] + ([("biographies","Biographies")] if has_bio else []) + [("graphe","Graphe"),("hypotheses","Hypothèses"),("fiches","Fiches"),("sources","Sources"),("chronologie","Chronologie"),("a-faire","À faire"),("journal","Journal"),("audit","Audit")] %}
+    <a href="{{ key }}.html"{% if page == key %} class="on" aria-current="page"{% endif %}>{{ lab }}{% if key == "audit" and nb_err %} <span class="err">({{ nb_err }})</span>{% endif %}{% if key == "a-faire" and nb_afaire %} <span class="muted">({{ nb_afaire }})</span>{% endif %}</a>
     {% endfor %}
   </nav>
 </header>

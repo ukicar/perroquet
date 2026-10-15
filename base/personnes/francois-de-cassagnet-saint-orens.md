@@ -45,7 +45,7 @@ de Guienne », qui procéda à la cotisation des vivres [[lestrade-1900.a2]] [[r
 et Bardies l'appellent « Tilladet de Saint-Orens » [[lestrade-1900.a16]] [[bardies-1903.a11]]. Qu'il soit aussi le
 « capitaine Tilladet » de l'[[expedition-de-monluc-en-couserans-1567]] et de la
 [[raid-des-cabannes-1567|surprise des Cabannes]] est probable mais repose sur cette seule pièce explicite, les
-récits protestants ne donnant pas de prénom [[crespin-histoire-des-martyrs.a1]]
+récits protestants ne donnant pas de prénom [[crespin-1570.a11]]
 [[discours-des-troubles-de-pamiers.a2]].
 
 Par la suite il fut maréchal de camp pour l'invasion du Béarn en 1570 [[monluc-commentaires-ruble.a25]], reçut

@@ -9,10 +9,10 @@ dans le site HTML (`./pq view`).
 **Langue** : tout ce que tu écris dans la base est en **français**. Les citations de sources restent
 **verbatim**, dans leur langue et graphie d'origine (moyen français compris), sans modernisation.
 
-La méthode est décrite pour les humains dans [METHODE.md](METHODE.md). Les neuf commandes des utilisateurs
-(`/hypothesis`, `/test`, `/challenge`, `/next`, `/source`, `/explore`, `/verify`, `/sync`, plus `/view`) sont
+La méthode est décrite pour les humains dans [METHODE.md](METHODE.md). Les dix commandes des utilisateurs
+(`/hypothesis`, `/test`, `/challenge`, `/next`, `/source`, `/explore`, `/verify`, `/sync`, `/sync-gallica`, plus `/view`) sont
 dans `methode/commandes/` ; les procédures internes qu'elles appellent (créer une fiche, relier, transcrire,
-fichiers lourds, publier le lien) dans `methode/procedures/` ; les rôles des sous-agents dans `methode/roles/`.
+fichiers lourds, publier le lien, tenir la biographie, noter une démarche sur place, propager un changement) dans `methode/procedures/` ; les rôles des sous-agents dans `methode/roles/`.
 Quand l'utilisateur demande en langage courant une de ces actions, suis la procédure correspondante. Les dossiers `.claude/` et
 `.opencode/` sont **générés** par `./pq adapters` : ne jamais les modifier à la main.
 
@@ -34,7 +34,9 @@ Quand l'utilisateur demande en langage courant une de ces actions, suis la proc�
 7. **Les gros fichiers ne vont jamais dans git.** Scans, PDF, images : dans `cache/` (ignoré par git), déclarés
    dans la fiche source sous `fichiers:` avec l'URL d'origine. Seuls les textes (fiches, transcriptions) sont
    versionnés.
-8. **Avant de terminer** une commande qui modifie la base : `./pq check` doit afficher 0 erreur. Corrige
+8. **Avant de terminer** une commande qui modifie la base : propager le changement à tout ce qui en dépend
+   (`./pq impact`, procédure `methode/procedures/propager.md` : fiches, synthèses, biographies, verdicts), puis
+   `./pq check` doit afficher 0 erreur. Corrige
    toi-même les erreurs. Puis `./pq build` pour mettre le site à jour.
 9. Ne fais jamais `git push` ni de commit sauf via `/sync` (`./pq sync`) ou à la demande explicite.
 
@@ -43,12 +45,16 @@ Quand l'utilisateur demande en langage courant une de ces actions, suis la proc�
 | Commande | Rôle |
 |---|---|
 | `./pq check` / `./pq audit` | valider la base / voir aussi les avertissements de méthode |
-| `./pq fiche <type> "<nom>"` | créer une fiche (détecte les doublons) ; types : personne famille lieu evenement institution source hypothese enquete |
+| `./pq fiche <type> "<nom>"` | créer une fiche (détecte les doublons) ; types : personne famille lieu evenement institution source hypothese enquete demarche gallica |
 | `./pq search gallica <termes…> [--index text] --hyp <id> --objet "<objet>"` | catalogue/plein texte Gallica |
 | `./pq search gallica-texte <ark> <termes…>` | occurrences, avec pages, dans un document Gallica |
 | `./pq search archive <termes…>` / `archive-texte <identifiant> <termes…>` | archive.org (catalogue / texte OCR) |
 | `./pq search local <chemin> <termes…>` | dans un fichier texte local |
+| `./pq dossier <id>` | tout ce que la base sait d'une fiche (relations, assertions, questions) |
 | `./pq score [id]` | scores ACH (incohérence pondérée) des hypothèses |
+| `./pq impact [ids…] [--since REF]` | ce qu'il faut relire et mettre à jour après un changement (fiches, synthèses, biographies, questions) |
+| `./pq gallica [--run]` | tâches en attente de Gallica : tester l'accès, relancer les recherches mises en attente |
+| `./pq bnf <outil> '<json>'` | serveur sweet-bnf (API Gallica : recherche, OCR d'une page `get_page_text`, images) ; `./pq bnf outils` |
 | `./pq fetch [--status]` | récupérer les gros fichiers manquants dans `cache/` |
 | `./pq hash <fichier>` | empreinte sha256 à noter dans `fichiers:` |
 | `./pq build` / `./pq view` | générer / ouvrir le site |
@@ -196,6 +202,28 @@ verdict_apres: "H1 plausible"
 ---
 Récit de l'enquête.
 ```
+
+### Biographies (`base/biographies/<id-personne>.md`)
+
+Récit en prose de la vie de chaque personne, affiché sur une page « Biographie » du site. Le texte reste continu ; la
+certitude et les preuves vont en marge avec `{{<confiance|inconnu|question-id|question-id#Hn>|commentaire
+[[source.aN|Libellé]]}}`, placé après la ponctuation. Une étiquette de question suit la confiance actuelle de
+cette question. Règles et format : `methode/procedures/biographie.md`.
+
+### Démarche (`base/demarches/`) : ce qu'il faut faire sur place
+
+Ce que seuls les utilisateurs peuvent faire (salle de lecture, courrier à un dépôt, livre, contact privé). La page
+« À faire sur place » du site les regroupe par lieu. Champs : `depot` (clé de `depots` dans
+`schema/vocabulaire.yaml`), `cote`, `action`, `pourquoi`, `mode`, `priorite` (haute|moyenne|basse), `statut`
+(a_faire|demandee|faite|abandonnee), `pour` (prédictions `question#Pn` servies), `sources`, `resultat`, `date_faite`.
+Toute piste bloquée en ligne devient une démarche : `methode/procedures/demarche.md`.
+
+### Tâche Gallica en attente (`base/gallica/`)
+
+Gallica bloque souvent nos requêtes (403/429). Une recherche `./pq search gallica…` refusée se met en attente toute
+seule ; une lecture de pages se note avec `./pq fiche gallica "<nom>"` : `ark`, `vues`, `action` (quoi lire et
+relever), `hyp`, `pour` (prédictions servies), `statut` (en_attente|faite|abandonnee), `tentatives`, `resultat`,
+`recherche`. Tout est repris par `/sync-gallica` quand Gallica répond. Ne jamais insister contre un blocage.
 
 ### Recherche (`base/recherches/`) : créée par `./pq search`, complétée à la main
 

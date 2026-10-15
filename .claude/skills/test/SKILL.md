@@ -28,7 +28,8 @@ applique toi-même sa fiche. Pour chaque prédiction :
    est consignée dans `base/recherches/` ; complète le corps de chaque fiche recherche d'une ligne d'interprétation.
 3. Les recherches web générales sont permises en complément ; consigne-les toi-même (fiche `recherche`).
 4. Si la seule voie est une salle de lecture ou un compte (Geneanet, archives non numérisées) : `resultat: bloque`,
-   prédiction `indecidable`, et note précisément ce qu'il faudrait consulter.
+   prédiction `indecidable`, et note précisément ce qu'il faudrait consulter : crée ou complète la démarche
+   correspondante (`methode/procedures/demarche.md`), qui apparaîtra sur la page « À faire sur place ».
 
 ## 3. Verser ce qui est trouvé
 Pour chaque document pertinent, suis la commande `/source` (classification, assertions verbatim avec locus,
@@ -51,6 +52,10 @@ Si le meneur ou la confiance a changé, applique la commande `/challenge` sur la
 ## 6. Clore
 - Fiche enquête : `recherches`, `ajouts` (sources, assertions `source.aN`, fiches), `changements`,
   `verdict_apres`, court récit dans le corps.
+- Si un fait ou un verdict a changé, reprends la biographie de chaque personne touchée
+  (`methode/procedures/biographie.md`).
 - `./pq check` (0 erreur), `./pq build`.
 - Réponds en 8–12 lignes : ce qui a été cherché, trouvé, pas trouvé ; l'effet sur chaque hypothèse ; le verdict ;
   la meilleure prochaine étape.
+
+**Propagation (obligatoire avant de répondre)** : `./pq impact` sur ce qui a été ajouté ou modifié, puis mise à jour de chaque fichier listé (`methode/procedures/propager.md`).

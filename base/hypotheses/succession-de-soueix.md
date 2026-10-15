@@ -48,12 +48,15 @@ matrice:
   - {preuve: site-roquemaurel.a17, H1: C, H2: C, H3: C, note: "Guillaume est déjà seigneur de Soueix le 10 mai 1567, trois mois après l'incendie."}
   - {preuve: ad31-1b-74.a2, H1: C, H2: I, H3: C, note: "En 1576, Guillaume est encore « s.r de Suys » et agit en son nom propre : un pupille né avant 1567 approcherait de la majorité ; aucune mention de tutelle."}
   - {preuve: cabinet-d-hozier-298.a4, H1: C, H2: C, H3: N, note: "La supplique de Soulan est signifiée à Guillaume en 1570/71 : il représente les intérêts de la maison d'Arnaud."}
+  - {preuve: roquemaurel-familles-du-midi.a6, H1: C, H2: I, H3: N, note: "Le généalogiste conjecture que l'enfant rescapé mourut peu après et fait succéder Guillaume par substitution : conjecture sans pièce, poids faible."}
 contestations: []
 meneur: H1
 confiance: plausible
-verdict: "Guillaume est seigneur de Soueix dès mai 1567 et l'est encore en 1576 en son nom propre ; le site familial attribue cette succession à une substitution dans le testament paternel de 1552. Cela suppose qu'Arnaud ne laissa pas de fils survivant, alors que le même site lui en donne « au moins un » : H1 est plausible, mais le sort de cet enfant reste inconnu."
+verdict: "Guillaume est seigneur de Soueix dès mai 1567 et l'est encore en 1576 et en 1592-1594 ; le site familial attribue cette succession à une substitution dans le testament paternel de 1552, et le généalogiste de la famille conjecture que l'enfant rescapé mourut peu après. Cela suppose qu'Arnaud ne laissa pas de fils survivant : H1 est plausible, mais le sort de l'enfant reste inconnu ; ce sont les héritiers de Gabrielle (les Espinas), non un fils, qui poursuivent ses droits en 1603."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
+  - {date: "2026-10-08", changement: "une ligne ajoutée ; confiance inchangée", cause: "roquemaurel-familles-du-midi.a6"}
+  - {date: "2026-10-08", changement: "verdict réécrit ; confiance inchangée", cause: "propagation : roquemaurel-familles-du-midi.a6, a2 ; ad14-77f-627"}
 sous_questions: [sort-de-gabrielle-a-soueix]
 ---
 ## Les faits

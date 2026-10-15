@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block main %}
+<main class="col">
+  <div class="eyebrow"><span class="chip">démarche sur place</span> {{ m.statut|chip('statut_demarche') }} {{ m.priorite|chip }} <code>{{ fi.id }}</code></div>
+  <h1>{{ fi.nom }}</h1>
+  <dl class="facts">
+    <dt>Où</dt><dd><a href="a-faire.html#{{ m.depot }}">{{ depot.libelle or m.depot }}</a>{% if depot.ville %}, {{ depot.ville }}{% endif %}</dd>
+    {% if m.cote %}<dt>Cote</dt><dd class="mono">{{ m.cote }}</dd>{% endif %}
+    {% if m.mode %}<dt>Comment</dt><dd>{{ m.mode|voc('mode') }}</dd>{% endif %}
+    <dt>Quoi faire</dt><dd>{{ m.action }}</dd>
+    {% if m.pourquoi %}<dt>Pourquoi</dt><dd>{{ m.pourquoi }}</dd>{% endif %}
+    {% if m.pour %}<dt>Questions</dt><dd>{% for r in m.pour %}{{ r|lk }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>{% endif %}
+    {% if m.sources %}<dt>Fiches</dt><dd>{% for r in m.sources %}{{ r|lk }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>{% endif %}
+    {% if m.url %}<dt>Lien</dt><dd><a href="{{ m.url }}">{{ m.url }}</a></dd>{% endif %}
+    {% if depot.acces %}<dt>Accès</dt><dd>{{ depot.acces }}{% if depot.url %} <a href="{{ depot.url }}">{{ depot.url }}</a>{% endif %}</dd>{% endif %}
+    {% if m.date_faite %}<dt>Faite le</dt><dd>{{ m.date_faite }}</dd>{% endif %}
+    {% if m.resultat %}<dt>Résultat</dt><dd>{{ m.resultat }}</dd>{% endif %}
+  </dl>
+  {% if fi.body.strip() %}<h2>Notes</h2><div class="prose">{{ fi.body|md }}</div>{% endif %}
+</main>
+{% endblock %}

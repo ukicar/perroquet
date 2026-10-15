@@ -9,6 +9,10 @@ confiance:
   improbable: {libelle: "improbable", rang: 2, aide: "Des preuves vont contre."}
   refute:     {libelle: "réfuté", rang: 1, aide: "Contredit par une preuve directe fiable."}
 
+# Étiquettes supplémentaires des notes marginales de la biographie (base/biographie.md).
+marge:
+  inconnu:    {libelle: "inconnu", aide: "Les sources se taisent : rien n'est affirmé."}
+
 # Fiabilité de la source (code de l'Amirauté / OTAN, adapté).
 fiabilite:
   A: {libelle: "A — entièrement fiable", poids: 1.0, aide: "Acte original produit par l'autorité compétente (registre, minute notariale)."}
@@ -101,3 +105,97 @@ resultat:
   negatif: "rien trouvé (preuve négative)"
   partiel: "indices partiels"
   bloque: "accès impossible"
+
+# Démarches sur place (base/demarches/) : ce que seuls les humains peuvent faire
+statut_demarche:
+  a_faire: "à faire"
+  demandee: "demandée, en attente de réponse"
+  faite: "faite"
+  abandonnee: "abandonnée"
+priorite:
+  haute: "décisive pour une question importante"
+  moyenne: "utile"
+  basse: "à faire si l'occasion se présente"
+mode:
+  salle_de_lecture: "consultation en salle de lecture"
+  courrier: "demande écrite (courriel, formulaire de reproduction)"
+  bibliotheque: "ouvrage à consulter en bibliothèque ou à emprunter"
+  achat: "ouvrage ou reproduction à acheter"
+  contact_prive: "prise de contact avec un particulier ou une famille"
+  compte_en_ligne: "base en ligne demandant un compte"
+  en_ligne: "à consulter en ligne par vous (site qui bloque les agents)"
+
+# Lieux où aller (dépôts d'archives, bibliothèques, détenteurs privés). La page « À faire sur place » regroupe
+# les démarches par dépôt, dans cet ordre de région : d'abord les plus proches du sujet.
+depots:
+  ad-ariege:
+    libelle: Archives départementales de l'Ariège
+    ville: Foix
+    url: https://archives.ariege.fr
+    acces: "Salle de lecture à Foix ; minutes notariales en série 5 E (non numérisées pour le XVIe s.)."
+  ad-haute-garonne:
+    libelle: Archives départementales de la Haute-Garonne
+    ville: Toulouse
+    url: https://archives.haute-garonne.fr
+    acces: "Salle de lecture à Toulouse (bd Griffoul-Dorval) ; arrêts civils du Parlement numérisés jusqu'en 1587 seulement."
+  ad-tarn-et-garonne:
+    libelle: Archives départementales de Tarn-et-Garonne
+    ville: Montauban
+    url: https://www.tarnetgaronne.fr
+    acces: "16, avenue du 10e Dragon, Montauban (adresse à reconfirmer) ; salle de lecture ; série C (intendance de Montauban), productions devant Bezons en C 80-C 98. Demande de reproduction possible par courriel."
+  am-muret:
+    libelle: Archives municipales de Muret
+    ville: Muret
+    url: null
+    acces: "Sur rendez-vous ; liasse 40, registres des États de Comminges."
+  ad-herault:
+    libelle: Archives départementales de l'Hérault
+    ville: Montpellier
+    url: https://archives-pierresvives.herault.fr
+    acces: "Salle de lecture à Montpellier (Pierresvives) ; série C, intendance de Languedoc."
+  ad-gers:
+    libelle: Archives départementales du Gers
+    ville: Auch
+    url: https://archives32.fr
+    acces: "Hôtel du Département, 81 route de Pessan, Auch ; salle ouverte du mercredi au vendredi ; inscription gratuite avec pièce d'identité ; notaires en série 3 E."
+  cglanguedoc:
+    libelle: Bibliothèque du Cercle généalogique de Languedoc
+    ville: Toulouse
+    url: https://www.cglanguedoc.org
+    acces: "Bibliothèque de l'association (réservée aux adhérents) ; travaux de Vuillier sur les Mauléon et les Roquemaurel."
+  bnf-richelieu:
+    libelle: BnF, département des Manuscrits (Richelieu)
+    ville: Paris
+    url: https://www.bnf.fr
+    acces: "Salle de lecture des Manuscrits, site Richelieu, sur accréditation ; Cabinet des titres (Pièces originales, Dossiers bleus), collections Harlay, Doat, Clairambault. Reproductions à commander pour les volumes non numérisés."
+  archives-nationales:
+    libelle: Archives nationales
+    ville: Pierrefitte-sur-Seine
+    url: https://www.siv.archives-nationales.culture.gouv.fr
+    acces: "Salle de lecture à Pierrefitte ; Conseil privé (série V), série K."
+  bibliotheques:
+    libelle: Bibliothèques (ouvrages imprimés non numérisés)
+    ville: Toulouse, Foix ou prêt entre bibliothèques
+    url: https://www.sudoc.abes.fr
+    acces: "Localiser l'ouvrage dans le Sudoc, puis bibliothèque universitaire, municipale ou prêt entre bibliothèques ; certains se trouvent d'occasion."
+  detenteurs-prives:
+    libelle: Détenteurs privés (familles)
+    ville: Oust (Ariège) et autres
+    url: http://tderoquemaurel.free.fr
+    acces: "Prendre contact par l'auteur du site de la famille de Roquemaurel, qui cite ces pièces privées (copie AJR, preuves de Malte de 1763, papiers Sentein)."
+  ad-gironde:
+    libelle: Archives départementales de la Gironde et Archives de Bordeaux Métropole
+    ville: Bordeaux
+    url: https://archives.gironde.fr
+    acces: "Registres secrets du Parlement de Bordeaux, jurade."
+  malte:
+    libelle: National Library of Malta (archives de l'ordre)
+    ville: La Valette
+    url: null
+    acces: "Archives of the Order of Malta (AOM) ; demande écrite."
+
+# Tâches en attente de Gallica (base/gallica/) : relancées par `pq gallica --run` et /sync-gallica
+statut_gallica:
+  en_attente: "en attente (Gallica bloquait)"
+  faite: "faite"
+  abandonnee: "abandonnée"

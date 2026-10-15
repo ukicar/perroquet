@@ -15,7 +15,8 @@ Sujet : **$ARGUMENTS**.
    établi, ce qui est supposé, ce qui manque (dates, parents, conjoint, biens, confession, mort, actes).
 3. **Chercher** (rôle `archiviste`) : plein texte Gallica et archive.org sur les variantes du nom, les éditions
    déjà connues (`./pq search gallica-texte <ark> …`, `archive-texte <id> …`), puis les pistes nouvelles.
-   Toutes les recherches sont consignées (`--objet "…"`).
+   Toutes les recherches sont consignées (`--objet "…"`). Une piste qui demande un déplacement, un courrier ou
+   un contact devient une démarche (`methode/procedures/demarche.md`).
 4. **Verser** (rôle `critique-des-sources`) les documents pertinents : fiches source, assertions verbatim,
    nouvelles fiches et relations justifiées.
 5. **Rédiger la synthèse** de la fiche (corps, en français) : chaque phrase de fond renvoie à `[[source.aN]]`.
@@ -23,5 +24,9 @@ Sujet : **$ARGUMENTS**.
 6. **Proposer des questions.** Pour chaque contradiction entre sources ou chaque trou important, propose une
    question avec ses hypothèses (ne la crée que si l'utilisateur l'accepte, ou si elle est indispensable à la
    cohérence de la base).
-7. `./pq check`, `./pq build`. Réponds : ce qui a été ajouté (sources, assertions, fiches), ce qui reste
+7. Écris ou reprends la biographie de la personne explorée et des proches touchés
+   (`methode/procedures/biographie.md`).
+8. `./pq check`, `./pq build`. Réponds : ce qui a été ajouté (sources, assertions, fiches), ce qui reste
    inconnu, les questions proposées avec la commande `/hypothesis "…"` prête à copier.
+
+**Propagation (obligatoire avant de répondre)** : `./pq impact` sur ce qui a été ajouté ou modifié, puis mise à jour de chaque fichier listé (`methode/procedures/propager.md`).

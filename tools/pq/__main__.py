@@ -62,6 +62,12 @@ def main(argv=None):
     p.add_argument("--objet", help="objet de la recherche, en clair")
     p.add_argument("--no-log", action="store_true", help="ne pas consigner (exploration)")
     p.add_argument("--json", action="store_true")
+    p = sub.add_parser("impact", help="ce qu'il faut revoir après un changement (fiches, synthèses, biographies, questions)")
+    p.add_argument("ids", nargs="*"); p.add_argument("--since", help="référence git (défaut : dernier commit)")
+    p = sub.add_parser("gallica", help="tâches en attente de Gallica : tester l'accès, relancer (--run)")
+    p.add_argument("--run", action="store_true", help="relancer les recherches en attente si Gallica répond")
+    p = sub.add_parser("bnf", help="appeler le serveur sweet-bnf (API Gallica) : pq bnf <outil> '<json>' ; pq bnf outils")
+    p.add_argument("outil"); p.add_argument("json", nargs="?")
     p = sub.add_parser("fetch", help="télécharger les fichiers lourds manquants dans cache/")
     p.add_argument("sources", nargs="*"); p.add_argument("--status", action="store_true"); p.add_argument("--verifier", action="store_true")
     p = sub.add_parser("hash", help="empreinte sha256 d'un fichier"); p.add_argument("chemin")
@@ -72,6 +78,7 @@ def main(argv=None):
     p = sub.add_parser("sync", help="valider, commit, pull --rebase, push")
     p.add_argument("-m", "--message"); p.add_argument("--force", action="store_true"); p.add_argument("-v", "--verbose", action="store_true")
     sub.add_parser("stats", help="chiffres de la base")
+    p = sub.add_parser("dossier", help="tout ce que la base sait d'une fiche (pour écrire une biographie)"); p.add_argument("id")
     args = ap.parse_args(argv)
 
     if args.cmd == "check":
@@ -94,6 +101,15 @@ def main(argv=None):
     if args.cmd == "search":
         from .search import run
         run(args); return 0
+    if args.cmd == "impact":
+        from .impact import run
+        return run(args)
+    if args.cmd == "gallica":
+        from .gallica import run
+        return run(args)
+    if args.cmd == "bnf":
+        from .bnf import run
+        return run(args)
     if args.cmd == "fetch":
         from .fetch import run
         run(Base(), args); return 0
@@ -111,6 +127,9 @@ def main(argv=None):
         run(); return 0
     if args.cmd == "sync":
         return cmd_sync(args)
+    if args.cmd == "dossier":
+        from .dossier import run
+        return run(Base(), args.id)
     if args.cmd == "stats":
         b = Base()
         for t in b.schema.types:

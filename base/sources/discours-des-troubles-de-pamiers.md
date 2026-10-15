@@ -146,3 +146,9 @@ assertions:
   verifie: non
 ---
 Récit protestant des troubles de Pamiers publié par Cimber et Danjou (Archives curieuses de l'histoire de France, 1re série, t. VI, p. 329-343). Il rapporte la levée de 300 arquebusiers sous le capitaine Tilladet, l'entreprise de « ce Roquemaurel » contre les réfugiés des Cabannes (26 mai 1567) et la capture du ministre Tachard. Témoin contemporain mais partisan ; ne donne aucun prénom à Tilladet.
+
+**Date d'impression à vérifier.** Benoit, dans son édition de Crespin (t. III, p. 646 n. 2, Gallica bpt6k11969085
+vue 665), cite ce texte comme « Discours des troubles advenus en la ville de Pamies. S. l. 1577 (reproduit dans le
+t. VI des Archives curieuses) ». Si l'imprimé est de 1577 et non de 1567, il est postérieur de dix ans aux faits et
+de sept ans à [[crespin-1570]], dont il pourrait dépendre en partie ; il garde des détails propres (Val d'Angrogne,
+« bonnet blanc », passage par Foix, 26 mai). À contrôler sur la page de titre reproduite dans les Archives curieuses.

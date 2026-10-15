@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block main %}
+<main class="col">
+  <div class="eyebrow"><span class="chip">en attente de Gallica</span> {{ m.statut|chip('statut_gallica') }} <code>{{ fi.id }}</code></div>
+  <h1>{{ fi.nom }}</h1>
+  <dl class="facts">
+    <dt>Quoi faire</dt><dd>{{ m.action }}</dd>
+    {% if m.ark %}<dt>Document</dt><dd><a href="https://gallica.bnf.fr/ark:/12148/{{ m.ark }}">{{ m.ark }}</a>{% if m.vues %} · {{ m.vues }}{% endif %}</dd>{% endif %}
+    {% if m.termes %}<dt>Recherche</dt><dd class="mono">{{ m.outil }} {{ m.termes|join(' ') }}</dd>{% endif %}
+    {% if m.hyp %}<dt>Question</dt><dd>{{ m.hyp|lk }}</dd>{% endif %}
+    {% if m.pour %}<dt>Prédictions</dt><dd>{% for r in m.pour %}{{ r|lk }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>{% endif %}
+    {% if m.tentatives %}<dt>Tentatives</dt><dd>{% for t in m.tentatives %}<span class="locus">{{ t.date }}</span> {{ t.resultat }}{% if not loop.last %} ; {% endif %}{% endfor %}</dd>{% endif %}
+    {% if m.recherche %}<dt>Recherche consignée</dt><dd>{{ m.recherche|lk }}</dd>{% endif %}
+    {% if m.resultat %}<dt>Résultat</dt><dd>{{ m.resultat }}</dd>{% endif %}
+  </dl>
+  {% if fi.body.strip() %}<div class="prose">{{ fi.body|md }}</div>{% endif %}
+  <p class="small muted">Reprise par <code>/sync-gallica</code> quand Gallica répond.</p>
+</main>
+{% endblock %}

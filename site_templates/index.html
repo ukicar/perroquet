@@ -4,7 +4,7 @@
 <main>
   <div class="eyebrow">Registre de recherche</div>
   <h1>Gabrielle d'Espinas et l'incendie de Soueix</h1>
-  <p class="lede">Veuve d'Arnaud II de Roquemaurel, seigneur de Soueix en Couserans, tué vers le 2 février 1567. Ce registre ne contient que des faits sourcés et des hypothèses mises à l'épreuve.</p>
+  <p class="lede">Veuve d'Arnaud II de Roquemaurel, seigneur de Soueix en Couserans, tué vers le 2 février 1567. Ce registre ne contient que des faits sourcés et des hypothèses mises à l'épreuve.{% if 'gabrielle-d-espinas' in bios %} <a href="biographie-gabrielle-d-espinas.html">Lire sa biographie</a>.{% endif %}</p>
   <div class="stats">
     <div class="stat"><b>{{ nb.hypothese }}</b><span>questions</span></div>
     <div class="stat"><b>{{ nb.source }}</b><span>sources</span></div>
@@ -12,8 +12,10 @@
     <div class="stat"><b>{{ nb.personne }}</b><span>personnes</span></div>
     <div class="stat"><b>{{ nb.evenement }}</b><span>événements</span></div>
     <div class="stat"><b>{{ nb.recherche }}</b><span>recherches</span></div>
+    <a class="stat" href="a-faire.html"><b>{{ nb_afaire }}</b><span>à faire sur place</span></a>
+    {% if nb_gallica %}<a class="stat" href="a-faire.html#gallica"><b>{{ nb_gallica }}</b><span>en attente de Gallica</span></a>{% endif %}
   </div>
-  <div class="cmds">{{ cmd('/hypothesis "…"') }} {{ cmd('/next') }} {{ cmd('/explore gabrielle-d-espinas') }} {{ cmd('/sync') }}</div>
+  <div class="cmds">{{ cmd('/hypothesis "…"') }} {{ cmd('/next') }} {{ cmd('/explore gabrielle-d-espinas') }} {{ cmd('/sync') }}{% if nb_gallica %} {{ cmd('/sync-gallica') }}{% endif %}</div>
 
   <details class="aide"{% if not hyps %} open{% endif %}>
     <summary>Les commandes : laquelle utiliser, et quand</summary>

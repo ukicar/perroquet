@@ -37,12 +37,15 @@ predictions:
 matrice:
   - {preuve: demembrement-vicomte-couserans.a6, H1: II, H2: CC, note: "Vivant le 5 juin 1571 (accord avec les habitants de Soulan), d'après les papiers Sentein."}
   - {preuve: ad31-1b-74.a3, H1: N, H2: N, note: "En 1576, c'est Jean-Antoine de Mauléon, non Jean-François, qui s'oppose à l'exécution du décret : indice possible d'un décès avant 1576, sans plus."}
+  - {preuve: roquemaurel-familles-du-midi.a2, H1: N, H2: C, note: "Soulan est dit « feu » dans la remontrance du 22 novembre 1603 : borne haute de sa mort (résumé non vérifié)."}
+  - {preuve: demembrement-vicomte-couserans.a9, H1: N, H2: C, note: "Pièce du même 22 novembre 1603 : Marguerite de Béon « s'estoit emparée de toutz les biens dudit feu Jehan-Francoys de Mauléon » (lue par un agent, non relue)."}
 contestations: []
 meneur: H2
 confiance: probable
-verdict: "La mort à Lunel en 1570 est contredite par l'accord que Soulan passe avec ses habitants le 5 juin 1571, rapporté par une étude fondée sur les papiers Sentein. H2 est probable ; elle deviendra établie quand l'assertion aura été relue sur la source. La date réelle du décès reste inconnue."
+verdict: "La mort à Lunel en 1570 est contredite par l'accord que Soulan passe avec ses habitants le 5 juin 1571, rapporté par une étude fondée sur les papiers Sentein. Il est dit « feu » le 22 novembre 1603 : il mourut donc entre juin 1571 et novembre 1603, à une date et en un lieu inconnus. H2 est probable ; elle deviendra établie quand ces assertions auront été relues sur les pièces."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
+  - {date: "2026-10-08", changement: "deux lignes ajoutées ; borne haute 1603 ; confiance inchangée", cause: "propagation : roquemaurel-familles-du-midi.a2, demembrement-vicomte-couserans.a9"}
 sous_questions: []
 ---
 ## La réfutation de Lunel 1570

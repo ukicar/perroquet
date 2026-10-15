@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block main %}
+<main>
+  <div class="eyebrow">Registre de recherche</div>
+  <h1>Biographies</h1>
+  <p class="lede">La vie de chaque personne de la base, racontée en prose à partir des seuls faits sourcés ; en marge, ce que vaut chaque passage. Les noms dans les récits mènent d'une vie à l'autre.</p>
+  {% if vedette %}
+  <a class="bio-vedette" href="biographie-{{ vedette.id }}.html">
+    <span class="eyebrow">Au centre de la recherche</span>
+    <b>{{ vedette.nom }}</b>
+    {% if vedette_meta.sous_titre %}<span>{{ vedette_meta.sous_titre }}</span>{% endif %}
+  </a>
+  {% endif %}
+  {% for fam, people in groups %}
+  <section class="bio-group">
+    <h2>{% if fam %}{{ fam.nom }} <a class="small" href="{{ fam.id }}.html">fiche</a>{% else %}Autres figures{% endif %}</h2>
+    <ul class="bio-cards">
+      {% for f in people %}{% set s = f.span() %}
+      <li{% if f.id == 'gabrielle-d-espinas' %} class="main"{% endif %}><a href="biographie-{{ f.id }}.html"><b>{{ f.nom }}</b>{% if s %}<span class="locus">{{ s[0] }}{% if s[1] and s[1] != s[0] %}–{{ s[1] }}{% endif %}</span>{% endif %}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% else %}<p class="muted">Aucune biographie rédigée.</p>{% endfor %}
+</main>
+{% endblock %}

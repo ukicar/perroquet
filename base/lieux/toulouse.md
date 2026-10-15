@@ -11,5 +11,5 @@ relations: []
 ---
 Siège du [[parlement-de-toulouse]], qui y rendit
 l'[[arret-du-24-mai-1567]] [[bardies-1903.a1]]. Martin Tachard y fut conduit le 6 juin 1567 et pendu place
-Saint-Georges [[crespin-histoire-des-martyrs.a5]] [[crespin-histoire-des-martyrs.a10]] ; Monluc demanda en mars 1567
+Saint-Georges en juillet [[crespin-1570.a15]] [[crespin-1570.a27]] ; Monluc demanda en mars 1567
 de l'artillerie à ses capitouls [[monluc-lettres-ruble.a16]].

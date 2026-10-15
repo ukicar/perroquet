@@ -23,7 +23,11 @@ Tu cherches des documents ; tu ne conclus pas. Tu travailles dans le dépôt Per
    `--cql 'dc.title all "…" and gallica all "…"'` pour combiner), `./pq search archive <termes…>`.
 4. Web (moteur de recherche de ton outil) : inventaires d'archives départementales, bulletins de sociétés
    savantes, FranceArchives, Persée, Google Books. Consigne ces recherches toi-même (fiche `recherche`).
-5. Ce qui demande un compte ou une salle de lecture : décris précisément la démarche (dépôt, cote, ce qu'il
+5. **Si Gallica refuse** (HTTP 403/429) : n'insiste pas. `./pq search gallica…` met la recherche en attente tout
+   seul ; pour une lecture de pages, note-la avec `./pq fiche gallica "<nom>"` (champs `ark`, `vues`, `action`,
+   `hyp`, `pour`). Elle sera reprise par `/sync-gallica`. Le serveur sweet-bnf (`./pq bnf <outil> '<json>'`)
+   passe aussi par Gallica et sera bloqué de même.
+6. Ce qui demande un compte ou une salle de lecture : décris précisément la démarche (dépôt, cote, ce qu'il
    faut y lire) et consigne `resultat: bloque`.
 
 Toujours `--hyp <question>` et `--objet "<ce que tu cherches et pourquoi>"`. Complète le corps de chaque fiche

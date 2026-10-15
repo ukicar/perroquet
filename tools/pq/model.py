@@ -7,8 +7,11 @@ BASE = os.path.join(REPO, "base")
 SCHEMA = os.path.join(REPO, "schema")
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#([^\]|]+))?(?:\|([^\]]+))?\]\]")
+# Margin note in the biography: {{probable|comment with [[source.a1]]}} or {{question-id#H1|comment}}
+MARGE_RE = re.compile(r"\{\{\s*([^|{}]+?)\s*\|(.*?)\}\}", re.S)
+BIOGRAPHIES = "biographies"   # base/biographies/<person-id>.md : prose lives, not fiches
 RESERVED = {"index", "graphe", "chronologie", "audit", "hypotheses", "sources", "fiches",
-            "enquetes", "recherches", "carte"}
+            "enquetes", "recherches", "carte", "biographies", "a-faire", "demarches", "gallica"}
 
 
 def load_yaml(name):
@@ -100,7 +103,14 @@ class Base:
         self.fiches = {}
         self.errors_load = []
         self.duplicates = []
+        self.biographies = {}   # person id -> (meta, body)
         for path in sorted(glob.glob(os.path.join(BASE, "*", "*.md"))):
+            if os.path.basename(os.path.dirname(path)) == BIOGRAPHIES:
+                try:
+                    self.biographies[os.path.splitext(os.path.basename(path))[0]] = parse_file(path)
+                except yaml.YAMLError as e:
+                    self.errors_load.append((os.path.relpath(path, REPO), f"YAML illisible : {e}"))
+                continue
             try:
                 meta, body = parse_file(path)
             except yaml.YAMLError as e:
@@ -141,6 +151,21 @@ class Base:
         if ref in self.claims:
             fi, c = self.claims[ref]
             return ("assertion", fi, c)
+        return None
+
+    def marge(self, tag):
+        """Resolve the tag of a biography margin note: a confidence value, a `marge` value
+        ('inconnu'), a question id (its current confidence) or 'question#Hn' (that hypothesis's).
+        Returns {'conf', 'ref'} or None."""
+        tag = str(tag).strip()
+        voc = self.schema.voc
+        if tag in voc["confiance"] or tag in voc.get("marge", {}):
+            return {"conf": tag, "ref": None}
+        r = self.resolve(tag)
+        if r and r[0] == "hypotheses":
+            return {"conf": r[2].get("confiance"), "ref": tag}
+        if r and r[0] == "fiche" and r[1].type == "hypothese":
+            return {"conf": r[1].get("confiance"), "ref": tag}
         return None
 
     def evidence_weight(self, ref):

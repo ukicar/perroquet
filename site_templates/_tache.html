@@ -1,0 +1,16 @@
+{# One manual task card. Needs `d` (the démarche fiche). #}
+<article class="tache prio-{{ d.meta.priorite }}" id="{{ d.id }}">
+  <div class="tache-head">
+    {{ d.meta.priorite|chip }}{% if d.meta.statut != 'a_faire' %} {{ d.meta.statut|chip('statut_demarche') }}{% endif %}
+    {% if d.meta.cote %}<span class="cote">{{ d.meta.cote }}</span>{% endif %}
+    <a class="tache-titre" href="{{ d.id }}.html">{{ d.nom }}</a>
+  </div>
+  <p class="tache-action">{{ d.meta.action }}</p>
+  {% if d.meta.pourquoi %}<p class="small"><b>Pourquoi :</b> {{ d.meta.pourquoi }}</p>{% endif %}
+  <div class="small muted">
+    {% if d.meta.mode %}<span>{{ d.meta.mode|voc('mode') }}</span>{% endif %}
+    {% if d.meta.pour %} · fait avancer : {% for r in d.meta.pour %}{{ r|lk }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
+    {% if d.meta.sources %} · fiche{{ 's' if d.meta.sources|length > 1 }} : {% for r in d.meta.sources %}{{ r|lk }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
+    {% if d.meta.url %} · <a href="{{ d.meta.url }}">lien</a>{% endif %}
+  </div>
+</article>
