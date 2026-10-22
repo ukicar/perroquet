@@ -25,7 +25,9 @@ rasement de sa maison [[monluc-lettres-ruble.a15]] et marcha contre lui au print
 
 Son prénom n'est pas établi : Bardies propose « probablement » Bernard d'Astarac, second frère du baron de
 Fontrailles [[bardies-1903.a10]], tandis que l'index de Ruble range les mentions de Fontrailles sous Gabriel et
-Michel d'Astarac [[monluc-lettres-ruble.a30]]. Soulan ayant épousé [[anne-d-astarac]], fille de
+Michel d'Astarac [[monluc-lettres-ruble.a30]]. La saisie de la place de Fontrailles, le 5 juin 1567, en vertu d'un
+arrêt du 26 mai « en raison de ce qu'avait commis Bernard d'Astarac » [[roquemaurel-familles-du-midi.a8]], fait
+aujourd'hui pencher la question vers Bernard ([[identite-du-jeune-fontrailles#H1]], possible). Soulan ayant épousé [[anne-d-astarac]], fille de
 [[jean-jacques-d-astarac]], seigneur de Fontrailles [[demembrement-vicomte-couserans.a4]], le jeune Fontrailles
 pourrait être un fils de ce dernier, ce qu'aucune source ne dit. On ne sait pas s'il fut compris dans l'arrêt du
 24 mai 1567.

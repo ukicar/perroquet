@@ -12,7 +12,9 @@ Soulan ayant épousé en 1560 [[anne-d-astarac|Anne d'Astarac]], fille de
 frère d'Anne, ce qu'aucune source ne dit en toutes lettres.{{plausible|Inférence tirée du mot « beau-frère ». [[demembrement-vicomte-couserans.a4|Démembrement]], [[monluc-lettres-ruble.a10|Monluc]]}}
 Son prénom reste incertain : Bardies propose, « probablement », Bernard d'Astarac, second frère du baron de
 Fontrailles, tandis que l'index de l'édition de Monluc range les mentions de Fontrailles sous Gabriel et Michel
-d'[[famille-d-astarac-fontrailles|Astarac]].{{identite-du-jeune-fontrailles|Aucune source primaire vue ne le nomme. [[bardies-1903.a10|Bardies]], [[monluc-lettres-ruble.a30|Ruble]]}}
+d'[[famille-d-astarac-fontrailles|Astarac]]. Le prénom de Bernard trouve un appui dans la saisie de la place de
+Fontrailles, faite le 5 juin 1567 en vertu d'un arrêt du 26 mai, deux jours après la condamnation de Soulan,
+« en raison de ce qu'avait commis Bernard d'Astarac ».{{identite-du-jeune-fontrailles|Aucune source primaire vue ne le nomme ; la saisie n'est connue que par une généalogie récente, lue sur l'OCR. [[bardies-1903.a10|Bardies]], [[monluc-lettres-ruble.a30|Ruble]], [[roquemaurel-familles-du-midi.a8|saisie de 1567]]}}
 
 Au début de février 1567, vers le 2, il surprit de nuit avec Soulan la maison
 d'[[arnaud-ii-de-roquemaurel|Arnaud de Roquemaurel]] à [[soueix|Soueix]], que les assaillants brûlèrent avec son

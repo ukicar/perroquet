@@ -103,6 +103,17 @@ assertions:
   information: secondaire
   credibilite: 3
   verifie: agent
+- id: a9
+  texte: "Selon l'auteur, Jean d'Espinas, seigneur de Caladrue, est dit feu en 1594 et 1599 aux contrats de mariage de ses petites-filles Anne et Claire ; il avait épousé Antonie (Antoinette) de Montesquieu, mariage que l'auteur estime vers 1540 d'après le baptême de Catherine (1561) et la chronologie des enfants de Martin."
+  citation: "Il fut cité feu les 26 janvier 1594 et 5 septembre 1599 lors des contrats de mariage de ses petites filles Anne et Claire d’Espinas. […] Le baptême de leur fille Catherine en 1561, ce que l’on peut supposer d’après les actes de baptêmes des enfants de leur fils Martin d’Espinas et de Domenge de Canals, son épouse, les dates des contrats de mariage de deux files de ceux-ci, les dernières dates d’apparition de Jean d’Espinas et d’Antoinette de Montesquieu, permet d’estimer le mariage de Jean d’Espinas et d’Antoinette de Montesquieu vers 1540."
+  locus: "t. VIII, p. 194, degré I (OCR archive.org, cache/familles-du-midi/Familles_du_Midi_VIII_v2_djvu.txt, l. 12289-12302)"
+  sujets: [jean-d-espinas-caladroy, antonie-de-montesquieu, martin-d-espinas]
+  date: '1540~'
+  preuve: indirecte
+  information: secondaire
+  credibilite: 4
+  verifie: agent
+  note: "La date de 1540 est une estimation de l'auteur, non un acte ; « files » est dans l'OCR (pour « filles »). Les contrats de 1594 et 1599 sont ceux de la démarche ad31-insinuations-espinas-1594-1599."
 ---
 Généalogie de 2026 mise en ligne sur archive.org par l'auteur du site de la famille de Roquemaurel. Elle n'est
 **pas indépendante** du site ([[site-roquemaurel]]), dont elle reprend des phrases. Mais pour Gabrielle elle apporte

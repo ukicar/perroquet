@@ -29,8 +29,9 @@ autres.{{probable|Liste des titres produits en 1669. [[bnf-fr-32552.a2|BnF fr. 3
 Elle épousa [[arnaud-ii-de-roquemaurel|Arnaud de Roquemaurel]], d'une famille qui tenait la maison de
 [[soueix|Soueix]], en [[couserans|Couserans]].{{probable|« veuve d'Arnaud de Roquemaurel » ; Monluc dit « sa femme ». [[bardies-1903.a3|Bardies]], [[monluc-lettres-ruble.a3|Monluc]]}}
 La date du mariage est inconnue. Les arbres généalogiques qui le placent vers 1541 ne reposent sur rien, et une
-union dans les années 1550 ou au début des années 1560 s'accorde mieux avec la génération des Espinas de
-Cardonne.{{mariage-d-arnaud-et-gabrielle|Inférence, sans preuve directe. [[arbres-geneanet-roquemaurel.a2|Geneanet]]}}
+union dans les années 1550 ou au début des années 1560 s'accorde mieux avec sa génération : fille de Jean de
+Caladroy, elle serait née après le mariage de ses parents, que le généalogiste estime vers
+1540.{{mariage-d-arnaud-et-gabrielle|Inférence, sans preuve directe ; l'argument tombe si elle est la sœur de Jean. [[arbres-geneanet-roquemaurel.a2|Geneanet]], [[roquemaurel-familles-du-midi.a9|Généalogie 2026]]}}
 Le couple eut au moins un enfant,{{probable|« quelque enfant qu'il avoit ». [[monluc-lettres-ruble.a3|Monluc]], [[site-roquemaurel.a2|Site Roquemaurel]]}}
 dont on ne connaît ni le nom ni le sort ; le fait que Soueix passe dès mai 1567 au frère d'Arnaud,
 [[guillaume-de-roquemaurel|Guillaume]], laisse penser qu'Arnaud ne laissa pas de fils

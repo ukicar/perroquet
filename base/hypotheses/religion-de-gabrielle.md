@@ -41,6 +41,7 @@ matrice:
   - {preuve: discours-des-troubles-de-pamiers.a3, H1: C, H2: I, note: "« Ce Roquemaurel » mène les troupes royales contre les réfugiés protestants de Pamiers en mai 1567."}
   - {preuve: aubais-pieces-fugitives.a2, H1: C, H2: N, note: "Pierre Espinas confrère de N.-D. de Bethléem en 1528 : famille catholique, si origine-de-gabrielle#H1 est vraie."}
   - {preuve: registres-paroissiaux-lezat.a3, H1: C, H2: N, note: "Les Despinas de Lézat baptisent à la paroisse catholique (1589-1735) ; vaut seulement si Gabrielle est de cette famille."}
+  - {preuve: registres-paroissiaux-lezat.a9, H1: C, H2: N, note: "Jean d'Espinas de Caladroy et Antonie de Montesquieu font baptiser leur fille Catherine à la paroisse de Lézat en octobre 1561 : famille catholique peu avant 1567, si Gabrielle est leur fille ou la sœur de Jean (origine-de-gabrielle#H5-H6, branche en tête)."}
 contestations: []
 meneur: H1
 confiance: plausible
@@ -48,6 +49,7 @@ verdict: "Aucun document ne dit la religion de Gabrielle. Les indices qui touche
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
   - {date: "2026-10-08", changement: "verdict réécrit ; confiance inchangée", cause: "propagation : registres-paroissiaux-lezat.a5, origine-de-gabrielle"}
+  - {date: "2026-10-21", changement: "ligne ajoutée à la matrice ; indice familial rapporté à la branche de Caladroy ; confiance inchangée", cause: "propagation : origine-de-gabrielle (meneur H5) ; registres-paroissiaux-lezat.a9 (baptême de 1561) n'était pas encore pris en compte ici"}
 sous_questions: [religion-des-roquemaurel, origine-de-gabrielle]
 ---
 ## Indices
@@ -62,9 +64,13 @@ naissance ; aucune trace de conversion ». Les indices, du plus fort au plus fai
 2. **Poursuite avec le procureur général** du Parlement de Toulouse [[bardies-1903.a2]]. L'alliance convient à
    une plaignante catholique, mais le procureur général se joint d'office aux poursuites pour meurtre : peu
    diagnostique.
-3. **Sa famille probable** (voir [[origine-de-gabrielle]]) : Pierre Espinas est confrère de Notre-Dame de
-   Bethléem à Lézat en 1528 [[aubais-pieces-fugitives.a2]] et les Despinas baptisent à la paroisse de Lézat
-   [[registres-paroissiaux-lezat.a3]]. Ces deux lignes ne valent que si [[origine-de-gabrielle#H1]] est vraie.
+3. **Sa famille probable** (voir [[origine-de-gabrielle]]) : selon la piste en tête, elle est fille ou sœur de
+   Jean d'Espinas de Caladroy ([[origine-de-gabrielle#H5]], [[origine-de-gabrielle#H6]]). Or Jean et Antonie de
+   Montesquieu font baptiser leur fille Catherine à la paroisse de Lézat le 15 octobre 1561
+   [[registres-paroissiaux-lezat.a9]], et les Despinas y baptisent encore ensuite [[registres-paroissiaux-lezat.a3]].
+   Sous l'ancienne hypothèse ([[origine-de-gabrielle#H1]], aujourd'hui seulement possible), Pierre Espinas est
+   confrère de Notre-Dame de Bethléem à Lézat en 1528 [[aubais-pieces-fugitives.a2]]. Ces lignes ne valent que si
+   Gabrielle est bien de l'une de ces branches.
 4. **La famille du mari est contradictoire** : Monluc dit les Roquemaurel « de la nouvelle religion »
    [[monluc-lettres-ruble.a6]], alors que Ruble les indexe comme catholiques [[monluc-lettres-ruble.a18]] et que
    le *Discours des troubles de Pamiers* montre « ce Roquemaurel » à la tête des troupes royales contre les
@@ -72,7 +78,11 @@ naissance ; aucune trace de conversion ». Les indices, du plus fort au plus fai
 
 ## Limites
 
-La question des conversions après 1567 est hors de portée : aucune source postérieure ne décrit Gabrielle,
-hormis le procès de 1610 connu par le seul site familial [[site-roquemaurel.a7]]. « Depuis quand » ne peut être
-daté plus finement que son baptême, inconnu (inférence des notes : née vers 1530-1548 dans une paroisse
-catholique, avant que la Réforme ne gagne le comté de Foix dans les années 1560).
+La question des conversions après 1567 est presque hors de portée : aucune source postérieure ne décrit sa foi.
+Le procès de 1610 [[site-roquemaurel.a7]], mené après sa mort par son héritier [[catalogue-ad09.a2]], n'en dit
+rien. Une « madamoyselle Gabrielle d'Espinas » est marraine à des baptêmes de Lézat en 1587 et 1588
+[[registres-paroissiaux-lezat.a10]] [[registres-paroissiaux-lezat.a11]] : si c'est elle, ce qui n'est pas établi,
+elle tenait encore un enfant sur les fonts catholiques vingt ans après l'incendie. « Depuis quand » ne peut être
+daté plus finement que son baptême, inconnu (inférence : sous la piste en tête, née après le mariage de ses parents,
+estimé vers 1540 [[roquemaurel-familles-du-midi.a9]], ou plus tôt si elle est la sœur de Jean ; de toute façon
+avant que la Réforme ne gagne le comté de Foix dans les années 1560).

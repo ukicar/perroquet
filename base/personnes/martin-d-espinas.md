@@ -2,7 +2,7 @@
 id: martin-d-espinas
 type: personne
 nom: Martin d'Espinas, seigneur de Caladroy
-variantes: [Martin d'Espinas, seigneur de Caladrue]
+variantes: ["Martin d'Espinas, seigneur de Caladrue", "noble martin despinac"]
 naissance: null
 mort: null
 periode: [1585, 1603]

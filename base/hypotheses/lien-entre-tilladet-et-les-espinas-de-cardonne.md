@@ -62,8 +62,9 @@ sous_questions: []
 ---
 ## La question
 
-L'utilisateur propose que Tilladet ait eu un lien avec la famille de Gabrielle, les Espinas de Cardonne
-(identification elle-même seulement plausible : [[origine-de-gabrielle]]), et que Monluc l'ait envoyé en Couserans
+L'utilisateur propose que Tilladet ait eu un lien avec la famille de Gabrielle, les Espinas de Lézat : ligne de
+Cardonne ou, selon la piste aujourd'hui en tête, branche de Caladroy (identification elle-même seulement
+plausible : [[origine-de-gabrielle]]). Il propose aussi que Monluc l'ait envoyé en Couserans
 pour cette raison : venger Arnaud et protéger sa veuve. Deux choses sont à distinguer : **le lien existe-t-il**
 (question de généalogie) et **a-t-il motivé le choix** (question de motifs, plus difficile).
 

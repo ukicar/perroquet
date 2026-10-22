@@ -3,7 +3,7 @@ id: origine-de-gabrielle
 type: hypothese
 nom: Origine familiale de Gabrielle d'Espinas
 question: "De quelle famille Gabrielle d'Espinas, veuve d'Arnaud II de Roquemaurel, est-elle issue ?"
-sujets: [gabrielle-d-espinas, famille-d-espinas-de-cardonne, pierre-espinas, achille-espinas]
+sujets: [gabrielle-d-espinas, famille-d-espinas-de-cardonne, jean-d-espinas-caladroy, antonie-de-montesquieu, martin-d-espinas, jean-arnaud-d-espinas, pierre-espinas, achille-espinas]
 statut: ouverte
 hypotheses:
   - {id: H1, enonce: "Elle est fille de Pierre Espinas, seigneur de Cardonne (confrère à Lézat en 1528, testament du 4 janvier 1560), donc sœur d'Achille et de François Espinas.", auteur: humain, confiance: possible}

@@ -2,7 +2,7 @@
 id: jean-arnaud-d-espinas
 type: personne
 nom: Jean (Jean-Arnaud) d'Espinas, seigneur de Caladroy
-variantes: [Jean d'Espinas, seigneur de Caladrue]
+variantes: ["Jean alias Jean Arnaud d'Espinas", "Jean-Arnaud d'Espinas", "Jehan despinac"]
 naissance: '1585-11-20'
 mort: null
 periode: [1585, 1645]

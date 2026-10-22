@@ -8,10 +8,12 @@ action: Demander le dossier de production des Espinas (Jean-Gabriel, sieur de Ca
   pour la maintenue de noblesse devant Bezons ; faire confirmer la cote ; photographier toutes les pièces, surtout
   les titres du XVIe siècle (testament de Pierre Espinas du 4 janvier 1560, contrats de mariage, livre de la confrérie
   de Lézat).
-pourquoi: 'C''est l''endroit le plus probable pour trouver les parents de Gabrielle : une famille qui prouvait sa
-  noblesse produisait ses testaments et contrats depuis le XVIe siècle.'
+pourquoi: 'Une famille qui prouvait sa noblesse produisait ses testaments et contrats depuis le XVIe siècle : le
+  dossier départagerait H1 (fille de Pierre) et dirait si la branche de Caladroy se rattache à Pierre. Mais il ne
+  suit que la ligne de Cardonne, alors que la piste en tête (H5-H6) place Gabrielle dans la branche de Caladroy :
+  ce n''est plus l''endroit le plus probable pour trouver ses parents.'
 mode: courrier
-priorite: haute
+priorite: moyenne
 statut: a_faire
 pour:
 - origine-de-gabrielle#P2
