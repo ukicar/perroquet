@@ -1,15 +1,16 @@
 ---
 titre: Blaise de Monluc
-sous_titre: "Lieutenant du roi en Guyenne, chargé d'apaiser la querelle de Soueix en 1567, qu'il rapporte au roi dans une seule lettre ; la base ne le connaît que par cette affaire et ses capitaines."
-mise_a_jour: "2026-10-08"
+sous_titre: "Lieutenant du roi en Guyenne, chargé d'apaiser la querelle de Soueix en 1567, dont il ne décrit l'incendie au roi que dans une seule lettre ; la base ne le connaît que par cette affaire et ses capitaines."
+mise_a_jour: "2026-10-22"
 ---
 La base ne connaît [[blaise-de-monluc|Blaise de Monluc]] que par les épisodes où il croise l'affaire de Soueix
 et les capitaines qui le servirent ; sa vie hors de ces épisodes n'y entre pas. Il y paraît au service du roi
 [[charles-ix|Charles IX]], qui l'envoya en 1567 apaiser la « querelle particulière, qui est au hault
 Commenge ».{{probable|Lettre aux capitouls, 31 mars 1567. [[monluc-lettres-ruble.a17|Monluc]], [[discours-des-troubles-de-pamiers.a1|Discours de Pamiers]]}}
-De cette affaire, il ne parle qu'une fois : dans sa lettre au roi du 14 février 1567, seul témoignage contemporain
-connu sur l'[[incendie-de-soueix-1567|incendie de Soueix]] ; ses Commentaires, son œuvre d'histoire, n'en disent
-rien, et aucune autre de ses lettres publiées n'y revient.{{monluc-et-gabrielle#H2|Recherche dans les Commentaires et l'index des lettres, éd. Ruble. [[monluc-lettres-ruble.a1|Monluc]], [[monluc-lettres-ruble.a5|id.]]}}
+De l'[[incendie-de-soueix-1567|incendie de Soueix]] lui-même, il ne parle qu'une fois : dans sa lettre au roi du
+14 février 1567, seul témoignage contemporain connu sur l'incendie ; ses Commentaires, son œuvre d'histoire, n'en
+disent rien, et ses autres lettres publiées ne reviennent que sur la querelle et ses suites, jamais sur l'incendie, les
+Roquemaurel ou la veuve.{{monluc-et-gabrielle#H2|Recherche dans les Commentaires et l'index des lettres, éd. Ruble. [[monluc-lettres-ruble.a1|Monluc]], [[monluc-lettres-ruble.a5|id.]]}}
 
 Écrivant d'[[agen|Agen]], d'après ce qu'on lui avait « mandé », il rapporte que, « depuis douze jours en çà »,
 [[jean-francois-de-mauleon|Soulan]] et le [[le-jeune-fontrailles|jeune Fontrailles]] avaient surpris de nuit le

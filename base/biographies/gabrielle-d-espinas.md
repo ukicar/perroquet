@@ -1,7 +1,7 @@
 ---
 titre: Gabrielle d'Espinas
-sous_titre: "Fille, semble-t-il, des Espinas de Lézat ; veuve d'Arnaud de Roquemaurel, seigneur de Soueix en Couserans ; plaide de 1567 à sa mort, survenue avant novembre 1603."
-mise_a_jour: "2026-10-08"
+sous_titre: "Fille, semble-t-il, des Espinas de Lézat ; veuve d'Arnaud de Roquemaurel, seigneur de Soueix en Couserans ; plaide de 1567 à sa mort, survenue sans doute avant septembre 1603."
+mise_a_jour: "2026-10-22"
 ---
 On ignore où et quand naquit [[gabrielle-d-espinas|Gabrielle d'Espinas]], et aucun texte de son temps encore lu ne
 nomme ses parents.{{inconnu|Ni Bardies, ni Monluc, ni les preuves des Roquemaurel ; les arbres en ligne la donnent sans parents. [[bardies-1903.a3|Bardies]], [[arbres-geneanet-roquemaurel.a1|Geneanet]]}}
@@ -78,11 +78,13 @@ accordées.{{dommages-de-gabrielle|Aucun paiement connu ; la créance était enc
 Vingt ans après l'incendie, une « madamoyselle » Gabrielle d'Espinas tint deux enfants sur les fonts de Lézat, en
 novembre 1587 et en juin 1588 : peut-être elle, revenue parmi les siens, mais les actes ne disent pas qui elle
 était.{{possible|Registre de Lézat lu sur l'original ; homonymie possible. La généalogie date à tort l'un de ces actes du 6 août 1589. [[registres-paroissiaux-lezat.a10|GG6, image 3]], [[registres-paroissiaux-lezat.a11|GG6, image 10]], [[registres-paroissiaux-lezat.a8|id.]]}}
+On ne la revoit plus ensuite : de 1591 à 1601, le registre de Lézat, lu en entier, ne nomme aucune Gabrielle d'Espinas,
+alors que les autres Espinas de Caladrue y sont souvent parrains et marraines.{{inconnu|Lecture simple, non relue ; ne pas paraître sur les fonts ne prouve ni l'absence ni la mort. [[registres-paroissiaux-lezat.a18|GG7]]}}
 À Lézat vivait alors la famille de son frère présumé : noble Martin d'Espinas, dont le fils Jean et la fille Claire
 furent ensemble parrain et marraine en juillet 1589.{{etabli|Registre original. [[registres-paroissiaux-lezat.a5|GG6, image 27]]}}
-Elle mourut avant novembre 1603 : cette année-là, son neveu [[jean-arnaud-d-espinas|Jean d'Espinas]], qui lui
-succédait ainsi qu'à son père, reprit devant le Parlement les droits nés de l'arrêt de
-1567.{{origine-de-gabrielle#H5|Arrêts des 3 septembre et 22 novembre 1603, connus par un résumé. [[roquemaurel-familles-du-midi.a2|Généalogie 2026]], [[roquemaurel-familles-du-midi.a3|id.]]}}
+Elle mourut sans doute avant septembre 1603 : le 3 septembre, son neveu [[jean-arnaud-d-espinas|Jean d'Espinas]]
+succéda par arrêt à son père et à « sa tante », et en novembre il reprit devant le Parlement les droits nés de l'arrêt
+de 1567.{{origine-de-gabrielle#H5|Arrêts des 3 septembre et 22 novembre 1603, connus par un résumé qui ne nomme pas la tante ; le « 3 novembre » du même auteur est une coquille. [[roquemaurel-familles-du-midi.a2|Généalogie 2026]], [[roquemaurel-familles-du-midi.a3|id.]]}}
 Ses droits n'étaient donc pas éteints. De 1607 à 1610, la vicomtesse de Soulan, [[marguerite-de-beon-de-sere|Marguerite de Béon]],
 qui tenait les biens du meurtrier, plaida contre ce Jean d'Espinas au sujet des places de Soulan et de
 Lescure ; c'est sans doute le procès de 1610 dont parle l'histoire de la

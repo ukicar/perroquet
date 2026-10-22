@@ -7,7 +7,7 @@ auteur: ukicar
 outil: gallica-texte
 requete: Espinas | Despinas | Espinasse | Cardonne | Spinas
 perimetre: gallica ark:/12148/bpt6k55582104
-resultat: positif
+resultat: negatif
 total: 1
 resultats:
 - terme: Espinas
@@ -19,3 +19,5 @@ hypotheses:
 ---
 
 Interprétation : aucune occurrence Espinas pertinente (seulement « l'Espinay » ou une étymologie) : pas de lien Espinas–Cassagnet/Galard dans ce volume. Négatif.
+
+_Résultat corrigé le 2026-10-22 (« positif » → « négatif ») : l'outil de recherche note « positif » dès qu'il y a des réponses ; aucune ne répond à l'objet de la recherche._

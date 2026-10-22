@@ -7,7 +7,7 @@ auteur: ukicar
 outil: archive
 requete: '"Espinas" OR "Cardonne"'
 perimetre: archive
-resultat: positif
+resultat: negatif
 total: 517
 resultats:
 - titre: Nintendo Accion 219 Revista Pokemon
@@ -85,3 +85,5 @@ hypotheses:
 ---
 
 Interprétation : la recherche catalogue archive.org (OU) ne renvoie que du bruit (espagnol, Cardona). Les recherches utiles ont été faites ensuite sur les textes OCR téléchargés (Revue de Comminges t. 1-42, inventaires sommaires de l'Ariège et de la Haute-Garonne, La Chenaye-Desbois, Saint-Allais, Revue de Gascogne) : voir le rapport de l'archiviste du 8 octobre 2026.
+
+_Résultat corrigé le 2026-10-22 (« positif » → « négatif ») : l'outil de recherche note « positif » dès qu'il y a des réponses ; aucune ne répond à l'objet de la recherche._

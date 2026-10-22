@@ -32,7 +32,7 @@ rendit l'[[arret-du-24-mai-1567]] contre Soulan et ses complices [[bardies-1903.
 **Son procès et sa mort.** Le catalogue des archives de l'Ariège décrit, dans l'article 1 J 94, un « procès entre
 Gabrielle d'Espinas, veuve d'Arnaud de Roquemaurel, et Jean François de Mauléon, vicomte de Soulan, et ses hommes
 d'armes » courant de 1567 à 1603 [[catalogue-ad09.a1]]. Selon la généalogie de Jacques de Roquemaurel, qui cite
-cet article, elle était morte en 1603, quand Jean d'Espinas, seigneur de Caladroy, son neveu, héritier de son père
+cet article, elle était morte en 1603, sans doute avant le 3 septembre, quand Jean d'Espinas, seigneur de Caladroy, son neveu, héritier de son père
 Martin et « de sa tante », reprit devant le Parlement les droits nés de l'arrêt de 1567
 [[roquemaurel-familles-du-midi.a2]] [[roquemaurel-familles-du-midi.a3]] ([[arret-du-22-novembre-1603]]). De 1607
 à 1610, Marguerite de Béon, vicomtesse de Soulan, plaida contre ce Jean d'Espinas au sujet des places de Soulan et
@@ -53,7 +53,8 @@ possible : Pierre ne laisse que deux fils connus [[aubais-pieces-fugitives.a4]],
 aussi un neveu, signe de plusieurs branches [[bnf-fr-32552.a2]]. Une « madamoyselle » Gabrielle d'Espinas est marraine à
 Lézat en novembre 1587 et en juin 1588 [[registres-paroissiaux-lezat.a10]] [[registres-paroissiaux-lezat.a11]] ;
 c'est peut-être elle, veuve revenue parmi les siens, mais l'acte ne le dit pas (la généalogie date à tort cet
-acte du 6 août 1589 [[registres-paroissiaux-lezat.a8]]). Le baptême de Catherine, fille de Jean d'Espinas et
+acte du 6 août 1589 [[registres-paroissiaux-lezat.a8]]). Le registre de 1591-1601, lu en entier, ne la nomme plus
+[[registres-paroissiaux-lezat.a18]]. Le baptême de Catherine, fille de Jean d'Espinas et
 d'Antonie de Montesquieu, en 1561, et le titre de Martin, « s.r de caladrue », sont attestés par le registre
 [[registres-paroissiaux-lezat.a9]] [[registres-paroissiaux-lezat.a12]].
 

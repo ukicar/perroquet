@@ -15,6 +15,8 @@ pour:
 tentatives:
 - date: '2026-10-08'
   resultat: Gallica bloquait (HTTP 403)
+- date: '2026-10-22'
+  resultat: "archive.org n'a que les volumes de Montpellier (r-2026-10-22-volume-generalite-de-toulouse-de-la-roqu) ; Gallica bloquait encore : recherche mise en attente (g-2026-10-22-volume-generalite-de-toulouse-de-la-roqu)"
 recherche: null
 resultat: null
 ---

@@ -1,7 +1,7 @@
 ---
 titre: Guillaume de Roquemaurel
 sous_titre: "Fils de Jean de Roquemaurel et de Catherine d'Ustou, frère d'Arnaud et de Girons, seigneur de Soueix après le meurtre d'Arnaud ; attesté de 1552 à 1594, mort avant 1597."
-mise_a_jour: "2026-10-08"
+mise_a_jour: "2026-10-22"
 ---
 [[guillaume-de-roquemaurel|Guillaume de Roquemaurel]] était fils de [[jean-de-roquemaurel|Jean de Roquemaurel]],
 dont le testament de 1552 nomme sa femme [[catherine-d-ustou|Catherine d'Ustou]] et « Guillaume de Roquemaurel
@@ -19,9 +19,8 @@ Metz.{{plausible|Le site familial seul, citant Duclos. [[site-roquemaurel.a18|Si
 
 Il épousa [[francoise-de-roques|Françoise de Roques]] par contrat du 2 décembre
 1553.{{mariage-de-guillaume|La marge de l'abrégé de 1677 porte 1560. [[bnf-fr-32298.a5|Jugement de 1700]], [[cabinet-d-hozier-298.a9|Preuves de 1677]]}}
-Le 14 juin 1555, il fut témoin d'un accord entre les habitants d'Espou et Soulan ; l'histoire familiale le dit
-alors habitant d'[[oust|Oust]], mais l'extrait qu'elle cite porte « habitant de
-Suys ».{{plausible|Le site familial seul, qui se contredit sur le lieu. [[site-roquemaurel.a15|Site Roquemaurel]]}}
+Le 14 juin 1555, alors habitant d'[[oust|Oust]], il fut présent à une transaction entre les habitants d'Espou et
+Jean-François de Mauléon.{{plausible|Le site familial seul, d'après l'abbé Fauroux ; l'acte n'est pas vu. [[site-roquemaurel.a15|Site Roquemaurel]]}}
 
 Après le meurtre d'Arnaud dans l'[[incendie-de-soueix-1567|incendie de Soueix]], au début de février 1567,
 Guillaume se trouva seigneur de [[soueix|Soueix]] dès le 10 mai suivant, peut-être par l'effet de la substitution

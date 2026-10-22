@@ -4,9 +4,10 @@ type: demarche
 nom: Procès de 1610 sur l'amende de 3 000 livres
 depot: ad-haute-garonne
 cote: registres d'arrêts civils de 1610 (1 B, non numérisés)
-action: 'Chercher dans les arrêts civils de 1610 le procès sur l''amende de 3 000 livres accordée en 1567 (parties
-  probables : Gabrielle ou ses héritiers contre Marguerite de Béon de Sère, puis Jean-Louis de Rochechouart).'
-pourquoi: Dirait si Gabrielle vivait encore en 1610, ou qui étaient ses héritiers.
+action: 'Chercher dans les arrêts civils de 1607-1610 le procès sur les réparations de 1567 : Marguerite de Béon de
+  Sère, vicomtesse de Soulan, contre Jean d''Espinas, seigneur de Caladrue, héritier de Gabrielle (catalogue-ad09.a2),
+  puis Jean-Louis de Rochechouart.'
+pourquoi: "Dirait l'issue de la créance de 1567 et à quel titre Jean d'Espinas la tenait (héritier ou cessionnaire) ; Gabrielle était sans doute morte avant le 3 septembre 1603 (roquemaurel-familles-du-midi.a2)."
 mode: salle_de_lecture
 priorite: moyenne
 statut: a_faire

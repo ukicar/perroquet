@@ -14,6 +14,6 @@ relations:
 ---
 Fils de Martin d'Espinas, baptisé à Lézat le 20 novembre 1585 selon la généalogie de Jacques de Roquemaurel. Par un
 arrêt du 3 septembre 1603, il succède à son père et à sa tante ; le 22 novembre 1603, il reprend devant le Parlement
-les droits nés de l'arrêt du 24 mai 1567 obtenu par Gabrielle d'Espinas [[roquemaurel-familles-du-midi.a2]]. En 1607,
+les droits nés de l'arrêt du 24 mai 1567 obtenu par Gabrielle d'Espinas [[roquemaurel-familles-du-midi.a2]]. Il portait déjà le titre de sieur de Caladrue en février 1597, à onze ans, son père étant mort avant 1594 [[registres-paroissiaux-lezat.a16]] [[roquemaurel-familles-du-midi.a10]]. En 1607,
 Marguerite de Béon, vicomtesse de Soulan, le poursuit [[roquemaurel-familles-du-midi.a7]] : sans doute la suite du
 procès sur les biens de Soulan ([[proces-de-1610]]).

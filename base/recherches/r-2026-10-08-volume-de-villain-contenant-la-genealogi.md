@@ -7,7 +7,7 @@ auteur: ukicar
 outil: archive
 requete: '"Villain" OR "France moderne"'
 perimetre: archive
-resultat: positif
+resultat: negatif
 total: 11466
 resultats:
 - titre: 'Episode 3 - My Ex is Trashing Me to My Kids: Help!'
@@ -90,3 +90,5 @@ hypotheses:
 ---
 
 Interprétation : la recherche archive.org (opérateur OU) ne renvoie que du bruit ; la 1re partie de Villain, t. Haute-Garonne–Ariège, n'est pas repérée sur archive.org. Recherche négative, à refaire sur Google Books ou HathiTrust.
+
+_Résultat corrigé le 2026-10-22 (« positif » → « négatif ») : l'outil de recherche note « positif » dès qu'il y a des réponses ; aucune ne répond à l'objet de la recherche._

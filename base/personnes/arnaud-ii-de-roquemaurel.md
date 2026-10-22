@@ -11,13 +11,15 @@ periode: [1552, 1567]
 relations:
   - {rel: participe_a, vers: incendie-de-soueix-1567, preuves: [monluc-lettres-ruble.a1, monluc-lettres-ruble.a2, cabinet-d-hozier-298.a3, bardies-1903.a6], confiance: probable, role: victime}
   - {rel: mort_a, vers: soueix, preuves: [monluc-lettres-ruble.a1, monluc-lettres-ruble.a2, cabinet-d-hozier-298.a3], confiance: probable, note: tué dans sa maison de Soueix}
-  - {rel: reside_a, vers: soueix, preuves: [monluc-lettres-ruble.a1, cabinet-d-hozier-298.a3], confiance: probable}
-  - {rel: seigneur_de, vers: soueix, preuves: [cabinet-d-hozier-298.a3, site-roquemaurel.a14], confiance: plausible, note: « maison de Souis » ; le titre ne lui est donné par aucune source de la base}
+  - {rel: reside_a, vers: soueix, preuves: [monluc-lettres-ruble.a1, cabinet-d-hozier-298.a3, site-roquemaurel.a29], confiance: probable, debut: '1555-11-13'}
+  - {rel: seigneur_de, vers: soueix, preuves: [roquemaurel-familles-du-midi.a2, cabinet-d-hozier-298.a3, site-roquemaurel.a30, site-roquemaurel.a14], confiance: probable, note: "« feu Arnaud de Roquemaurel, seigneur de Soueix » dans l'arrêt du 22 novembre 1603 (résumé du généalogiste, acte non vu) ; « maison de Souis » en 1677 ; son père était coseigneur : sans doute coseigneur lui aussi. plausible → probable le 2026-10-22 sur roquemaurel-familles-du-midi.a2"}
   - {rel: enfant_de, vers: jean-de-roquemaurel, preuves: [site-roquemaurel.a14], confiance: plausible}
   - {rel: enfant_de, vers: catherine-d-ustou, preuves: [site-roquemaurel.a14], confiance: plausible}
   - {rel: membre_de, vers: famille-de-roquemaurel, preuves: [bardies-1903.a3, monluc-lettres-ruble.a1], confiance: probable}
 ---
-Arnaud de Roquemaurel, que Monluc appelle « le jeune Rocquemaurel », fut surpris de nuit dans sa maison par
+Arnaud de Roquemaurel, seigneur (sans doute coseigneur, comme son père [[samiac-bsa-1917-ustou.a2]]) de Soueix, que
+l'arrêt du 22 novembre 1603 appelle « feu Arnaud de Roquemaurel, seigneur de Soueix » [[roquemaurel-familles-du-midi.a2]],
+habitait Soueix dès 1555 [[site-roquemaurel.a29]]. Monluc l'appelle « le jeune Rocquemaurel » ; il fut surpris de nuit dans sa maison par
 Fontrailles et Soulan environ douze jours avant le 14 février 1567 [[monluc-lettres-ruble.a1]] ; les assaillants
 brûlèrent la maison et le tuèrent avec six autres personnes [[monluc-lettres-ruble.a2]] : c'est
 l'[[incendie-de-soueix-1567]]. L'abrégé des preuves de Malte de 1677 confirme qu'il s'agit de la maison de Soueix

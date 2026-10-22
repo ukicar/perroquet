@@ -23,7 +23,7 @@ L'histoire familiale des Roquemaurel dit seulement, sans référence, que l'amen
 date de fin et par les parties (l'héritier de Gabrielle face à la détentrice des biens de Soulan) : c'est très
 probablement le même procès. On peut y lire, sans qu'aucune pièce le dise, que l'héritier poursuivait sur les places
 de Soulan et de Lescure les réparations de 1567, et que la vicomtesse en réclamait la valeur des travaux faits par
-elle et ses ancêtres. Gabrielle était morte avant novembre 1603 [[roquemaurel-familles-du-midi.a3]].
+elle et ses ancêtres. Gabrielle était sans doute morte avant le 3 septembre 1603, date de l'arrêt par lequel ce Jean succéda à « sa tante » [[roquemaurel-familles-du-midi.a2]] [[roquemaurel-familles-du-midi.a3]].
 
 L'issue du procès est inconnue. La juridiction est vraisemblablement le Parlement de Toulouse, dont les registres de
 1610 ne sont pas numérisés [[catalogue-ad31.a6]] ; les pièces elles-mêmes sont à lire aux AD Ariège, 1 J 94.

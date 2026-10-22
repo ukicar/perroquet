@@ -67,14 +67,19 @@ que possible ([[origine-de-gabrielle]]). La Gabrielle d'Espinas que la généalo
 
 ## Autres mentions
 
-La famille est présente à Lézat de 1589 à 1735 [[registres-paroissiaux-lezat.a3]] ; une damoiselle « ant. despinas »
+La famille est présente à Lézat dès 1561 [[registres-paroissiaux-lezat.a9]] et jusqu'en 1735 [[registres-paroissiaux-lezat.a3]] ;
+la branche de Caladrue y paraît sans cesse de 1581 à 1601 : Martin, mort avant 1594, sa veuve Domenge de Canals, leurs
+enfants Jean, sieur de Caladrue dès 1597, Anne, femme de François de Rochefort, et Claire, femme de François de Galauba
+[[registres-paroissiaux-lezat.a14]] [[registres-paroissiaux-lezat.a15]] [[registres-paroissiaux-lezat.a16]]
+[[registres-paroissiaux-lezat.a17]] [[roquemaurel-familles-du-midi.a10]] [[roquemaurel-familles-du-midi.a11]] ; une damoiselle « ant. despinas »
 y est marraine en 1589 [[registres-paroissiaux-lezat.a7]]. Un François d'Espinas, seigneur de Gouzens, épouse Hilaire
 de Lapasse en 1645 [[lapasse-1868.a1]] ; une Domenge d'Espinasse épouse Jean de Médrano [[revue-de-gascogne-1880.a1]],
 mariage que Gondal place en 1629 [[gondal-1969.a2]] ; des Despinas sont inhumés à Castagnac de 1685 à 1729
 [[registres-paroissiaux-castagnac.a1]] [[registres-paroissiaux-castagnac.a3]] ; un Jean-Jacques Despinasse, seigneur de
 Gouzens, siège à Muret en 1789 [[bremond-1863.a4]]. Au XVIIIe siècle, un château de Cardonne est dit « juridiction de
 Montesquieu-Volvestre » [[inventaire-ad09-serie-b-1894.a1]], et des d'Espinas et Lespinasse figurent à
-Montesquieu-Volvestre [[ad31-serie-c-vingtiemes-rieux.a1]], peut-être apparentés. Les notes tiennent pour une coquille
-la date de 1509 qu'Aubais imprime pour le mariage de Claire Espinas avec François Galauba [[aubais-pieces-fugitives.a11]],
-mariage confirmé par Villain sans date [[villain-france-moderne.a1]]. Les armes varient selon les sources (pin, aubépin
+Montesquieu-Volvestre [[ad31-serie-c-vingtiemes-rieux.a1]], peut-être apparentés. La date de 1509 qu'Aubais imprime
+pour le mariage de Claire Espinas avec François Galauba [[aubais-pieces-fugitives.a11]] est une coquille pour le
+contrat du 5 septembre 1599 [[roquemaurel-familles-du-midi.a11]] ; Villain confirme le mariage sans date
+[[villain-france-moderne.a1]]. Les armes varient selon les sources (pin, aubépin
 ou azerolier de sinople) [[catalogue-de-caux-1676.a3]] [[bremond-1863.a3]] [[aubais-pieces-fugitives.a1]].

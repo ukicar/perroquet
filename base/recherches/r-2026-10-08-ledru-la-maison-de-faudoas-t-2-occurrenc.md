@@ -7,7 +7,7 @@ auteur: ukicar
 outil: gallica-texte
 requete: Espinas | Despinas | Roquemaurel | Soueich
 perimetre: gallica ark:/12148/bpt6k3156740
-resultat: positif
+resultat: negatif
 total: 6
 resultats:
 - terme: Espinas
@@ -40,3 +40,5 @@ hypotheses:
 ---
 
 Interprétation : pas d'Espinas. Les seules occurrences Roquemaurel/Soueich concernent le mariage de Pierre-Jean de Faudoas et de Lucrèce de Roquemaurel (contrat du 13 novembre 1648, passé au château de Soueich), sans lien avec Gabrielle. Négatif pour la question.
+
+_Résultat corrigé le 2026-10-22 (« positif » → « négatif ») : l'outil de recherche note « positif » dès qu'il y a des réponses ; aucune ne répond à l'objet de la recherche._

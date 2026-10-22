@@ -21,8 +21,9 @@ relations:
 ---
 Lieutenant du roi en Guyenne, Blaise de Monluc est la principale source contemporaine sur
 l'[[incendie-de-soueix-1567]], mais il n'en parle que dans **une** lettre au roi, datée d'Agen le 14 février 1567 :
-ses Commentaires n'en disent rien et aucune autre lettre publiée ne revient sur l'affaire ni sur la veuve (voir
-[[monluc-et-gabrielle]]). Il y rapporte, d'après ce qu'on lui a mandé, la surprise nocturne de la maison du jeune
+ses Commentaires n'en disent rien et aucune autre lettre publiée ne revient sur l'incendie ni sur la veuve (voir
+[[monluc-et-gabrielle]]) ; la querelle, elle, reparaît le 31 mars 1567, quand il demande de l'artillerie « pour
+marcher contre Solan et Fonterailles » [[monluc-lettres-ruble.a16]]. Il y rapporte, d'après ce qu'on lui a mandé, la surprise nocturne de la maison du jeune
 Roquemaurel [[monluc-lettres-ruble.a1]] et le sort de sa femme, qu'il ne nomme pas et appelle « la pouvre femme »
 [[monluc-lettres-ruble.a3]] [[monluc-lettres-ruble.a5]] ; il croit les Roquemaurel réformés
 [[monluc-lettres-ruble.a6]] et sait que leur aîné fut maréchal des logis du feu roi de Navarre

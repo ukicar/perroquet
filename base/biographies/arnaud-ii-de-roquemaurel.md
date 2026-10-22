@@ -1,7 +1,7 @@
 ---
 titre: Arnaud II de Roquemaurel
 sous_titre: "Gentilhomme du Couserans, fils semble-t-il de Jean de Roquemaurel et de Catherine d'Ustou, mari de Gabrielle d'Espinas, tué dans l'incendie de sa maison de Soueix vers le 2 février 1567."
-mise_a_jour: "2026-10-08"
+mise_a_jour: "2026-10-22"
 ---
 On ne sait ni quand ni où naquit [[arnaud-ii-de-roquemaurel|Arnaud de Roquemaurel]].{{inconnu|Aucune source de la base ne donne sa naissance. [[cabinet-d-hozier-298.a2|Preuves de 1677]]}}
 L'histoire de la [[famille-de-roquemaurel|famille de Roquemaurel]], seule à le dire, en fait un fils de
@@ -17,9 +17,9 @@ charge de maréchal des logis du feu roi de Navarre, qui était celle de Girons 
 cadet.{{ordre-des-freres-roquemaurel#H2|Contredit le site familial. [[site-roquemaurel.a14|Site Roquemaurel]], [[monluc-lettres-ruble.a1|Monluc]], [[monluc-lettres-ruble.a8|id.]], [[samiac-bsa-1917-ustou.a3|Samiac]]}}
 
 Il vivait dans la maison de Soueix, en [[couserans|Couserans]], que les preuves de 1677 appellent
-« maison de Souis ».{{probable|Monluc : « en sa maison » ; l'abrégé nomme Soueix. [[monluc-lettres-ruble.a1|Monluc]], [[cabinet-d-hozier-298.a3|Preuves de 1677]]}}
-On le dit seigneur du lieu, mais aucune source de la base ne lui donne ce titre ; son père en était
-coseigneur.{{plausible|Titre déduit de la maison et de la succession. [[cabinet-d-hozier-298.a3|Preuves de 1677]], [[site-roquemaurel.a14|Site Roquemaurel]], [[samiac-bsa-1917-ustou.a2|Samiac]]}}
+« maison de Souis » ; il y habitait déjà en novembre 1555, quand il fut témoin d'un acte.{{probable|Monluc : « en sa maison » ; l'abrégé nomme Soueix ; l'acte de 1555 d'après Samiac. [[monluc-lettres-ruble.a1|Monluc]], [[cabinet-d-hozier-298.a3|Preuves de 1677]], [[site-roquemaurel.a29|Site Roquemaurel]]}}
+Il en était seigneur, ou plutôt coseigneur comme son père : l'arrêt du 22 novembre 1603 l'appelle « feu Arnaud de
+Roquemaurel, seigneur de Soueix ».{{probable|Arrêt connu par le résumé du généalogiste de la famille, acte non vu. [[roquemaurel-familles-du-midi.a2|arrêt de 1603]], [[samiac-bsa-1917-ustou.a2|Samiac]], [[cabinet-d-hozier-298.a3|Preuves de 1677]]}}
 Il épousa [[gabrielle-d-espinas|Gabrielle d'Espinas]], qui venait, semble-t-il, des Espinas de
 [[lezat-sur-leze|Lézat]], de la branche de Caladroy : le généalogiste de la famille la dit fille de
 [[jean-d-espinas-caladroy|Jean d'Espinas, seigneur de Caladroy]], et d'[[antonie-de-montesquieu|Antonie de

@@ -20,7 +20,7 @@ predictions:
     enquetes: []
   - id: P2
     h: H1
-    attendu: "Le registre 1 B 60 (12 nov. 1566 - 13 mai 1567) contient les ajournements que Monluc dit déjà rendus contre Fontrailles et Soulan, et, après février 1567, des arrêts à la requête de la veuve de Roquemaurel."
+    attendu: "Le registre 1 B 60 (12 nov. 1566 - 31 mai 1567, prononcés jusqu'au 2 juin) contient les ajournements que Monluc dit déjà rendus contre Fontrailles et Soulan, et, après février 1567, des arrêts à la requête de la veuve de Roquemaurel."
     ou_chercher: "AD31 1 B 60, numérisé (serveur IIIF des AD31) : lecture des mentions marginales et des débuts d'arrêts, de novembre 1566 à mai 1567 ; rôle paléographe."
     diagnostique: haute
     statut: infirmee
@@ -59,29 +59,33 @@ historique:
   - {date: "2026-10-08", changement: "P1 : non_testee → infirmee", cause: "recherche plein texte de l'inventaire imprimé, t. 1 (r-2026-10-08-inventaire-imprime-ad31-serie-b-t-1-1903)"}
   - {date: "2026-10-08", changement: "ligne ajoutée ; P2 testée en partie (mars-juin 1567, négatif), février reste à lire", cause: "r-2026-10-08-ad31-1b-60-mars-juin-1567"}
   - {date: "2026-10-08", changement: "P2 → infirmée ; ligne 1 B 60 renforcée (H1 et H2 : I)", cause: "lecture complète de 1 B 60 du 17 janvier au 2 juin 1567 (r-2026-10-08-ad31-1b-60-mars-juin-1567)"}
+  - {date: "2026-10-22", changement: "corps mis à jour après l'infirmation de P2 et la correction des dates de 1 B 60 (31 mai, non 13 mai) ; confiances inchangées", cause: "ad31-1b-60.a1, ad31-1b-60.a2"}
 sous_questions: []
 ---
 ## Ce qui est en ligne
 
 Les arrêts civils du Parlement de Toulouse sont numérisés jusqu'en 1587 [[catalogue-ad31.a6]]. Pour l'affaire, les
-registres utiles sont 1 B 60 (novembre 1566 - 13 mai 1567), 1 B 61 (juin - octobre 1567) et 1 B 62 (novembre 1567 -
-novembre 1568), tous lus seulement en partie, puis 1 B 63 et suivants jusqu'à la supplique de Soulan (1570-1571) et
-1 B 72-74 (1575-1576) [[catalogue-ad31.a3]] [[catalogue-ad31.a5]]. L'arrêt du 24 mai 1567, lui, tombe dans le trou
-d'avril-mai 1567 et n'existe que dans le registre en double 1 B 2103, non numérisé [[catalogue-ad31.a4]].
+registres utiles sont 1 B 60 (novembre 1566 - 31 mai 1567, et non 13 mai comme le dit le catalogue), 1 B 61
+(juin - octobre 1567) et 1 B 62 (novembre 1567 - novembre 1568), puis 1 B 63 et suivants jusqu'à la supplique de
+Soulan (1570-1571) et 1 B 72-74 (1575-1576) [[catalogue-ad31.a3]] [[ad31-1b-60.a1]] [[catalogue-ad31.a5]].
+1 B 60 a été lu en entier du 17 janvier au 2 juin 1567 sans rien sur l'affaire [[ad31-1b-60.a2]] ; novembre 1566 -
+16 janvier 1567 reste à lire, 1 B 61 et 1 B 62 ne sont lus qu'en partie. L'arrêt du 24 mai 1567, lui, n'est pas dans
+1 B 60 ; il manque aussi le registre criminel d'avril-mai, et l'on ne sait pas encore s'il subsiste dans le registre en
+double 1 B 2103, non numérisé [[catalogue-ad31.a4]] (voir [[localisation-de-l-arret-du-24-mai-1567]]).
 
 ## Pour H1 et H2 : il doit y avoir plus
 
 Monluc écrit en février 1567 que le Parlement avait déjà fait ajourner les parties, que les Roquemaurel avaient
 comparu et les autres non [[monluc-lettres-ruble.a32]] : ces ajournements, rendus avant l'incendie, devraient se trouver
-dans 1 B 59 ou 1 B 60. L'inventaire imprimé montre aussi que les Mauléon de Soulan plaidaient régulièrement à Toulouse
+dans 1 B 59 ou dans la partie de 1 B 60 qui n'a pas été lue (novembre 1566 - 16 janvier 1567). L'inventaire imprimé montre aussi que les Mauléon de Soulan plaidaient régulièrement à Toulouse
 (en 1563 encore, contre le chapitre de Pamiers [[inventaire-ad31-serie-b-1903.a2]]).
 
 ## Ce qui sépare H1 et H2
 
 Rien de ce qu'on a trouvé après 1567 ne nomme Gabrielle : l'arrêt de 1576 ne connaît que Guillaume et Mauléon
 [[ad31-1b-74.a9]], et la supplique de Soulan est intimée à Guillaume [[cabinet-d-hozier-298.a4]]. Si Gabrielle
-apparaît dans les registres numérisés, ce sera plutôt dans 1 B 60 (avant mai 1567) ou dans les premiers mois de
-1 B 61.
+apparaît dans les registres numérisés, ce ne sera pas dans 1 B 60 de janvier à juin 1567, lu sans résultat
+[[ad31-1b-60.a2]] : plutôt dans les premiers mois de 1 B 61 ou dans 1 B 62.
 
 ## Pour H3
 
@@ -93,5 +97,7 @@ il ne retient qu'une partie des arrêts, et son silence pèse peu. Les décrets 
 
 Les registres ne sont pas indexés. Méthode proposée : parcourir les images à basse résolution, repérer dans les
 débuts d'arrêts (« Entre … ») les noms Roquemaurel, Soulan, Mauléon, Fontrailles, Astarac, Espinas, puis lire en
-pleine résolution ce qui est repéré (rôle paléographe). Compter environ 500 images par registre ; commencer par
-1 B 60 de novembre 1566 à mai 1567 (P2), le plus diagnostique.
+pleine résolution ce qui est repéré (rôle paléographe). Compter environ 500 images par registre. P2 est faite :
+1 B 60, lu du 17 janvier au 2 juin 1567, n'a rien donné ([[r-2026-10-08-ad31-1b-60-mars-juin-1567]]). Reste le
+plus diagnostique : 1 B 61 et 1 B 62 (P3), puis le début de 1 B 60 (novembre 1566 - 16 janvier 1567) pour les
+ajournements d'avant l'incendie.

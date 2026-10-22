@@ -67,8 +67,10 @@ L'utilisateur s'étonne qu'un chef militaire de ce rang « écrive dans l'histoi
 Il faut d'abord préciser ce que Monluc a écrit. Il n'en parle **pas dans ses Commentaires**, qui sont son œuvre
 d'histoire : les tomes I-III de l'édition Ruble ne mentionnent ni Soueix, ni les Roquemaurel, ni Soulan
 ([[r-2026-10-08-monluc-commentaires-ed-ruble-t-1-mention]], [[r-2026-10-08-monluc-commentaires-ed-ruble-t-2-mention]],
-[[r-2026-10-08-monluc-commentaires-ed-ruble-t-3-mention]]). Il en parle **une seule fois**, dans une lettre au roi
-écrite à Agen le 14 février 1567, publiée par Ruble parmi ses lettres.
+[[r-2026-10-08-monluc-commentaires-ed-ruble-t-3-mention]]). Il ne parle de l'incendie et de la veuve qu'**une seule
+fois**, dans une lettre au roi écrite à Agen le 14 février 1567, publiée par Ruble parmi ses lettres. Une lettre aux
+capitouls du 31 mars 1567 nomme encore Soulan et Fontrailles, pour marcher contre eux, sans rien dire de l'incendie
+ni de la veuve [[monluc-lettres-ruble.a16]].
 
 ## Ce que dit la lettre
 

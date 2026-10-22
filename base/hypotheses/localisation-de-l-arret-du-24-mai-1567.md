@@ -49,30 +49,37 @@ matrice:
   - {preuve: lasnier-2008.a3, H1: C, H2: C, H3: I, note: "Vuillier cite « extrait des registres du parlement de Toulouse, AD Haute-Garonne » ; peut reprendre l'intitulé d'une copie privée."}
   - {preuve: site-roquemaurel.a8, H1: C, H2: C, H3: C, note: "« Extraits des registres du parlement de Toulouse ; copie AJR » : copie privée tirée d'un registre ; compatible avec tout."}
   - {preuve: catalogue-ad31.a2, H1: C, H2: I, H3: C, note: "Pas de registre de la Tournelle pour avril-mai 1567."}
-  - {preuve: catalogue-ad31.a3, H1: N, H2: I, H3: C, note: "Lacune du registre de Grand Chambre sur parchemin entre le 13 mai et le 2 juin 1567."}
+  - {preuve: catalogue-ad31.a3, H1: N, H2: N, H3: N, note: "Le catalogue arrête 1 B 60 au 13 mai 1567 ; c'est inexact : le registre va jusqu'au 31 mai, avec des prononcés jusqu'au 2 juin (ad31-1b-60.a1). Il n'y a donc pas de lacune en Grand Chambre : ligne neutralisée le 2026-10-22."}
   - {preuve: catalogue-ad31.a4, H1: C, H2: N, H3: N, note: "Le registre des arrêts en double d'avril-mai 1567 (1 B 2103) subsiste, non numérisé."}
   - {preuve: ad31-1b-60.a1, H1: C, H2: C, H3: N, note: "Le registre civil couvre bien le 24 mai 1567 mais ne reproduit pas les arrêts criminels : l'arrêt doit être cherché dans le criminel (registre manquant d'avril-mai) ou en double (1 B 2103)."}
   - {preuve: catalogue-ad09.a1, H1: N, H2: N, H3: C, note: "AD Ariège 1 J 94 contient le procès de Gabrielle contre Soulan, 1567-1603 : un exemplaire ou un extrait de l'arrêt peut s'y trouver, hors des AD Haute-Garonne (va dans le sens de Bardies)."}
 contestations: []
 meneur: H1
 confiance: possible
-verdict: "Le registre criminel d'avril-mai 1567 et le registre de Grand Chambre de la même période manquent ; le registre civil 1 B 60, qui va en fait jusqu'au 2 juin, ne contient pas l'arrêt. Subsistent, non numérisés, le registre des arrêts en double 1 B 2103 (AD Haute-Garonne) et les pièces du procès de Gabrielle, 1567-1603, aux AD Ariège (1 J 94), où un exemplaire de l'arrêt peut se trouver. H1 et H3 restent à égalité : lire 1 B 2103 et 1 J 94."
+verdict: "Le registre criminel d'avril-mai 1567 manque ; le registre de Grand Chambre 1 B 60, qui va en fait jusqu'au 2 juin et non jusqu'au 13 mai, ne contient pas l'arrêt. Subsistent, non numérisés, le registre des arrêts en double 1 B 2103 (AD Haute-Garonne) et les pièces du procès de Gabrielle, 1567-1603, aux AD Ariège (1 J 94), où un exemplaire de l'arrêt peut se trouver. H1 et H3 restent à égalité : lire 1 B 2103 et 1 J 94."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
   - {date: "2026-10-08", changement: "ligne ajoutée", cause: "ad31-1b-60.a1 (registre civil lu jusqu'au 31 mai 1567)"}
   - {date: "2026-10-08", changement: "ligne ajoutée ; confiance inchangée", cause: "propagation : catalogue-ad09.a1 (1 J 94)"}
+  - {date: "2026-10-22", changement: "ligne catalogue-ad31.a3 neutralisée (H2 : I → N, H3 : C → N) ; verdict et corps corrigés ; confiances inchangées", cause: "ad31-1b-60.a1 : 1 B 60 va jusqu'au 31 mai 1567, la « lacune » de Grand Chambre du catalogue n'existe pas"}
 sous_questions: []
 ---
 ## Les registres où l'arrêt devrait être
 
 L'arrêt est criminel : il devrait figurer dans les registres de la Tournelle. Or 1 B 3456 couvre février-26 mars
 1567 et 1 B 3457 commence le 2 juin [[catalogue-ad31.a1]], [[catalogue-ad31.a2]] : le registre d'avril-mai est
-perdu. Le registre de Grand Chambre sur parchemin présente la même lacune (1 B 60 finit le 13 mai, 1 B 61
-commence le 2 juin) [[catalogue-ad31.a3]]. Subsiste le registre papier des « arrêts en double » 1 B 2103,
-avril-mai 1567, non numérisé [[catalogue-ad31.a4]]. Voir [[r-2026-10-06-ad31-arret-du-24-mai-1567-lacunes]].
+perdu. Le registre de Grand Chambre sur parchemin, lui, ne présente pas de lacune : le catalogue arrête 1 B 60
+au 13 mai [[catalogue-ad31.a3]], mais le registre va en fait jusqu'au 31 mai, avec des prononcés jusqu'au 2 juin
+[[ad31-1b-60.a1]] ; il ne contient pas l'arrêt, ni aucun acte de l'affaire du 17 janvier au 2 juin [[ad31-1b-60.a2]].
+Subsiste le registre papier des « arrêts en double » de la Grand Chambre 1 B 2103, avril-mai 1567, non numérisé
+[[catalogue-ad31.a4]]. Voir [[r-2026-10-06-ad31-arret-du-24-mai-1567-lacunes]].
 
 **Inférence des notes** : les gentilshommes accusés pouvaient demander à être jugés en Grand Chambre ; la
-sentence contre Soulan pourrait donc être copiée dans 1 B 2103. C'est une hypothèse, non un fait.
+sentence contre Soulan pourrait donc être copiée dans 1 B 2103. C'est une hypothèse, non un fait. **Inférence**
+(2026-10-22) : 1 B 60 étant le registre original de la Grand Chambre pour la même période, et l'arrêt n'y étant pas,
+H1 suppose que le registre en double garde aussi des arrêts criminels que l'original n'enregistre pas
+([[ad31-1b-60.a1]] : l'original ne porte pas les arrêts criminels définitifs). C'est ce que la lecture de 1 B 2103
+dira.
 
 L'arrêt n'est pas dans les registres civils numérisés ni dans BnF fr. 5455, qui ne couvre que
 novembre-décembre 1567 [[bnf-fr-5455.a1]].

@@ -198,8 +198,8 @@ assertions:
   note: paraphrase des notes du 6-7 oct. 2026 ; citation à relever sur la source
 - id: a15
   texte: Guillaume, habitant d'Oust, est témoin le 14 juin 1555 d'un accord entre les habitants d'Espou et Soulan.
-  citation: habitant de Suys
-  locus: degres_couserans
+  citation: "Le 14 juin 1555, habitant Oust, il est présent à une transaction entre les habitants d’Espou et Jean-François de Mauléon, seigneur d’Alos"
+  locus: "degres_couserans, degré X (Guillaume), note 48 : « Abbé Fauroux »"
   sujets:
   - guillaume-de-roquemaurel
   - jean-francois-de-mauleon
@@ -208,8 +208,8 @@ assertions:
   preuve: directe
   information: secondaire
   credibilite: 3
-  verifie: non
-  note: Les notes citent « habitant de Suys » à propos de l'acte de 1555 ; le reste est paraphrasé.
+  verifie: agent
+  note: "Relu sur le site le 2026-10-22. La citation « habitant de Suys » portée ici auparavant ne concerne pas Guillaume : elle vient d'un autre acte, du 13 novembre 1555, où témoigne Arnaud (a29)."
 - id: a16
   texte: Guillaume épouse le 2 décembre 1553 Françoise de Roques, fille de Jacques Roques de Saint-Girons et de
     Guillaumette alias Gaudiette de Méritens (contrat devant Dupuy).
@@ -373,5 +373,35 @@ assertions:
   credibilite: 4
   verifie: non
   note: paraphrase des notes du 6-7 oct. 2026 ; citation à relever sur la source
+- id: a29
+  texte: "Le 13 novembre 1555, noble Arnaud de Roquemaurel, habitant de Soueix (« Suys »), est témoin d'un acte."
+  citation: "Noble Arnaud de Roquemaurel, habitant de Suys (Soueix) est témoin d’un acte le 13 novembre 1555"
+  locus: "degres_couserans, degré X (Arnaud II), note 24 : « Abbé Samiac »"
+  sujets:
+  - arnaud-ii-de-roquemaurel
+  - soueix
+  date: '1555-11-13'
+  preuve: directe
+  information: secondaire
+  credibilite: 3
+  verifie: agent
+  note: "Lu sur le site le 2026-10-22. L'acte lui-même n'est pas identifié ; la source donnée est l'abbé Samiac."
+- id: a30
+  texte: "Le site intitule Arnaud II « seigneur de Soueix », le dit fils aîné dans le testament de son père du 27 octobre 1552 et le fait périr dans l'incendie de « son château de Soueix »."
+  citation: "X- Arnaud II de Roquemaurel, seigneur de Soueix Il est cité comme fils aîné dans le testament de son père Jean de Roquemaurel, du 27 octobre 1552, avec ses frères Guillaume et Girons [23]. […] Il périt tragiquement dans l’incendie de son château de Soueix"
+  locus: "degres_couserans, degré X (Arnaud II), notes 23 (« BN pièces originales 2544 Roquelaure-Roquendorf ») et 26"
+  sujets:
+  - arnaud-ii-de-roquemaurel
+  - soueix
+  - jean-de-roquemaurel
+  - guillaume-de-roquemaurel
+  - girons-de-roquemaurel
+  - incendie-de-soueix-1567
+  date: '1552-10-27'
+  preuve: directe
+  information: secondaire
+  credibilite: 3
+  verifie: agent
+  note: "Lu sur le site le 2026-10-22. Le titre de l'en-tête est celui du généalogiste ; les degrés précédents de la même page parlent de « coseigneurie de Soueix » (1503, 1540)."
 ---
 Histoire de la famille rédigée par ses descendants (pages degres_couserans, montegut, ustou, « Familles alliées »), reprise mot pour mot par la notice Geneanet. Elle détaille les condamnations de l'arrêt du 24 mai 1567 d'après des « Extraits des registres du parlement de Toulouse ; copie AJR » (copie privée) et signale un procès encore pendant en 1610, sans note. Elle donne de nombreuses pistes (cotes AD31, BnF, notaires), mais certaines références restent non identifiées (« A.M.T tome II, p. 502 ») ou invérifiées (arbitrage d'Agen d'après « Lestrade, op. cité »), et elle confond les deux Tilladet (note 34).

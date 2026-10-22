@@ -34,7 +34,7 @@ assertions:
   texte: "Le 22 novembre 1603, Jean d'Espinas, seigneur de Caladroy, remontre qu'au sujet du meurtre et de l'incendie commis sur Arnaud de Roquemaurel et son château, Gabrielle d'Espinas, veuve, avait comparu au Parlement le 24 mai 1567 ; il avait succédé à son père Martin et à sa tante par un arrêt du 3 septembre 1603."
   citation: "Le 22 novembre 1603, Jean d'Espinas, seigneur de Caladroy, dit et remontra que pour raison du meurtre et boutefeu commis sur la personne et château de feu Arnaud de Roquemaurel, seigneur de Soueix, par feu Jean François de Mauléon, seigneur de Soulan, et ses complices, avait comparu (devant le parlement) à Toulouse, le 24 mai 1567, Gabrielle d'Espinas, veuve dudit feu de Roquemaurel, il donna 1 000 écus à la dite Gabrielle d'Espinas. Le dit Jean d'Espinas avait succédé à feu Martin d'Espinas, son père, et à sa tante, suivant un arrêt du 3 septembre 1603"
   locus: "t. VIII, p. 200 et n. 1245 (« AD, Ariège | J 94 », à lire sans doute AD Ariège 1 J 94)"
-  sujets: [gabrielle-d-espinas, jean-arnaud-d-espinas, martin-d-espinas, arret-du-24-mai-1567, arret-du-22-novembre-1603]
+  sujets: [gabrielle-d-espinas, jean-arnaud-d-espinas, martin-d-espinas, arret-du-24-mai-1567, arret-du-22-novembre-1603, arnaud-ii-de-roquemaurel, jean-francois-de-mauleon, soueix]
   date: '1603-11-22'
   preuve: directe
   information: secondaire
@@ -51,7 +51,7 @@ assertions:
   information: secondaire
   credibilite: 3
   verifie: agent
-  note: "Formulation confuse (3 septembre ou 3 novembre ?) ; le neveu succède « à sa tante » par l'arrêt du 3 septembre 1603."
+  note: "Relu le 2026-10-22 (OCR l. 12325-12328 et 12718-12724). « 3 novembre » est sans doute une coquille de l'auteur pour le 3 septembre : le passage détaillé, auquel il renvoie (« supra »), date du 3 septembre 1603 l'arrêt par lequel le neveu succède « à sa tante » (a2, note 1245). Ce passage ne dit pas Gabrielle « feue » et ne nomme pas la tante : la mort de Gabrielle avant le 3 septembre 1603 suppose que la tante est bien elle et que Jean est héritier, non cessionnaire."
 - id: a4
   texte: "Le 6 août 1589, à Lézat, une Gabrielle d'Espinas est marraine d'un enfant prénommé Pierre ; le parrain, peut-être Pierre d'Espinas, fils du seigneur de Caladroy, « pourrait être » son frère."
   citation: "C'est peut-être le même qui fut parrain, à Lézat, le 6 août 1589, d'un enfant prénommé Pierre, la marraine étant Gabrielle d'Espinas, qui pourrait être sa sœur"
@@ -114,6 +114,28 @@ assertions:
   credibilite: 4
   verifie: agent
   note: "La date de 1540 est une estimation de l'auteur, non un acte ; « files » est dans l'OCR (pour « filles »). Les contrats de 1594 et 1599 sont ceux de la démarche ad31-insinuations-espinas-1594-1599."
+- id: a10
+  texte: "Selon l'auteur, Martin d'Espinas, seigneur de Caladrue, mourut avant le 26 janvier 1594 : ce jour-là, au château de Malenfant (Malsang, à Lézat), sa fille Anne, « fille de feu Martin », épouse par contrat François de Rochefort, écuyer, du consentement d'Antoinette de Montesquieu, son aïeule, et de Domenge de Canals, sa mère."
+  citation: "Il mourut avant le 26 janvier 1594, date du contrat de mariage de sa fille Anne avec François de Rochefort. […] Fille de feu Martin d’Espinas, seigneur de Caladrue, elle épousa, par contrat du 26 janvier 1594, au château de Malenfant (Malsang, en Lézat), François de ROCHEFORT, écuyer, du consentement d’Antoinette de Montesquieu, son aïeule, et de Domenge de Canals, sa mère"
+  locus: "t. VIII, p. 198-199 (OCR archive.org, l. 12576-12577 et 12610-12614)"
+  sujets: [martin-d-espinas, antonie-de-montesquieu]
+  date: '1594-01-26'
+  preuve: directe
+  information: secondaire
+  credibilite: 3
+  verifie: agent
+  note: "Lu sur l'OCR le 2026-10-22. Le mariage avec Rochefort est confirmé de façon indépendante par le registre de Lézat (registres-paroissiaux-lezat.a17, 27 mai 1594)."
+- id: a11
+  texte: "Selon l'auteur, Claire d'Espinas, fille de feu Martin, épousa par contrat du 5 septembre 1599 François de Galauba, fils de Jean de Galauba, seigneur de Mailholas et de Dahusse, assistée d'Antoinette de Montesquieu, son aïeule, veuve de Jean d'Espinas, seigneur de Caladrue."
+  citation: "Fille de feu Martin d’Espinas, seigneur de Caladrue, elle avait épousé, par contrat du 5 septembre 1599, étant assistée d’Antoinette de Montesquieu, son aïeule, veuve de Jean d’Espinas, seigneur de Caladrue, François de GALAUBA"
+  locus: "t. VIII, p. 199 (OCR archive.org, l. 12636-12640)"
+  sujets: [martin-d-espinas, antonie-de-montesquieu, jean-d-espinas-caladroy]
+  date: '1599-09-05'
+  preuve: directe
+  information: secondaire
+  credibilite: 3
+  verifie: agent
+  note: "Lu sur l'OCR le 2026-10-22. Contredit la date de 1509 imprimée par Aubais (aubais-pieces-fugitives.a11), qu'une note avait corrigée en 1609 sans source."
 ---
 Généalogie de 2026 mise en ligne sur archive.org par l'auteur du site de la famille de Roquemaurel. Elle n'est
 **pas indépendante** du site ([[site-roquemaurel]]), dont elle reprend des phrases. Mais pour Gabrielle elle apporte
@@ -121,7 +143,9 @@ une **identification nouvelle, appuyée sur une cote** : Gabrielle serait fille 
 Caladroy (branche de Lézat), et d'Antonie de Montesquieu [[roquemaurel-familles-du-midi.a1]]. La preuve invoquée
 est un arrêt du 22 novembre 1603 par lequel son neveu Jean d'Espinas, héritier de son père Martin et « de sa tante »,
 reprend la créance née de l'arrêt du 24 mai 1567 [[roquemaurel-familles-du-midi.a2]]. Elle serait morte avant le
-3 novembre 1603 [[roquemaurel-familles-du-midi.a3]].
+« 3 novembre 1603 » [[roquemaurel-familles-du-midi.a3]] ; mais l'arrêt de succession que l'auteur invoque est daté,
+dans le passage détaillé, du 3 septembre 1603 [[roquemaurel-familles-du-midi.a2]] : si la « tante » est Gabrielle,
+elle était morte avant le 3 septembre 1603.
 
 L'acte cité (AD Ariège, 1 J 94 d'après la note, OCR « | J 94 ») n'a pas été vu : tout repose sur le résumé de l'auteur,
 qui est obscur par endroits. Ce sera la première démarche à faire. Lue sur l'OCR d'archive.org le 8 octobre 2026

@@ -1,7 +1,7 @@
 ---
 id: registres-paroissiaux-lezat
 type: source
-nom: Registres paroissiaux de Lézat (AD Ariège), index Geneanet
+nom: Registres paroissiaux de Lézat (AD Ariège), baptêmes GG1-GG9
 titre: Registres paroissiaux de Lézat
 auteur: null
 date_redaction: null
@@ -17,6 +17,7 @@ distance: null
 biais: null
 citee_par: []
 fichiers:
+  - {chemin: cache/ad09-lezat-gg/, url: "https://mdr-archives.ariege.fr/mdr/index.php/docnumserv/getImageVisualiseur/06/VI6/75EDT_GGnn@AD09_2Mi3_R0191_75EDT_GGnn_iiii.jpg/N/T20/100/1600 (GG9 : bobine R0192)", sha256: null, recuperation: auto, note: "522 images téléchargées le 2026-10-22 : GG01 1-31, GG02 1-26, GG03 1-26, GG04 1-18, GG05 2-111, GG06 1-44, GG07 1-133, GG08 1-69, GG09 1-65 (cache/ad09-lezat-gg/list.txt)"}
   - {chemin: cache/ad09-lezat/GG01_0012.jpg, url: "https://mdr-archives.ariege.fr/mdr/index.php/docnumserv/getImageVisualiseur/06/VI6/75EDT_GG01@AD09_2Mi3_R0191_75EDT_GG01_0012.jpg/N/T20/100/1600", sha256: b545a329c4411af82b4baef5ee943c980ed2fe22bb906a7881d7a0063002c86c, recuperation: auto, note: "GG01_0012"}
   - {chemin: cache/ad09-lezat/GG05_0035.jpg, url: "https://mdr-archives.ariege.fr/mdr/index.php/docnumserv/getImageVisualiseur/06/VI6/75EDT_GG05@AD09_2Mi3_R0191_75EDT_GG05_0035.jpg/N/T20/100/1600", sha256: 10b1c33f7e97e6f9ce27f09006622a6e67dddc6a1fad00a6cc6ba13dac0ab9ae, recuperation: auto, note: "GG05_0035"}
   - {chemin: cache/ad09-lezat/GG06_0003.jpg, url: "https://mdr-archives.ariege.fr/mdr/index.php/docnumserv/getImageVisualiseur/06/VI6/75EDT_GG06@AD09_2Mi3_R0191_75EDT_GG06_0003.jpg/N/T20/100/1600", sha256: 9ae74839bb2cfa842272716e307ee5f327cfa96410fc9706f61da7f2f54a2ced, recuperation: auto, note: "GG06_0003"}
@@ -172,5 +173,63 @@ assertions:
   credibilite: 2
   verifie: agent
   note: "Le nom de la marraine, mal lu, est sans doute celui de la « gabrielle de Coromis » qui tient une marraine en mai 1588 (GG6, image 10) ; ce n'est ni Espinas ni Roquemaurel."
+- id: a14
+  texte: "Le 20 janvier 1591, noble Martin d'Espinas, sieur de Caladrue, est parrain à Lézat ; la marraine est damoiselle Bernarde de Pelisse."
+  citation: "parrin noble martin despinas s.r de caladrue la marrine damoyselle bernarde de pelisse"
+  locus: "GG7, image 3, page de droite, 6e acte (« Le vingtiesme dud. moys », janvier 1591)"
+  sujets: [martin-d-espinas]
+  date: '1591-01-20'
+  preuve: directe
+  information: primaire
+  credibilite: 2
+  verifie: agent
+  note: "Relevé par le paléographe le 2026-10-22, relu sur l'agrandissement par l'agent principal. Dernière mention connue de Martin vivant."
+- id: a15
+  texte: "Le 7 juillet 1596, la marraine d'un enfant baptisé à Lézat est damoiselle Domenge de Canals, « femme à feu M. de Caladrue quand vivait » ; le parrain est noble François de Rochefort."
+  citation: "La marrine damoyselle domenge canaulx femme a feu m.r de caladrue quand vivoit"
+  locus: "GG7, image 57, page de gauche, 1er acte (« Le septiesme jour du moys de Juillet », 1596)"
+  sujets: [martin-d-espinas]
+  date: '1596-07-07'
+  preuve: directe
+  information: primaire
+  credibilite: 2
+  verifie: agent
+  note: "Relu sur l'agrandissement par l'agent principal. Même mention le 21 juillet 1596 (même image, page de droite, 1er acte), avec pour parrain « noble Jehan bertrand despinas » (lecture simple, non relue)."
+- id: a16
+  texte: "Le 17 février 1597, noble Jean d'Espinas, sieur de Caladrue, est parrain à Lézat ; la marraine est damoiselle Claire d'Espinas."
+  citation: "le parrin noble Johan despinas s.r de Calladrue la marrine damoyselle Clare despinas"
+  locus: "GG7, image 65, page de droite, dernier acte (« Le xvij febrier », 1597)"
+  sujets: [jean-arnaud-d-espinas]
+  date: '1597-02-17'
+  preuve: directe
+  information: primaire
+  credibilite: 2
+  verifie: agent
+  note: "Relu sur l'agrandissement par l'agent principal. La généalogie de 2026 place ce parrainage au 23 février 1597 ; le registre porte « xvij »."
+- id: a17
+  texte: "Le 27 mai 1594, la marraine d'un enfant baptisé à Lézat est « madamoyselle Anne d'Espinas, femme de M. de Rochefort »."
+  citation: "la marrine madamoyselle anne despinas femme de m.r de rochefort"
+  locus: "GG7, image 32, page de droite, 4e acte (« Le 27 mey », 1594)"
+  sujets: []
+  date: '1594-05-27'
+  preuve: directe
+  information: primaire
+  credibilite: 2
+  verifie: agent
+  note: "Relu sur l'agrandissement par l'agent principal (« femme » mal formé). Confirme le mariage d'Anne, fille de Martin, avec François de Rochefort (roquemaurel-familles-du-midi.a10)."
+- id: a18
+  texte: "Dans les baptêmes de Lézat de décembre 1590 à mars 1601 (GG7, images 1-131), aucune Gabrielle d'Espinas n'apparaît, ni marraine, ni mère ; les Espinas présents sont Martin et Jean, sieurs de Caladrue, Domenge de Canals, veuve, Anne, Claire, Magdalene, Catherine et Germaine d'Espinas, noble Bertrand et noble Jean-Bertrand d'Espinas, et un noble Jean d'Espinas « sieur de [Peyrinasse ?] » (21 août 1599)."
+  locus: "GG7, images 1-131 (relevé de deux paléographes, 2026-10-22)"
+  sujets: [gabrielle-d-espinas, martin-d-espinas, jean-arnaud-d-espinas]
+  date: '1601-03'
+  preuve: negative
+  information: primaire
+  credibilite: 3
+  verifie: non
+  note: "Lecture simple et rapide de chaque page, non relue ; quelques pages passées ou mutilées (images 3, 61, 81, 101, 113, 114, 118). Ne pas être marraine ne prouve pas l'absence ni la mort."
 ---
-Actes de la paroisse de Lézat connus par leur indexation sur Geneanet : baptêmes d'enfants de Bertrand Despinas en 1602 et 1611 (Gabriel), familles Despinas de 1589 à 1735. Source originale, mais vue seulement à travers un index : lectures à contrôler sur les images.
+Registres originaux des baptêmes de Lézat-sur-Lèze (AD Ariège, 75 EDT GG1-GG9, 1561-1612), numérisés ; les
+premières assertions (a1-a4) viennent de l'index Geneanet et sont à contrôler. Les autres ont été lues sur les images
+(a5-a17 relues par l'agent principal). Le 2026-10-22, les 522 images ont été téléchargées (cache/ad09-lezat-gg/) et
+GG7 (décembre 1590 - mars 1601) lu en entier [[registres-paroissiaux-lezat.a18]] ; GG1-GG6, GG8 et GG9 n'ont été lus
+qu'en partie (lecture interrompue). La généalogie de 2026 signale que les années 1566-1578 manquent.

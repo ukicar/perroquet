@@ -27,7 +27,7 @@ predictions:
     resultat: null
     enquetes: []
 matrice:
-  - {preuve: site-roquemaurel.a14, H1: C, H2: I, H3: N, note: "Le site dit Guillaume « second fils » substitué à « son frère aîné Arnaud » (testament de 1552), sans citer la pièce."}
+  - {preuve: site-roquemaurel.a14, H1: C, H2: I, H3: N, note: "Le site dit Guillaume « second fils » substitué à « son frère aîné Arnaud » (testament de 1552) ; sa note 23 renvoie, pour ce testament, à « BN pièces originales 2544 Roquelaure-Roquendorf » (site-roquemaurel.a30), dossier non numérisé."}
   - {preuve: monluc-lettres-ruble.a8, H1: I, H2: C, H3: N, note: "« L'aîné Rocquemaurel » était maréchal des logis du feu roi de Navarre : ce n'est pas Arnaud, puisque Monluc oppose cet aîné au « jeune Rocquemaurel » tué."}
   - {preuve: samiac-bsa-1917-ustou.a3, H1: N, H2: C, H3: N, note: "Girons se dit en 1560 maréchal des logis de la compagnie du roi de Navarre : c'est l'aîné de Monluc. Lu par un agent, non relu."}
   - {preuve: monluc-lettres-ruble.a1, H1: N, H2: C, H3: C, note: "« le jeune Rocquemaurel » : cadet, ou simplement fils par rapport au père ; peu diagnostique."}
@@ -37,6 +37,7 @@ confiance: possible
 verdict: "Monluc distingue « l'aîné Rocquemaurel », maréchal des logis du roi de Navarre, du « jeune Rocquemaurel » tué à Soueix, et Samiac montre que ce maréchal des logis est Girons : Girons l'aîné et Arnaud cadet (H2) est la lecture la plus naturelle, mais l'histoire familiale fait d'Arnaud l'aîné, et « le jeune » peut seulement distinguer le fils du père. En l'état, la question est indécise (H3 mène par défaut) ; le testament de 1552 tranchera."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "propagation : inférence apparue en mettant à jour les biographies (samiac-bsa-1917-ustou.a3, monluc-lettres-ruble.a8)"}
+  - {date: "2026-10-22", changement: "note de la ligne site-roquemaurel.a14 corrigée (la pièce citée par le site est BnF Pièces originales 2544) ; cotes et confiances inchangées", cause: "site-roquemaurel.a30, relu sur le site"}
 sous_questions: []
 ---
 Question ouverte lors de la mise à jour des biographies, pour que l'ordre des frères repose sur un verdict et non sur

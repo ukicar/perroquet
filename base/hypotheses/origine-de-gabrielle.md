@@ -64,10 +64,10 @@ predictions:
   - id: P7
     h: [H1, H5]
     attendu: "Les registres paroissiaux de Lézat (GG 1, à partir de 1561 environ) nomment Gabrielle d'Espinas avec des Espinas de Caladroy (marraine en 1589, parrainages croisés)."
-    ou_chercher: "Registres paroissiaux de Lézat-sur-Lèze, AD Ariège (numérisés en ligne ; site qui bloque les agents)."
+    ou_chercher: "Registres paroissiaux de Lézat-sur-Lèze, AD Ariège (numérisés ; images téléchargées dans cache/ad09-lezat-gg/)."
     diagnostique: moyenne
-    statut: non_testee
-    resultat: null
+    statut: confirmee
+    resultat: "En partie : une « madamoyselle » Gabrielle d'Espinas est marraine à Lézat en novembre 1587 et juin 1588 (registres-paroissiaux-lezat.a10, a11), au temps où Martin d'Espinas, sieur de Caladrue, y est parrain (a12, a13) ; mais aucun acte ne les réunit, l'identité avec la veuve n'est pas établie, et elle n'y paraît plus de 1591 à 1601 (a18). Rien en 1589 (a8). Déjà pesé dans la matrice (a10, a11) : confiances inchangées."
     enquetes: []
   - id: P8
     h: [H5, H6]
@@ -134,6 +134,7 @@ historique:
   - {date: "2026-10-08", changement: "ligne ajoutée ; confiance inchangée", cause: "catalogue-ad09.a1-a2 : la cote 1 J 94 et le procès 1567-1603 sont confirmés par le catalogue des AD Ariège"}
   - {date: "2026-10-08", changement: "lignes ajoutées (registre de Lézat lu sur l'original)", cause: "registres-paroissiaux-lezat.a5, a8"}
   - {date: "2026-10-08", changement: "trois lignes ajoutées (registres de Lézat relus sur l'original) ; confiance inchangée", cause: "registres-paroissiaux-lezat.a9, a11, a12"}
+  - {date: "2026-10-22", changement: "P7 : non_testee → confirmee (en partie) ; confiances inchangées (a10 et a11 déjà dans la matrice)", cause: "registres-paroissiaux-lezat.a10, a11, a18 ; r-2026-10-22-lezat-gg7-espinas-1590-1601"}
 sous_questions: []
 ---
 ## Ce que l'on sait
@@ -207,8 +208,9 @@ non nommée, cession possible) et ajouté H6 (sœur de Jean de Caladroy).
 Gallica et Geneanet n'ont rien donné qui relie Gabrielle à une famille
 ([[r-2026-10-07-gallica-espinas-de-cardonne-gabrielle]], [[r-2026-10-07-geneanet-releves-gabrielle-espinas]],
 [[r-2026-10-06-gallica-gabrielle-d-espinas]]) ; les arbres en ligne la donnent sans parents
-[[arbres-geneanet-roquemaurel.a1]]. L'armorial de La Roque n'a pas répondu à la recherche OCR
-([[r-2026-10-06-la-roque-armorial-ocr-espinas]]).
+[[arbres-geneanet-roquemaurel.a1]]. L'armorial de La Roque n'a pas encore été lu : la recherche OCR
+([[r-2026-10-06-la-roque-armorial-ocr-espinas]]) portait sur le volume de Montpellier, non sur celui de Toulouse,
+qui reste à trouver ([[la-roque-armorial-languedoc]]).
 
 ## Ce qui trancherait
 

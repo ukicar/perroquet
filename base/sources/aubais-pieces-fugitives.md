@@ -160,7 +160,6 @@ assertions:
   information: secondaire
   credibilite: 5
   verifie: non
-  note: paraphrase des notes du 6-7 oct. 2026 ; citation à relever sur la source ; date fautive selon les notes
-    (1609).
+  note: "paraphrase des notes du 6-7 oct. 2026 ; citation à relever sur la source. Date fautive : le contrat est du 5 septembre 1599 selon la généalogie de 2026 (roquemaurel-familles-du-midi.a11) ; la correction « 1609 » des notes était sans source."
 ---
-Recueil imprimé résumant les jugements de noblesse ; la notice n° 799 « Espinas (Mirepoix, Rieux) » (p. 68, Gallica vue 287) donne la filiation des Espinas de Cardonne depuis Pierre (confrère en 1528, testament du 4 janvier 1560). Elle repose sur les titres produits en 1669, non vus. Une coquille au moins (mariage Galauba daté 1509 pour 1609) invite à contrôler les dates.
+Recueil imprimé résumant les jugements de noblesse ; la notice n° 799 « Espinas (Mirepoix, Rieux) » (p. 68, Gallica vue 287) donne la filiation des Espinas de Cardonne depuis Pierre (confrère en 1528, testament du 4 janvier 1560). Elle repose sur les titres produits en 1669, non vus. Une coquille au moins (mariage Galauba daté 1509 pour 1599 [[roquemaurel-familles-du-midi.a11]]) invite à contrôler les dates.

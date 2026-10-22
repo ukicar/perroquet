@@ -7,7 +7,7 @@ auteur: ukicar
 outil: gallica-texte
 requete: Espinas | Despinas | Espinasse | Cardonne | Spinas
 perimetre: gallica ark:/12148/bpt6k54249441
-resultat: positif
+resultat: negatif
 total: 3
 resultats:
 - terme: Espinas
@@ -29,3 +29,5 @@ hypotheses:
 ---
 
 Interprétation : dans La Chenaye-Desbois (bpt6k54249441), aucune famille Espinas du Midi : seulement Espinay (Bretagne), la maison catalane de Cardona (« Cardonne ») et une branche « de Spina ». Pas de lien Espinas–Cassagnet. Négatif.
+
+_Résultat corrigé le 2026-10-22 (« positif » → « négatif ») : l'outil de recherche note « positif » dès qu'il y a des réponses ; aucune ne répond à l'objet de la recherche._
