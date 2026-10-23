@@ -28,3 +28,10 @@ La date diffère selon les sources : 25 mai 1567 chez Crespin (dès 1570) et Cas
 Aucune source ne donne le prénom de Tilladet (François de Saint-Orens est le plus probable, voir
 [[francois-de-cassagnet-saint-orens]]) ni celui de « ce Roquemaurel » ; l'histoire familiale y place
 [[girons-de-roquemaurel]] [[site-roquemaurel.a28]], sans pièce à l'appui.
+
+Jeanne d'Albret, comtesse de Foix, dénonça au roi ces excès : les capitaines « Tilladet, Mauvesin et Castelnau »
+avaient commis « massacres volleries, viollemens de femmes et de filles » aux Cabannes et à Cassaignabère, en
+Nébouzan, quand ils furent « envoyez en Comminges pour la querelle des s. de Soulan et de Rocquemorel »
+[[ruble-ed-memoires-et-poesies-de-jeanne-d-albret-1893.a1]]. Son éditeur, Ruble, attribue la prise des Cabannes à Castelnau de Durban, chef de bandes catholiques,
+qui aurait remis les réfugiés à Tilladet le 26 mai, et voit dans ce Tilladet Antoine de Cassagnet, sans source
+[[ruble-ed-memoires-et-poesies-de-jeanne-d-albret-1893.a2]].

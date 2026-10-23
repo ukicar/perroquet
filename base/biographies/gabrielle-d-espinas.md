@@ -40,7 +40,7 @@ survivant.{{succession-de-soueix#H1|Par substitution dans le testament paternel 
 Au début de février 1567, vers le 2, [[jean-francois-de-mauleon|Jean-François de Mauléon]], sieur de Soulan, et
 son beau-frère le [[le-jeune-fontrailles|jeune Fontrailles]] surprirent de nuit la maison
 d'Arnaud.{{probable|Monluc au roi, 14 février 1567 : « depuis douze jours en çà ». [[monluc-lettres-ruble.a1|Monluc]]}}
-La querelle, à en croire Monluc, était née d'un oiseau de proie ; Crespin, en 1570, rapporte le même bruit.{{probable|« à cause (comme on disoit) de quelque oyseau de proye ». [[monluc-lettres-ruble.a11|Monluc]], [[crespin-1570.a7|Crespin]]}}
+La querelle, à en croire Monluc, était née d'un oiseau que Fontrailles et Soulan avaient pris de force aux Roquemaurel ; Crespin, en 1570, parle d'un « oyseau de proye », comme d'un bruit.{{probable|« pour ung oyseau que le dict Fonteraille et Solan leur avoient prins d'audace » ; « à cause (comme on disoit) de quelque oyseau de proye ». [[monluc-lettres-ruble.a11|Monluc]], [[crespin-1570.a7|Crespin]]}}
 Les assaillants mirent le feu à la maison ;
 Arnaud y périt avec six autres personnes,{{probable|« bruslé la maison, le dict Rocquemaurel et six autres personnes ». [[monluc-lettres-ruble.a2|Monluc]], [[cabinet-d-hozier-298.a3|Preuves de 1677]]}}
 parmi lesquelles se trouvaient peut-être deux prêtres tués au

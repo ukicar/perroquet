@@ -143,10 +143,9 @@ assertions:
   verifie: non
   note: paraphrase des notes du 6-7 oct. 2026 ; citation à relever sur la source
 - id: a11
-  texte: La querelle entre Fontrailles et Soulan d'une part et les Roquemaurel d'autre part est née d'un oiseau
-    de proie.
-  citation: pour ung oyseau
-  locus: t. V, lettre 160 (Agen, 14 févr. 1567), p. 77-83
+  texte: "La querelle entre Fontrailles et Soulan d'une part et les Roquemaurel d'autre part est née d'un oiseau que Fontrailles et Soulan avaient pris de force (« d'audace ») aux Roquemaurel."
+  citation: "il est intervenu une querelle entre eulx deux, les Rocquemaurelz, qui sont aussi de la nouvelle religion, pour ung oyseau que le dict Fonteraille et Solan leur avoient prins d'audace."
+  locus: "t. V, lettre 160 (Agen, 14 févr. 1567), p. 78 (OCR archive.org commentairesetle05monl, l. 4173-4177)"
   sujets:
   - le-jeune-fontrailles
   - jean-francois-de-mauleon
@@ -154,8 +153,8 @@ assertions:
   preuve: directe
   information: secondaire
   credibilite: 3
-  verifie: non
-  note: Citation réduite aux mots relevés dans les notes.
+  verifie: agent
+  note: "Relu sur l'OCR le 2026-10-22. Monluc ne dit pas « oiseau de proie » : c'est Crespin (crespin-1570.a7) qui parle de « quelque oyseau de proye », comme d'un bruit. Le texte complet dit que l'oiseau avait été pris aux Roquemaurel par Fontrailles et Soulan."
 - id: a12
   texte: Quatorze ou quinze cents hommes sont en armes ; le parti de Soulan tient Saint-Girons, dont la moitié appartient
     au vicomte de Fimarcon ; les Roquemaurel sont dans une ville royale (Saint-Lizier).
@@ -451,5 +450,17 @@ assertions:
   information: secondaire
   credibilite: 2
   verifie: agent
+- id: a34
+  texte: Monluc dit Soulan de la nouvelle religion.
+  citation: "Le dict Solan est bien de la religion nouvelle"
+  locus: "t. V, lettre 160 (Agen, 14 févr. 1567), p. 78 (OCR archive.org commentairesetle05monl, l. 4172)"
+  sujets:
+  - jean-francois-de-mauleon
+  date: '1567-02-14'
+  preuve: directe
+  information: secondaire
+  credibilite: 3
+  verifie: agent
+  note: "Lu sur l'OCR le 2026-10-22. Ruble le dit aussi « gentilhomme huguenot du comté de Foix » (ruble-ed-memoires-et-poesies-de-jeanne-d-albret-1893.a3)."
 ---
 Lettres de Blaise de Monluc publiées par A. de Ruble (Société de l'histoire de France, 5 vol., 1864–1872) ; la lettre 160 à Charles IX (Agen, 14 février 1567, t. V, p. 77-82) est le seul témoignage contemporain connu sur l'incendie de Soueix. Monluc écrit une douzaine de jours après les faits, d'après ce qu'on lui a « mandé », et ne nomme pas la veuve ; il dit les Roquemaurel protestants, ce que contredisent d'autres sources et l'index de Ruble. Les notes et l'index de Ruble (t. V) sont précieux mais attribuent de façon incohérente les mentions de « Tilladet » à Antoine ou à François de Cassagnet. Consultée par l'OCR d'archive.org.

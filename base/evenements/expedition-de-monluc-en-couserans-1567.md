@@ -42,3 +42,8 @@ mai, et l'ordonnance du 11 juillet compte les frais jusqu'au départ du « cappi
 [[lestrade-1900.a8]]. L'identité de ce capitaine (François ou Antoine de Cassagnet) est discutée : la requête nomme
 Saint-Orens, l'histoire familiale des Roquemaurel tient pour Antoine [[site-roquemaurel.a24]]. Les frais donnèrent
 lieu à l'[[ordonnance-de-monluc-du-11-juillet-1567]], à l'[[arbitrage-d-agen-1567]] et au [[role-de-la-taxe-1568]].
+
+La reine de Navarre, protestante et comtesse de Foix, s'en plaignit au roi : les capitaines « Tilladet, Mauvesin et
+Castelnau », envoyés en Comminges « pour la querelle des s. de Soulan et de Rocquemorel », avaient commis massacres,
+pillages et viols aux Cabannes et à Cassaignabère, en Nébouzan, trois ou quatre mois avant la reprise de la guerre
+[[ruble-ed-memoires-et-poesies-de-jeanne-d-albret-1893.a1]]. C'est un troisième témoin contemporain de l'expédition, après Monluc et le Discours de Pamiers.

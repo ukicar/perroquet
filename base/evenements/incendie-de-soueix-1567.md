@@ -14,8 +14,8 @@ approximative du 2 février 1567. Ils brûlèrent la maison, Roquemaurel et six 
 femme fut prise par les assaillants [[monluc-lettres-ruble.a4]], Monluc ayant en outre reçu un rapport sur une
 atteinte à son honneur [[monluc-lettres-ruble.a5]]. L'abrégé des preuves de Malte de 1677 parle de l'« Incendie de
 la maison de Souis » et du « meurtre » de noble Arnaud de Roquemaurel [[cabinet-d-hozier-298.a3]]. Monluc fait
-remonter la querelle à un oiseau de proie [[monluc-lettres-ruble.a11]], ce que Crespin rapporte aussi comme un bruit
-[[crespin-1570.a7]] ; elle mettait en armes quatorze ou quinze
+remonter la querelle à un oiseau que Fontrailles et Soulan avaient pris de force aux Roquemaurel
+[[monluc-lettres-ruble.a11]] ; Crespin parle, comme d'un bruit, de « quelque oyseau de proye » [[crespin-1570.a7]] ; elle mettait en armes quatorze ou quinze
 cents hommes [[monluc-lettres-ruble.a12]].
 
 Le bilan reste incertain. Samiac, en 1914, écrit lui aussi que Soulan fit brûler Arnaud dans son château « avec six

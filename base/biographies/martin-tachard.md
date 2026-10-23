@@ -1,7 +1,7 @@
 ---
 titre: Martin Tachard
 sous_titre: "Ministre réformé né à Montauban, pris aux Cabannes en mai 1567 par les troupes levées contre Soulan et les Roquemaurel, pendu à Toulouse en juillet 1567."
-mise_a_jour: "2026-10-08"
+mise_a_jour: "2026-10-22"
 ---
 On ne connaît [[martin-tachard|Martin Tachard]] que par les récits protestants de sa capture et de sa mort, dont le
 plus ancien qui lui soit consacré est la notice que Jean Crespin imprima à Genève en 1570, trois ans après les faits.
@@ -21,7 +21,7 @@ Il s'y trouvait au printemps 1567 avec une trentaine de réfugiés de Pamiers, �
 passer en Béarn.{{probable|[[discours-des-troubles-de-pamiers.a4|Discours de Pamiers]]}}
 
 Son sort se noua alors avec celui de l'entourage de [[gabrielle-d-espinas|Gabrielle d'Espinas]]. La querelle des
-sieurs de Solan et de Roquemaurel, née, disait-on, d'un oiseau de proie, avait mis le Comminges en armes et causé
+sieurs de Solan et de Roquemaurel, née, disait-on, d'un « oyseau de proye » que Fontrailles et Soulan avaient pris aux Roquemaurel, avait mis le Comminges en armes et causé
 « des meurtres, bruslemens & autres desordres d'vn costé & d'autre » : c'est dans ce conflit qu'avait péri, au début
 de février, [[arnaud-ii-de-roquemaurel|Arnaud de Roquemaurel]], mari de Gabrielle.{{probable|Crespin ne nomme personne ; le rapprochement avec Soueix vient de Monluc. [[crespin-1570.a7|Crespin 1570]], [[monluc-lettres-ruble.a11|Monluc]]}}
 Le roi en chargea [[blaise-de-monluc|Monluc]], qui devait se rendre sur les lieux avec le canon pour punir les

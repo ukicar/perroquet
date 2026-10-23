@@ -75,7 +75,7 @@ ni de la veuve [[monluc-lettres-ruble.a16]].
 ## Ce que dit la lettre
 
 C'est un rapport de lieutenant général. Monluc expose une guerre privée entre Fontrailles et Soulan d'une part et
-les Roquemaurel d'autre part, née « pour ung oyseau » [[monluc-lettres-ruble.a11]]. Le Parlement a ajourné les parties
+les Roquemaurel d'autre part, née « pour ung oyseau » que Fontrailles et Soulan « leur avoient prins d'audace » [[monluc-lettres-ruble.a11]]. Le Parlement a ajourné les parties
 [[monluc-lettres-ruble.a32]]. Il avait déjà envoyé le vice-sénéchal La Chappelle, à qui l'on a conseillé de repartir
 faute d'un camp [[monluc-lettres-ruble.a31]]. Il raconte l'incendie : la femme de Roquemaurel et un enfant se jettent
 par une fenêtre, les assaillants la prennent [[monluc-lettres-ruble.a3]] [[monluc-lettres-ruble.a4]], et « l'on m'a

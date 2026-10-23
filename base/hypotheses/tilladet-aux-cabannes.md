@@ -36,6 +36,8 @@ predictions:
     resultat: "8 oct. 2026 : Crespin relu en entier, éd. de 1570 et de 1619 : seul « le sieur de Tilladet & autres Capitaines » est nommé, et Tachard est amené à Tilladet (crespin-1570.a11, a13). Rien pour H3 de ce côté ; restent le Discours complet et la procédure."
     enquetes: []
 matrice:
+  - {preuve: ruble-ed-memoires-et-poesies-de-jeanne-d-albret-1893.a1, H1: C, H2: C, H3: N, note: "Jeanne d'Albret (1568 ?) : les capitaines « Tilladet, Mauvesin et Castelnau » envoyés en Comminges pour la querelle Soulan-Roquemaurel ont commis les excès des Cabannes : même troupe que l'expédition ; ne dit pas quel Tilladet."}
+  - {preuve: ruble-ed-memoires-et-poesies-de-jeanne-d-albret-1893.a2, H1: I, H2: C, H3: N, note: "Note de Ruble (1893), sans source : ce Tilladet serait Antoine ; Ruble se contredit ailleurs sur les deux frères (poids faible)."}
   - {preuve: discours-des-troubles-de-pamiers.a3, H1: C, H2: C, H3: I, note: "Les Cabannes furent attaquées par les mêmes troupes, « quand ils eurent exécuté leur commission » : le chef est celui de l'expédition (voir commandant-en-couserans-1567)."}
   - {preuve: lestrade-1900.a2, H1: C, H2: I, H3: I, note: "Le chef des compagnies de l'expédition est Saint-Orens ; combiné à la ligne précédente, cela désigne François. Inférence en deux temps."}
   - {preuve: discours-des-troubles-de-pamiers.a2, H1: C, H2: C, H3: I, note: "« sous la charge du capitaine Tilladet », sans prénom."}
@@ -57,6 +59,7 @@ verdict: "Le Tilladet des Cabannes est plausiblement François de Cassagnet, sei
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche du 7 octobre 2026"}
   - {date: "2026-10-08", changement: "lignes Crespin rapportées à l'édition de 1570 ; P3 en partie examinée ; aucun changement de confiance", cause: "lecture de crespin-1570"}
+  - {date: "2026-10-22", changement: "deux lignes ajoutées (Jeanne d'Albret ; note de Ruble) ; confiances inchangées (H1 mène toujours)", cause: "ruble-ed-memoires-et-poesies-de-jeanne-d-albret-1893.a1, a2"}
 sous_questions: [commandant-en-couserans-1567, date-du-raid-des-cabannes]
 ---
 ## La question

@@ -20,7 +20,7 @@ fille Catherine en 1561 [[roquemaurel-familles-du-midi.a5]] ; en 1589, le regist
 [[registres-paroissiaux-lezat.a6]], et une damoiselle « ant. despinas » [[registres-paroissiaux-lezat.a7]] ; aucune
 Gabrielle d'Espinas n'y figure de juillet à septembre 1589 [[registres-paroissiaux-lezat.a8]].
 
-En 1569, l'abbé de Lézat vend la métairie de Malsang, adjugée à un Jehan d'Espinas [[gondal-1969.a1]] ; elle passe
+En 1568, les réformés ravagent l'abbaye de Lézat et les églises qui en dépendent, et l'abbé doit se cacher dans ses bois [[huguenots-diocese-de-rieux-1904.a1]]. En 1569, l'abbé de Lézat vend la métairie de Malsang, adjugée à un Jehan d'Espinas [[gondal-1969.a1]] (aucune pièce vue ne relie cette vente aux ravages de l'année précédente) ; elle passe
 ensuite aux Médrano par le mariage de Domenge d'Espinasse [[revue-de-gascogne-1880.a1]]. Des Espinas sont présents à
 Lézat de 1561 [[registres-paroissiaux-lezat.a9]] à 1735 [[registres-paroissiaux-lezat.a3]] ; la branche de Caladrue y est
 attestée sans interruption de 1581 à 1601 [[registres-paroissiaux-lezat.a13]] [[registres-paroissiaux-lezat.a18]], dont les enfants de Bertrand Despinas baptisés en 1602 et

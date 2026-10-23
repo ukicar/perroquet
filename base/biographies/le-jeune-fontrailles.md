@@ -1,7 +1,7 @@
 ---
 titre: le jeune Fontrailles
 sous_titre: "Frère du sénéchal d'Armagnac et beau-frère de Soulan, coauteur de l'attaque de Soueix ; connu seulement en 1567."
-mise_a_jour: "2026-10-08"
+mise_a_jour: "2026-10-22"
 ---
 Le [[le-jeune-fontrailles|jeune Fontrailles]] n'est connu que par les lettres de
 [[blaise-de-monluc|Monluc]], qui ne lui donnent pas de prénom. Monluc le dit frère du sénéchal d'Armagnac et
@@ -19,8 +19,7 @@ Fontrailles, faite le 5 juin 1567 en vertu d'un arrêt du 26 mai, deux jours apr
 Au début de février 1567, vers le 2, il surprit de nuit avec Soulan la maison
 d'[[arnaud-ii-de-roquemaurel|Arnaud de Roquemaurel]] à [[soueix|Soueix]], que les assaillants brûlèrent avec son
 maître et six autres personnes : c'est l'[[incendie-de-soueix-1567|incendie de Soueix]].{{probable|[[monluc-lettres-ruble.a1|Monluc]], [[monluc-lettres-ruble.a2|id.]]}}
-La querelle avec les [[famille-de-roquemaurel|Roquemaurel]] était née, selon Monluc, « pour ung
-oyseau ».{{probable|Monluc, et Crespin en 1570 qui le rapporte comme un bruit (« comme on disoit »). [[monluc-lettres-ruble.a11|Monluc]], [[crespin-1570.a7|Crespin]]}}
+La querelle avec les [[famille-de-roquemaurel|Roquemaurel]] était née, selon Monluc, « pour ung oyseau » que Fontrailles et Soulan « leur avoient prins d'audace ».{{probable|Monluc, et Crespin en 1570 qui le rapporte comme un bruit (« comme on disoit »). [[monluc-lettres-ruble.a11|Monluc]], [[crespin-1570.a7|Crespin]]}}
 Monluc fait de lui un portrait sévère : « Il n'a aucune religion, car autant de pilleries fait-il sur les ungs que
 sur les autres » ; les officiers de l'évêque de [[comminges|Comminges]] se plaignaient que sa bande s'en prît aux
 « gens d'esglise » et saisît des bénéfices par force.{{plausible|Jugement d'un adversaire. [[monluc-lettres-ruble.a9|Monluc]], [[monluc-lettres-ruble.a13|id.]]}}

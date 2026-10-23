@@ -30,8 +30,7 @@ n'exclut une union plus tardive.{{mariage-d-arnaud-et-gabrielle|La date « vers 
 Le couple eut au moins un enfant, dont on ignore le nom.{{probable|« quelque enfant qu'il avoit ». [[monluc-lettres-ruble.a3|Monluc]], [[site-roquemaurel.a2|Site Roquemaurel]]}}
 
 Les Roquemaurel étaient en querelle avec [[jean-francois-de-mauleon|Jean-François de Mauléon]], sieur de Soulan,
-et [[le-jeune-fontrailles|Fontrailles]] ; à en croire Monluc, elle était née « pour ung
-oyseau ».{{probable|Monluc, et Crespin en 1570 qui le rapporte comme un bruit (« comme on disoit »). [[monluc-lettres-ruble.a11|Monluc]], [[crespin-1570.a7|Crespin]]}}
+et [[le-jeune-fontrailles|Fontrailles]] ; à en croire Monluc, elle était née « pour ung oyseau » que Fontrailles et Soulan « leur avoient prins d'audace ».{{probable|Monluc, et Crespin en 1570 qui le rapporte comme un bruit (« comme on disoit »). [[monluc-lettres-ruble.a11|Monluc]], [[crespin-1570.a7|Crespin]]}}
 Le [[parlement-de-toulouse|Parlement de Toulouse]] avait déjà ajourné les parties ; selon Monluc, « Les
 Roquemaurelz se sont toujours présentés et les autres non ».{{probable|Monluc, de seconde main. [[monluc-lettres-ruble.a32|Monluc]]}}
 Au début de février 1567, vers le 2, Fontrailles et Soulan surprirent Arnaud de nuit dans sa maison, la

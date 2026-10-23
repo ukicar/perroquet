@@ -1,7 +1,7 @@
 ---
 titre: Jean-François de Mauléon
 sous_titre: "Sieur ou vicomte de Soulan en Couserans, auteur avec le jeune Fontrailles de l'attaque de Soueix (1567), attesté de 1560 à 1571, mort avant novembre 1603."
-mise_a_jour: "2026-10-08"
+mise_a_jour: "2026-10-22"
 ---
 On ignore la date de naissance de [[jean-francois-de-mauleon|Jean-François de Mauléon]], sieur ou vicomte de
 [[soulan|Soulan]], en [[couserans|Couserans]].{{inconnu|Aucune source de la base ne la donne.}}
@@ -21,8 +21,7 @@ dans cette affaire.{{plausible|Inventaire imprimé de 1903, lu en OCR ; date et 
 Au début de février 1567, vers le 2, Soulan et son beau-frère le [[le-jeune-fontrailles|jeune Fontrailles]],
 allié à lui depuis six mois, surprirent de nuit la maison d'[[arnaud-ii-de-roquemaurel|Arnaud de Roquemaurel]] à
 [[soueix|Soueix]].{{probable|Monluc au roi, 14 février 1567 : « depuis douze jours en çà ». [[monluc-lettres-ruble.a1|Monluc]], [[monluc-lettres-ruble.a10|id.]]}}
-La querelle qui les opposait aux [[famille-de-roquemaurel|Roquemaurel]] était née, à en croire Monluc, « pour ung
-oyseau ».{{probable|Monluc, et Crespin en 1570 qui le rapporte comme un bruit (« comme on disoit »). [[monluc-lettres-ruble.a11|Monluc]], [[crespin-1570.a7|Crespin]]}}
+La querelle qui les opposait aux [[famille-de-roquemaurel|Roquemaurel]] était née, à en croire Monluc, « pour ung oyseau » que Fontrailles et Soulan « leur avoient prins d'audace ».{{probable|Monluc, et Crespin en 1570 qui le rapporte comme un bruit (« comme on disoit »). [[monluc-lettres-ruble.a11|Monluc]], [[crespin-1570.a7|Crespin]]}}
 Les assaillants mirent le feu à la maison : Arnaud y périt avec six autres personnes, tandis que sa femme,
 [[gabrielle-d-espinas|Gabrielle d'Espinas]], se jetait par une fenêtre avec un
 enfant.{{probable|« bruslé la maison, le dict Rocquemaurel et six autres personnes » ; Samiac, en 1914, dit de même que Soulan le « fit brûler avec six autres personnes ». [[monluc-lettres-ruble.a2|Monluc]], [[monluc-lettres-ruble.a3|id.]], [[demembrement-vicomte-couserans.a8|Samiac]]}}

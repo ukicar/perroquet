@@ -25,7 +25,7 @@ Monluc dit la famille « bien apparentés de toutes partz » [[monluc-lettres-ru
 religion [[monluc-lettres-ruble.a6]], alors que l'index de Ruble indexe le seigneur de Roquemaurel comme
 gentilhomme catholique [[monluc-lettres-ruble.a18]] : la religion de la famille en 1567 reste une question ouverte
 ([[religion-des-roquemaurel]], où l'hypothèse de Girons seul réformé mène). Sa querelle avec Soulan et Fontrailles,
-née d'un oiseau de proie [[monluc-lettres-ruble.a11]] [[crespin-1570.a7]], était déjà devant le Parlement de
+née d'un oiseau que Fontrailles et Soulan avaient pris de force aux Roquemaurel [[monluc-lettres-ruble.a11]] (« quelque oyseau de proye », selon un bruit que rapporte Crespin [[crespin-1570.a7]]), était déjà devant le Parlement de
 Toulouse, où les Roquemaurel comparaissaient toujours et leurs adversaires jamais [[monluc-lettres-ruble.a32]] ; le
 sénéchal de Toulouse, parent de Fontrailles et de Soulan, se disait sûr de faire entendre raison aux seuls
 Roquemaurel [[monluc-lettres-ruble.a33]]. Elle aboutit à l'[[incendie-de-soueix-1567]] ; en février 1567 les

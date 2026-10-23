@@ -38,7 +38,7 @@ est vraisemblablement lui, plaidait en 1563 contre le chapitre cathédral de [[p
 
 Monluc le désigne, avec le [[le-jeune-fontrailles]], son beau-frère et allié depuis six mois
 [[monluc-lettres-ruble.a10]], comme auteur de la surprise nocturne de la maison d'Arnaud de Roquemaurel
-[[monluc-lettres-ruble.a1]], au terme d'une querelle née « pour ung oyseau » [[monluc-lettres-ruble.a11]]
+[[monluc-lettres-ruble.a1]], au terme d'une querelle née « pour ung oyseau » que Fontrailles et Soulan « leur avoient prins d'audace » [[monluc-lettres-ruble.a11]]
 [[crespin-1570.a7]] ; Samiac écrit de même qu'il fit brûler Arnaud dans son château « avec six autres personnes »
 [[demembrement-vicomte-couserans.a8]]. En février 1567 son parti tenait Saint-Girons [[monluc-lettres-ruble.a12]].
 Monluc demanda au roi le rasement de sa maison [[monluc-lettres-ruble.a15]] et de l'artillerie pour marcher contre
@@ -62,3 +62,5 @@ Le 22 novembre 1603, il est dit « feu » à la fois dans la remontrance de Jean
 [[demembrement-vicomte-couserans.a9]] ; c'est elle qui, vicomtesse de Soulan, plaide de 1607 à 1610 contre
 l'héritier de Gabrielle au sujet des places de Soulan et de Lescure [[catalogue-ad09.a2]]. Il est donc mort entre
 juin 1571 et novembre 1603, à une date et en un lieu inconnus.
+
+Monluc le dit « bien de la religion nouvelle », comme les Roquemaurel qu'il combat [[monluc-lettres-ruble.a34]] [[monluc-lettres-ruble.a6]] : la querelle, selon lui, opposait deux maisons réformées ; Ruble en fait un « gentilhomme huguenot du comté de Foix » [[ruble-ed-memoires-et-poesies-de-jeanne-d-albret-1893.a3]].

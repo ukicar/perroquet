@@ -21,7 +21,7 @@ on lui avait mandé « quelque chose de l'honneur de la pouvre femme », sans pa
 passés.{{probable|[[monluc-lettres-ruble.a3|Monluc]], [[monluc-lettres-ruble.a5|id.]]}}
 Il ne la nomme pas et ne sait d'elle que ce qu'on lui rapporte : rien n'indique un lien personnel entre eux, et
 l'atrocité du crime sert, semble-t-il, à rendre pressante sa demande de troupes.{{monluc-et-gabrielle|Aucun indice d'une protection ; lettres inédites non vues. [[monluc-lettres-ruble.a3|Monluc]], [[monluc-lettres-ruble.a14|id.]]}}
-La querelle, écrit-il, était née « pour ung oyseau » et tenait en armes quatorze ou quinze cents
+La querelle, écrit-il, était née « pour ung oyseau » que Fontrailles et Soulan « leur avoient prins d'audace » et tenait en armes quatorze ou quinze cents
 hommes.{{probable|[[monluc-lettres-ruble.a11|Monluc]], [[monluc-lettres-ruble.a12|id.]]}}
 Il dit aussi les Roquemaurel « de la nouvelle religion », ce que contredit tout le reste du dossier ; l'aîné, qu'il
 dit ancien maréchal des logis du feu roi de Navarre, était, semble-t-il, [[girons-de-roquemaurel|Girons]], seul
