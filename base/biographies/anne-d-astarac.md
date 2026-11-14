@@ -1,7 +1,7 @@
 ---
 titre: Anne d'Astarac
 sous_titre: "Fille du seigneur de Fontrailles, femme de Jean-François de Mauléon, sieur de Soulan, par contrat de 1560."
-mise_a_jour: "2026-10-08"
+mise_a_jour: "2026-10-26"
 ---
 [[anne-d-astarac|Anne d'Astarac]] était la fille de [[jean-jacques-d-astarac|Jean-Jacques d'Astarac]], seigneur de
 Fontrailles et de Marestaing, et d'Anne de Narbonne, de la famille des
@@ -12,5 +12,8 @@ Le couple n'eut pas d'enfants.{{plausible|Même étude, seule à le dire. [[deme
 Par ce mariage, son frère, semble-t-il, devint le [[le-jeune-fontrailles|jeune Fontrailles]] que Monluc dit
 beau-frère de Soulan, et qui attaqua avec lui la maison de Soueix en février
 1567.{{plausible|Inférence : aucune source ne la dit sœur du jeune Fontrailles. [[monluc-lettres-ruble.a10|Monluc]], [[monluc-lettres-ruble.a1|id.]]}}
+Les éditeurs des *Huguenots en Bigorre* la disent sœur du baron de Montamat et de Michel d'Astarac, « le fameux
+Fontrailles » ; ils voient le jeune Fontrailles dans Montamat, Bernard d'Astarac, qui avait lui-même épousé une sœur
+de Soulan, Isabeau de Solan.{{identite-du-jeune-fontrailles|Notes d'éditeurs de 1883, sans pièce citée. [[durier-carsalade-huguenots-en-bigorre.a5|Durier et Carsalade]], [[durier-carsalade-huguenots-en-bigorre.a7|id.]]}}
 On ne sait rien d'autre d'elle : ni ses dates, ni sa part dans les événements de 1567, ni ce qu'elle devint après
 la condamnation de son mari.{{inconnu|Aucune assertion ne la nomme après 1560.}}

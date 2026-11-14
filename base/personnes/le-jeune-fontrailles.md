@@ -15,13 +15,24 @@ relations:
   - {rel: membre_de, vers: famille-d-astarac-fontrailles, preuves: [monluc-lettres-ruble.a10], confiance: probable, note: frère du sénéchal d'Armagnac}
   - {rel: enfant_de, vers: jean-jacques-d-astarac, preuves: [monluc-lettres-ruble.a10, demembrement-vicomte-couserans.a4], confiance: plausible, note: inférence — « beau-frère » de Soulan, qui a épousé Anne, fille de Jean-Jacques d'Astarac}
   - {rel: frere_soeur_de, vers: anne-d-astarac, preuves: [monluc-lettres-ruble.a10, demembrement-vicomte-couserans.a4], confiance: plausible, note: même inférence}
+  - {rel: participe_a, vers: querelle-de-l-oiseau, role: "prend l'oiseau aux Roquemaurel, avec Soulan", preuves: [monluc-lettres-ruble.a11], confiance: probable}
 ---
 Monluc nomme « Fontraille » avec Soulan comme auteur de la surprise de la maison de Roquemaurel
 [[monluc-lettres-ruble.a1]] ; il le dit frère du sénéchal d'Armagnac et beau-frère de Soulan, allié à lui depuis
 six mois [[monluc-lettres-ruble.a10]], sans religion et pillant les deux partis [[monluc-lettres-ruble.a9]], et
 rapporte que sa bande s'en prenait aux gens d'Église du Comminges [[monluc-lettres-ruble.a13]]. Monluc demanda le
 rasement de sa maison [[monluc-lettres-ruble.a15]] et marcha contre lui au printemps 1567
-[[monluc-lettres-ruble.a16]] [[courteault-1909.a1]].
+[[monluc-lettres-ruble.a16]] [[courteault-1909.a1]]. Avec Soulan, il prit aux Roquemaurel l'oiseau d'où naquit
+la [[querelle-de-l-oiseau]] [[monluc-lettres-ruble.a11]]. L'alliance de six mois dont parle Monluc en février 1567
+commence vers août 1566, après le départ de Soulan de Pamiers ([[troubles-de-pamiers-1566]]) ; Durier et Carsalade du
+Pont, qui mettent le jeune Fontrailles à Pamiers avec Soulan, ne sont pas suivis ici
+[[durier-carsalade-huguenots-en-bigorre.a2]].
+
+Les mêmes éditeurs reconnaissent en lui Bernard d'Astarac, baron de Montamat, mari d'Isabeau de Solan, sœur de
+Soulan : cette alliance lui aurait donné le château dans les montagnes du comté de Foix d'où Monluc l'accuse de
+rançonner le haut Comminges [[durier-carsalade-huguenots-en-bigorre.a7]]. Cela ferait de Soulan et de lui des
+beaux-frères deux fois ([[identite-du-jeune-fontrailles]]). Montamat resta en Béarn avec de grandes forces après le
+départ de Montgomery en 1569 [[durier-carsalade-huguenots-en-bigorre.a8]].
 
 Son prénom n'est pas établi : Bardies propose « probablement » Bernard d'Astarac, second frère du baron de
 Fontrailles [[bardies-1903.a10]], tandis que l'index de Ruble range les mentions de Fontrailles sous Gabriel et

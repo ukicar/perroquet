@@ -52,8 +52,11 @@ def main(argv=None):
     p = sub.add_parser("build", help="générer le site HTML dans site/"); p.add_argument("--publish", action="store_true", help="version pour lien claude.ai (site_publish/)")
     sub.add_parser("view", help="générer et ouvrir le site")
     p = sub.add_parser("score", help="scores ACH d'une ou toutes les questions"); p.add_argument("ids", nargs="*")
-    p = sub.add_parser("search", help="chercher dans Gallica / archive.org / fichiers locaux (consigné)")
-    p.add_argument("outil", choices=["gallica", "gallica-texte", "archive", "archive-texte", "local"])
+    p = sub.add_parser("search", help="chercher dans Gallica / archive.org / le corpus / MDZ / Europeana / fichiers locaux (consigné)")
+    p.add_argument("outil", choices=["gallica", "gallica-texte", "archive", "archive-texte", "corpus",
+                                     "mdz-texte", "europeana", "local"])
+    p.add_argument("--avec", nargs="+", help="corpus : ne garder que les passages où figure aussi un de ces mots")
+    p.add_argument("--filtre", help="corpus : ne lire que les livres dont l'id, le titre, le thème ou la région contient ce mot")
     p.add_argument("termes", nargs="+")
     p.add_argument("--index", default="gallica", help="index SRU Gallica : gallica, text, dc.title, dc.creator…")
     p.add_argument("--cql", help="requête CQL Gallica brute")
@@ -62,6 +65,8 @@ def main(argv=None):
     p.add_argument("--objet", help="objet de la recherche, en clair")
     p.add_argument("--no-log", action="store_true", help="ne pas consigner (exploration)")
     p.add_argument("--json", action="store_true")
+    p = sub.add_parser("corpus", help="livres choisis (corpus/livres.yaml) : état du cache ; --fetch télécharge les textes manquants")
+    p.add_argument("--fetch", action="store_true"); p.add_argument("--filtre")
     p = sub.add_parser("impact", help="ce qu'il faut revoir après un changement (fiches, synthèses, biographies, questions)")
     p.add_argument("ids", nargs="*"); p.add_argument("--since", help="référence git (défaut : dernier commit)")
     p = sub.add_parser("gallica", help="tâches en attente de Gallica : tester l'accès, relancer (--run)")
@@ -101,6 +106,14 @@ def main(argv=None):
     if args.cmd == "search":
         from .search import run
         run(args); return 0
+    if args.cmd == "corpus":
+        from .search import corpus_entries, corpus_cached, corpus_fetch
+        if args.fetch:
+            print(f"{corpus_fetch(args.filtre)} volume(s) à télécharger.")
+        for e in corpus_entries(args.filtre):
+            vols = e.get("archive", [])
+            print(f"{e['id']} : {sum(corpus_cached(v) for v in vols)}/{len(vols)} volume(s) en cache — {e.get('theme')}, {e.get('region')}")
+        return 0
     if args.cmd == "impact":
         from .impact import run
         return run(args)

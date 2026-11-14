@@ -15,3 +15,5 @@ __pycache__/
 *.zip
 .DS_Store
 site_publish/
+tools/.europeana-key
+.opencode/package-lock.json

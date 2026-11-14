@@ -11,6 +11,7 @@ relations:
   - {rel: seigneur_de, vers: soueix, preuves: [ad31-1b-74.a2, cabinet-d-hozier-298.a1, samiac-bsa-1917-ustou.a1], confiance: probable}
   - {rel: participe_a, vers: raid-des-cabannes-1567, preuves: [discours-des-troubles-de-pamiers.a3], confiance: plausible, role: 'instigateur (« ce Roquemaurel », sans prénom)'}
   - {rel: participe_a, vers: expedition-de-monluc-en-couserans-1567, preuves: [discours-des-troubles-de-pamiers.a1], confiance: probable, role: partie visée (doit poser les armes)}
+  - {rel: participe_a, vers: querelle-de-l-oiseau, role: "partie lésée (l'oiseau leur avait été pris)", preuves: [monluc-lettres-ruble.a11, crespin-1570.a7], confiance: probable}
 ---
 Famille noble du Couserans, coseigneurs puis seigneurs de Soueix. Au milieu du XVIe siècle, Jean de Roquemaurel,
 « coseigneur de Soueix », avait épousé [[catherine-d-ustou]], de la maison d'Ustou [[samiac-bsa-1917-ustou.a1]] ;

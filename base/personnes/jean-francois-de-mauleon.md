@@ -26,6 +26,9 @@ relations:
   - {rel: enfant_de, vers: marguerite-de-lordat, preuves: [demembrement-vicomte-couserans.a1], confiance: probable}
   - {rel: membre_de, vers: famille-de-mauleon, preuves: [demembrement-vicomte-couserans.a1], confiance: probable}
   - {rel: seigneur_de, vers: soulan, preuves: [demembrement-vicomte-couserans.a6, site-roquemaurel.a19, catalogue-ad09.a1], confiance: probable}
+  - {rel: participe_a, vers: troubles-de-pamiers-1566, role: chef dans la ville après le massacre, preuves: [monluc-lettres-ruble.a35], confiance: probable}
+  - {rel: participe_a, vers: querelle-de-l-oiseau, role: "prend l'oiseau aux Roquemaurel, avec Fontrailles", preuves: [monluc-lettres-ruble.a11, crespin-1570.a7], confiance: probable}
+  - {rel: participe_a, vers: campagne-de-montgomery-en-bigorre-1569, role: colonel de troupes logées à Ibos, preuves: [durier-carsalade-huguenots-en-bigorre.a4, durier-carsalade-huguenots-en-bigorre.a5], confiance: probable}
 ---
 Jean-François de Mauléon, sieur ou vicomte de Soulan, est le fils unique de [[raymond-roger-de-mauleon]] et de
 [[marguerite-de-lordat]] [[demembrement-vicomte-couserans.a1]] ; il épousa [[anne-d-astarac]], fille du seigneur
@@ -64,3 +67,23 @@ l'héritier de Gabrielle au sujet des places de Soulan et de Lescure [[catalogue
 juin 1571 et novembre 1603, à une date et en un lieu inconnus.
 
 Monluc le dit « bien de la religion nouvelle », comme les Roquemaurel qu'il combat [[monluc-lettres-ruble.a34]] [[monluc-lettres-ruble.a6]] : la querelle, selon lui, opposait deux maisons réformées ; Ruble en fait un « gentilhomme huguenot du comté de Foix » [[ruble-ed-memoires-et-poesies-de-jeanne-d-albret-1893.a3]].
+
+La [[querelle-de-l-oiseau]] s'inscrit dans un parcours de chef protestant du comté de Foix. Après le massacre du
+5 juin 1566, Soulan « s'est jeté dans Pamyer » et y resta chef jusqu'à l'envoi par le roi du capitaine Sarlabous
+[[monluc-lettres-ruble.a35]], que Joyeuse fit partir le 19 juillet ; la garnison et les « étrangers » quittèrent la
+ville vers le 21 juillet ([[troubles-de-pamiers-1566]]). L'alliance avec le jeune Fontrailles ne date que de l'été
+1566 [[monluc-lettres-ruble.a10]]. Durier et Carsalade du Pont, qui le disent à Pamiers avec Fontrailles et font
+envoyer Sarlabous par Monluc, se trompent sur ces deux points [[durier-carsalade-huguenots-en-bigorre.a2]].
+
+En 1569, le « seigneur de Solan, coronel des troupes » de Montgomery logées à Ibos, en Bigorre, rançonna la ville de
+seize cents livres [[durier-carsalade-huguenots-en-bigorre.a4]] ; les mêmes éditeurs, corrigeant une première note
+qui le rattachait aux Comminges [[durier-carsalade-huguenots-en-bigorre.a1]], l'identifient à François de Mauléon,
+seigneur de Solan et de Belpech, fils de Raymond-Roger et de Marguerite de Lordat, mari d'Anne d'Astarac
+[[durier-carsalade-huguenots-en-bigorre.a5]] : c'est bien lui. En octobre, un « mons. de Sola » conduit l'artillerie
+avec le baron de Lons [[durier-carsalade-huguenots-en-bigorre.a3]] ([[campagne-de-montgomery-en-bigorre-1569]]).
+Condamné à mort en mai 1567, il était donc libre et en armes deux ans plus tard.
+
+La tradition d'une mort à Lunel en 1570 vient sans doute d'une conjecture des mêmes éditeurs, qui le rapprochent du
+« Lalou beau-frère de Fontrailles » tué au siège de Lunel [[durier-carsalade-huguenots-en-bigorre.a6]] ; La
+Popelinière appelle cet homme « la Louë », maréchal de camp, et ne le dit pas sieur de Soulan
+[[la-popeliniere-1572.a1]] ([[mort-de-soulan]]).

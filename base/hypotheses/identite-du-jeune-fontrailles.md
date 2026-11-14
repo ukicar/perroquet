@@ -48,6 +48,7 @@ matrice:
   - {preuve: monluc-lettres-ruble.a10, H1: C, H2: C, H3: C, note: "Frère du sénéchal d'Armagnac et beau-frère de Soulan depuis six mois : vrai de tout fils cadet de Jean-Jacques d'Astarac."}
   - {preuve: roquemaurel-familles-du-midi.a8, H1: C, H2: I, H3: I, note: "Le 5 juin 1567, la place de Fontrailles est saisie par le procureur général, en vertu d'un arrêt du 26 mai 1567 (deux jours après l'arrêt contre Soulan), « en raison de ce qu'avait commis Bernard d'Astarac » : un Bernard de la famille est poursuivi au moment même de l'affaire de Soueix. Indépendant de Bardies (pièce d'archives citée par la généalogie de 2026), mais lu sur l'OCR, note d'archives mal rattachée, et l'acte ne dit pas ce que Bernard avait commis."}
   - {preuve: demembrement-vicomte-couserans.a4, H1: C, H2: C, H3: C, note: "Anne d'Astarac, femme de Soulan, est fille de Jean-Jacques d'Astarac, seigneur de Fontrailles : le jeune Fontrailles est son frère."}
+  - {preuve: durier-carsalade-huguenots-en-bigorre.a7, H1: C, H2: I, H3: I, note: "Durier et Carsalade (1883) : Bernard d'Astarac, baron de Montamat, mari d'Isabeau de Solan, sœur de Soulan, tenait par elle un château dans les montagnes du comté de Foix ; ils y voient le brigand de la lettre de 1567. Ils distinguent Michel d'Astarac, « le fameux Fontrailles » (a5). Identification d'éditeur, antérieure à Bardies, qui a pu la reprendre."}
 contestations: []
 meneur: H1
 confiance: possible
@@ -55,6 +56,7 @@ verdict: "Le jeune Fontrailles est sûrement un frère d'Anne d'Astarac, femme d
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
   - {date: "2026-10-21", changement: "meneur H2 → H1 ; confiance inchangée (possible)", cause: "roquemaurel-familles-du-midi.a8 (saisie de Fontrailles pour ce qu'avait commis Bernard d'Astarac, arrêt du 26 mai 1567), versée le 8 octobre dans la fiche de la famille mais pas encore dans cette question"}
+  - {date: "2026-10-26", changement: "nouvelle ligne de matrice (H1 cohérent) ; confiance inchangée (possible)", cause: "durier-carsalade-huguenots-en-bigorre.a7 ; Bardies (1903) peut dépendre de cette note"}
 sous_questions: []
 ---
 ## Ce qui est sûr
@@ -84,3 +86,11 @@ seigneur de Fontrailles et de Marestaing [[demembrement-vicomte-couserans.a3]],
 Ces témoignages restent faibles. Avec la saisie de 1567, le calcul ACH place H1 devant H2 ; avant elle, H2 menait
 d'une courte tête par le seul poids de l'édition Ruble. Vérifier l'index de Ruble ([[identite-du-jeune-fontrailles#P1]]) est le test le
 moins coûteux ; l'arrêt de 1567 serait décisif ([[identite-du-jeune-fontrailles#P2]]).
+
+## Les *Huguenots en Bigorre* (2026-10-26)
+
+Les éditeurs reconnaissent dans le Fontrailles de la lettre de 1567 Bernard d'Astarac, baron de Montamat, qui avait
+épousé Isabeau de Solan, sœur de Soulan, et tenait d'elle un château dans les montagnes du comté de Foix
+[[durier-carsalade-huguenots-en-bigorre.a7]] ; ils distinguent son frère Michel, « le fameux Fontrailles »
+[[durier-carsalade-huguenots-en-bigorre.a5]]. C'est un appui pour H1, mais d'éditeurs, sans pièce citée, et
+antérieur à Bardies, qui a pu le suivre : la confiance reste « possible » jusqu'à un acte qui donne le prénom.

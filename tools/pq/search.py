@@ -4,8 +4,13 @@ Every search is logged as a `recherche` fiche (unless --no-log): a negative resu
   pq search gallica <termes...>                catalogue + plein texte Gallica (SRU)
   pq search gallica-texte <ark> <termes...>    occurrences dans un document Gallica (ContentSearch, avec pages)
   pq search archive <termes...>                catalogue archive.org
-  pq search archive-texte <identifiant> <termes...>   occurrences dans le texte OCR d'un livre archive.org
+  pq search archive-texte <identifiant>[/<fichier>] <termes...>   occurrences dans le texte OCR d'un livre archive.org
+  pq search corpus <termes...> [--filtre m]    dans les livres choisis du corpus (corpus/livres.yaml), texte local
+  pq search mdz-texte <bsb…> <termes...>       occurrences dans un livre numérisé de la BSB Munich (MDZ), avec pages
+  pq search europeana <termes...>              notices Europeana (métadonnées, tous les termes ; clé dans tools/.europeana-key)
   pq search local <chemin> <termes...>         occurrences dans un fichier texte local (cache/…)
+
+Tous ces outils lisent un texte déjà existant (couche texte des numérisations) : jamais d'OCR ni d'image.
 """
 import os, re, html, json, datetime, subprocess, unicodedata
 import xml.etree.ElementTree as ET
@@ -84,13 +89,19 @@ def archive(terms, maximum=20):
 
 
 def archive_text_path(identifier):
-    path = os.path.join(CACHE_TXT, "archive", f"{identifier}.txt")
+    """`identifiant` ou `identifiant/fichier` (nom de base d'un volume dans un item à plusieurs volumes)."""
+    identifier, _, volume = identifier.partition("/")
+    path = os.path.join(CACHE_TXT, "archive", f"{identifier}{'--' + slugify(volume) if volume else ''}.txt")
     if os.path.exists(path):
         return path
     meta = _get(f"https://archive.org/metadata/{identifier}").json()
-    names = [f["name"] for f in meta.get("files", []) if f["name"].endswith("_djvu.txt")]
+    names = [f["name"] for f in meta.get("files", []) if f["name"].endswith("_djvu.txt")
+             and (not volume or f["name"] == f"{volume}_djvu.txt")]
     if not names:
-        raise SystemExit(f"Pas de texte OCR (_djvu.txt) pour {identifier}")
+        raise SystemExit(f"Pas de texte OCR (_djvu.txt) pour {identifier}" + (f"/{volume}" if volume else ""))
+    if len(names) > 1 and not volume:
+        print(f"Attention : {len(names)} volumes dans {identifier} ; lu : {names[0]}. "
+              f"Préciser `{identifier}/<fichier>` parmi : " + " ; ".join(n[:-9] for n in names))
     txt = _get(f"https://archive.org/download/{identifier}/{names[0]}", timeout=300).text
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
@@ -102,7 +113,7 @@ def grep_text(text, terms, url=None, context=220, limit=60):
     folded = fold(text)
     hits = []
     for t in terms:
-        for m in re.finditer(re.escape(fold(t)), folded):
+        for m in re.finditer(r"(?<![a-z0-9])" + re.escape(fold(t)), folded):  # début de mot : « Solan » ≠ « Marsolan »
             a, b = max(0, m.start() - context), min(len(text), m.end() + context)
             snippet = re.sub(r"\s+", " ", text[a:b])
             hits.append({"terme": t, "titre": f"car. {m.start()} : …{snippet}…", "url": url})
@@ -114,9 +125,113 @@ def grep_text(text, terms, url=None, context=220, limit=60):
 def archive_texte(identifier, terms):
     path = archive_text_path(identifier)
     text = open(path, encoding="utf-8").read()
-    hits = grep_text(text, terms, url=f"https://archive.org/details/{identifier}")
+    hits = grep_text(text, terms, url=f"https://archive.org/details/{identifier.partition('/')[0]}")
     return {"requete": " | ".join(terms), "perimetre": f"archive.org {identifier} (OCR, {os.path.relpath(path, REPO)})",
             "total": len(hits), "resultats": hits}
+
+
+def _clean(s, n=300):
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>|\{\{\{|\}\}\}", "", html.unescape(s or ""))).strip()[:n]
+
+
+# ---------------------------------------------------------------- corpus : livres choisis (corpus/livres.yaml)
+CORPUS = os.path.join(REPO, "corpus", "livres.yaml")
+
+
+def corpus_entries(filtre=None):
+    entries = yaml.safe_load(open(CORPUS, encoding="utf-8")) or []
+    if filtre:
+        f = fold(filtre)
+        entries = [e for e in entries if f in fold(" ".join(str(e.get(k, "")) for k in ("id", "titre", "theme", "region")))]
+    return entries
+
+
+def corpus_cached(identifier):
+    return os.path.exists(os.path.join(CACHE_TXT, "archive", f"{identifier}.txt"))
+
+
+def corpus_fetch(filtre=None):
+    """Télécharge le texte existant (_djvu.txt) des volumes absents du cache. Aucun OCR."""
+    todo = [(e["id"], v) for e in corpus_entries(filtre) for v in e.get("archive", []) if not corpus_cached(v)]
+    for i, (eid, v) in enumerate(todo, 1):
+        try:
+            archive_text_path(v)
+            print(f"[{i}/{len(todo)}] {eid} : {v}")
+        except (SystemExit, requests.RequestException) as e:
+            print(f"[{i}/{len(todo)}] {eid} : {v} — échec ({e})")
+    return len(todo)
+
+
+def corpus_search(terms, filtre=None, avec=None, per_volume=3, limit=80):
+    """Cherche les termes dans le texte local de chaque volume du corpus ; un résumé par livre, peu d'extraits.
+    `avec` : ne garder que les passages où figure aussi un de ces mots (à ~220 caractères)."""
+    out, counts, missing = [], {}, 0
+    for e in corpus_entries(filtre):
+        for v in e.get("archive", []):
+            path = os.path.join(CACHE_TXT, "archive", f"{v}.txt")
+            if not os.path.exists(path):
+                missing += 1
+                continue
+            hits = grep_text(open(path, encoding="utf-8", errors="replace").read(), terms,
+                             url=f"https://archive.org/details/{v}", limit=500)
+            if avec:
+                hits = [h for h in hits if any(fold(a) in fold(h["titre"]) for a in avec)]
+            if hits:
+                counts[f"{e['id']} [{v}]"] = len(hits)
+                for h in hits[:per_volume]:
+                    if len(out) < limit:
+                        out.append({**h, "titre": f"{e['titre']} [{v}] {h['titre']}"})
+    vols = sum(len(e.get("archive", [])) for e in corpus_entries(filtre))
+    note = f" ; {missing} volume(s) pas encore téléchargé(s) : ./pq corpus --fetch" if missing else ""
+    print("Occurrences par volume : " + (", ".join(f"{k} {n}" for k, n in sorted(counts.items(), key=lambda x: -x[1])) or "aucune"))
+    return {"requete": " | ".join(terms) + (f" (avec {' | '.join(avec)})" if avec else ""),
+            "total": sum(counts.values()), "resultats": out,
+            "perimetre": f"corpus/livres.yaml{' (filtre ' + filtre + ')' if filtre else ''} : {vols - missing}/{vols} volumes lus{note}"}
+
+
+# ---------------------------------------------------------------- MDZ (Bayerische Staatsbibliothek)
+def mdz_texte(bsb, terms):
+    bsb = re.search(r"bsb\d{8}", bsb).group(0)
+    man = _get(f"https://api.digitale-sammlungen.de/iiif/presentation/v2/{bsb}/manifest").json()
+    labels = {c["@id"]: c.get("label") for c in man["sequences"][0]["canvases"]}
+    hits = []
+    for t in terms:
+        d = _get(f"https://api.digitale-sammlungen.de/iiif/services/search/v1/{bsb}", params={"q": t}).json()
+        pages = {}
+        for res in d.get("resources", []):
+            on = res["on"] if isinstance(res["on"], str) else res["on"][0]
+            pages[res["@id"]] = on.split("#")[0]
+        for h in d.get("hits", []):
+            canvas = pages.get((h.get("annotations") or [""])[0], "")
+            label = labels.get(canvas, "?")
+            num = canvas.rstrip("/").split("/")[-1] if canvas else ""
+            snip = _clean(f"{h.get('before', '')}[{h.get('match', '')}]{h.get('after', '')}")
+            hits.append({"terme": t, "titre": f"p. {label} : …{snip}…",
+                         "url": f"https://www.digitale-sammlungen.de/view/{bsb}?page={num.lstrip('0') or num}"})
+    return {"requete": " | ".join(terms), "perimetre": f"MDZ {bsb} : {_clean(str(man.get('label')), 150)}",
+            "total": len(hits), "resultats": hits}
+
+
+# ---------------------------------------------------------------- Europeana
+def _key(name, env):
+    if os.environ.get(env):
+        return os.environ[env].strip()
+    p = os.path.join(REPO, "tools", name)
+    return open(p).read().strip() if os.path.exists(p) else None
+
+
+def europeana(terms, maximum=20):
+    key = _key(".europeana-key", "EUROPEANA_KEY")
+    if not key:
+        raise SystemExit("Clé Europeana absente : la mettre dans tools/.europeana-key.")
+    q = " AND ".join(f'"{t}"' if " " in t else t for t in terms)
+    d = _get("https://api.europeana.eu/record/v2/search.json",
+             params={"wskey": key, "query": q, "rows": maximum, "profile": "standard"}).json()
+    out = [{"titre": _clean((it.get("title") or ["?"])[0], 200), "auteur": _clean((it.get("dataProvider") or [""])[0], 80),
+            "date": (it.get("year") or [""])[0], "url": (it.get("edmIsShownAt") or [it.get("guid", "").split("?")[0]])[0]}
+           for it in d.get("items", [])]
+    return {"requete": q, "perimetre": "Europeana, métadonnées (pas le texte des livres)", "total": d.get("totalResults", 0),
+            "resultats": out}
 
 
 def local(path, terms):
@@ -172,6 +287,12 @@ def run(args):
         res = archive(args.termes, maximum=args.max)
     elif t == "archive-texte":
         res = archive_texte(args.termes[0], args.termes[1:])
+    elif t == "corpus":
+        res = corpus_search(args.termes, filtre=args.filtre, avec=args.avec)
+    elif t == "mdz-texte":
+        res = mdz_texte(args.termes[0], args.termes[1:])
+    elif t == "europeana":
+        res = europeana(args.termes, maximum=args.max)
     elif t == "local":
         res = local(args.termes[0], args.termes[1:])
     else:

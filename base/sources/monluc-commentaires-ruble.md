@@ -341,5 +341,16 @@ assertions:
   credibilite: 2
   verifie: non
   note: paraphrase des notes du 7 oct. 2026 ; citation à relever sur la source
+- id: a26
+  texte: "Selon une note de Ruble, le jeune Baratnau (un Monlezun, probablement frère de Jean de Monlezun, seigneur de Baratnau) occupait Pamiers en 1565 sous les ordres de Damville avec le capitaine Gonnelieu, et ils y commirent les plus grands excès."
+  citation: "Monlezun, seigneur de Baratnau , que Monluc appelle le jeune Baratnau, probablement frère de celui dont nous avons parlé page 16. En 1565, le jeune Baratnau occupait Pamiers sous les ordres de Damvillc avec le capitaine Gonnelieu. Ils y comniireiiL les plus grands excès [Archives curieuses, t. VI, p. 313. Pièce sur les troubles de Pamiers)."
+  locus: "t. III, p. 48-50, note de Ruble (OCR archive.org commentairesetle03monl)"
+  sujets: [pamiers]
+  date: "1565"
+  preuve: indirecte
+  information: secondaire
+  credibilite: 3
+  verifie: agent
+  note: "Lu sur l'OCR le 2026-10-26 (« Damvillc » = Damville). Ruble distingue ce jeune Baratnau de Jean de Monlezun, seigneur de Baratnau (t. III, p. 16) ; Durier et Carsalade les confondent (durier-carsalade-huguenots-en-bigorre.a2)."
 ---
 Les Commentaires de Blaise de Monluc dans l'édition d'A. de Ruble (Société de l'histoire de France) : récit de l'acteur lui-même sur les guerres d'Italie et les guerres civiles, source principale de la carrière des deux Tilladet. Monluc distingue parfois « le jeune Tilladet » / Saint-Orens et « Tilladet », mais pas toujours ; les notes de Ruble se contredisent sur l'attribution (Bernard pour François en I, 181 ; gouvernement de Bordeaux). Consultée par l'OCR d'archive.org.

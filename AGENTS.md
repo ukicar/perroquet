@@ -49,6 +49,8 @@ Quand l'utilisateur demande en langage courant une de ces actions, suis la proc�
 | `./pq search gallica <termes…> [--index text] --hyp <id> --objet "<objet>"` | catalogue/plein texte Gallica |
 | `./pq search gallica-texte <ark> <termes…>` | occurrences, avec pages, dans un document Gallica |
 | `./pq search archive <termes…>` / `archive-texte <identifiant> <termes…>` | archive.org (catalogue / texte OCR) |
+| `./pq corpus [--fetch]` / `./pq search corpus <termes…> [--filtre <mot>]` | livres choisis par thème, période et région (`corpus/livres.yaml`) : télécharger leur texte / y chercher |
+| `./pq search mdz-texte <bsb…> <termes…>` / `europeana <termes…>` | dans un livre de la BSB Munich (avec pages) / notices Europeana (clé `tools/.europeana-key`) |
 | `./pq search local <chemin> <termes…>` | dans un fichier texte local |
 | `./pq dossier <id>` | tout ce que la base sait d'une fiche (relations, assertions, questions) |
 | `./pq score [id]` | scores ACH (incohérence pondérée) des hypothèses |
@@ -60,6 +62,11 @@ Quand l'utilisateur demande en langage courant une de ces actions, suis la proc�
 | `./pq build` / `./pq view` | générer / ouvrir le site |
 | `./pq sync` | valider, commit, pull --rebase, push |
 | `./pq adapters` | régénérer `.claude/` et `.opencode/` depuis `methode/` |
+
+**Économie** : ne jamais faire d'OCR ni lire d'images de pages pour chercher ; on interroge le texte déjà existant des
+livres numérisés (outils ci-dessus) et on ne lit que de courts extraits. On ne fouille pas tous les livres : on
+choisit ceux qui peuvent contenir quelque chose (thème, période, région), on les ajoute à `corpus/livres.yaml`, puis
+on cherche dedans.
 
 Les recherches web générales (moteur de recherche de ton outil) sont permises en complément ; consigne alors
 toi-même une fiche `recherche`. Les recherches qui demandent un compte (Geneanet…) ou une salle de lecture

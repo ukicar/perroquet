@@ -1,7 +1,7 @@
 ---
 titre: Jean-François de Mauléon
-sous_titre: "Sieur ou vicomte de Soulan en Couserans, auteur avec le jeune Fontrailles de l'attaque de Soueix (1567), attesté de 1560 à 1571, mort avant novembre 1603."
-mise_a_jour: "2026-10-22"
+sous_titre: "Sieur ou vicomte de Soulan en Couserans, auteur avec le jeune Fontrailles de l'attaque de Soueix (1567), chef protestant à Pamiers (1566) et colonel dans l'armée de Montgomery (1569), attesté de 1560 à 1571, mort avant novembre 1603."
+mise_a_jour: "2026-10-26"
 ---
 On ignore la date de naissance de [[jean-francois-de-mauleon|Jean-François de Mauléon]], sieur ou vicomte de
 [[soulan|Soulan]], en [[couserans|Couserans]].{{inconnu|Aucune source de la base ne la donne.}}
@@ -28,6 +28,14 @@ enfant.{{probable|« bruslé la maison, le dict Rocquemaurel et six autres perso
 C'est l'[[incendie-de-soueix-1567|incendie de Soueix]], que l'abrégé des preuves de Malte de 1677 appelle le
 « meurtre » d'Arnaud.{{probable|[[cabinet-d-hozier-298.a3|Preuves de 1677]]}}
 
+La [[querelle-de-l-oiseau|querelle]] n'éclata pas dans le vide. Le 5 juin 1566, les protestants de
+[[pamiers|Pamiers]] s'étaient rendus maîtres de la ville en tuant ou chassant les catholiques ; Soulan s'y jeta
+« après le massacre » et y resta chef jusqu'à ce que le roi y envoie le capitaine Sarlabous, que Joyeuse fit partir
+de Toulouse le 19 juillet.{{probable|Monluc au roi, 14 février 1567 ; date de l'ordre par l'Histoire générale de Languedoc. [[monluc-lettres-ruble.a35|Monluc]], [[histoire-generale-de-languedoc.a2|HGL]]}}
+La garnison et les « étrangers » durent quitter Pamiers vers le 21 juillet ; c'est après cela, vers août 1566, que
+Soulan s'allia au jeune Fontrailles.{{probable|Voir [[troubles-de-pamiers-1566]]. [[histoire-generale-de-languedoc.a3|HGL]], [[monluc-lettres-ruble.a10|Monluc]]}}
+Une note de 1883 qui le montre à Pamiers avec Fontrailles, et Monluc envoyant contre eux Sarlabous et Baratnau,
+mêle ces faits.{{plausible|Le roi envoie Sarlabous, et le jeune Baratnau était à Pamiers en 1565. [[durier-carsalade-huguenots-en-bigorre.a2|Durier et Carsalade]], [[monluc-commentaires-ruble.a26|Ruble]]}}
 La querelle tint bientôt en armes quatorze ou quinze cents hommes ; à la mi-février, le parti de Soulan tenait
 [[saint-girons|Saint-Girons]], et les Roquemaurel s'étaient retirés dans une ville royale,
 [[saint-lizier|Saint-Lizier]].{{probable|Lettre du 14 février 1567. [[monluc-lettres-ruble.a12|Monluc]]}}
@@ -63,8 +71,19 @@ La sentence ne fut pas exécutée sur sa personne. Soulan adressa au roi, en 156
 On ignore ce qu'il demandait : peut-être des lettres de rémission, qui expliqueraient qu'il agisse librement
 ensuite, peut-être la révision de l'arrêt ou le renvoi de l'affaire devant une autre
 juridiction.{{supplique-de-soulan|Le texte de la supplique n'est pas connu. [[cabinet-d-hozier-298.a3|Preuves de 1677]]}}
+
+Deux ans après l'incendie, il était en armes dans le camp protestant. À l'été 1569, quand l'armée de Montgomery
+traversa la Bigorre pour secourir le Béarn, le « seigneur de Solan, coronel des troupes » logées à Ibos épargna
+l'église contre une promesse de rançon, emmena les consuls prisonniers et ne les relâcha que pour seize cents
+livres.{{probable|Déposition du notaire d'Ibos, enquête de 1575, et identification des éditeurs, qui donnent ses parents et sa femme. [[durier-carsalade-huguenots-en-bigorre.a4|Enquête d'Ibos]], [[durier-carsalade-huguenots-en-bigorre.a5|Durier et Carsalade]]}}
+En octobre, un « mons. de Sola » conduisait l'artillerie avec le baron de Lons ; voir
+[[campagne-de-montgomery-en-bigorre-1569]].{{plausible|Lettre contemporaine ; identification des éditeurs. [[durier-carsalade-huguenots-en-bigorre.a3|Lettre de Baudéan]]}}
 Il était encore vivant le 5 juin 1571, date d'un dernier accord avec les habitants de Soulan, ce qui écarte la
 tradition qui le fait mourir à Lunel en 1570.{{mort-de-soulan|Étude tirée des papiers Sentein, non relue. [[demembrement-vicomte-couserans.a6|Démembrement]]}}
+Cette tradition vient sans doute d'une conjecture des éditeurs de 1883, qui le rapprochaient du « Lalou »,
+beau-frère de Fontrailles, tué au siège de Lunel en 1570 : La Popelinière appelle cet homme « la Louë », maréchal de
+camp, mort près de Montpellier dans la nuit du 1er avril 1570, et n'en fait pas le sieur de
+Soulan.{{mort-de-soulan|[[durier-carsalade-huguenots-en-bigorre.a6|Durier et Carsalade]], [[la-popeliniere-1572.a1|La Popelinière]]}}
 
 Le 25 juin 1575, Guillaume de Roquemaurel obtint du Parlement un [[decret-du-25-juin-1575|décret]] qui, selon
 l'histoire familiale, lui adjugeait la moitié de la part de Soulan sur Soulan, Erp, Araux et Régule ; on ignore

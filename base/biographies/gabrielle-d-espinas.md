@@ -1,7 +1,7 @@
 ---
 titre: Gabrielle d'Espinas
 sous_titre: "Fille, semble-t-il, des Espinas de Lézat ; veuve d'Arnaud de Roquemaurel, seigneur de Soueix en Couserans ; plaide de 1567 à sa mort, survenue sans doute avant septembre 1603."
-mise_a_jour: "2026-10-22"
+mise_a_jour: "2026-10-26"
 ---
 On ignore où et quand naquit [[gabrielle-d-espinas|Gabrielle d'Espinas]], et aucun texte de son temps encore lu ne
 nomme ses parents.{{inconnu|Ni Bardies, ni Monluc, ni les preuves des Roquemaurel ; les arbres en ligne la donnent sans parents. [[bardies-1903.a3|Bardies]], [[arbres-geneanet-roquemaurel.a1|Geneanet]]}}
@@ -41,6 +41,12 @@ Au début de février 1567, vers le 2, [[jean-francois-de-mauleon|Jean-François
 son beau-frère le [[le-jeune-fontrailles|jeune Fontrailles]] surprirent de nuit la maison
 d'Arnaud.{{probable|Monluc au roi, 14 février 1567 : « depuis douze jours en çà ». [[monluc-lettres-ruble.a1|Monluc]]}}
 La querelle, à en croire Monluc, était née d'un oiseau que Fontrailles et Soulan avaient pris de force aux Roquemaurel ; Crespin, en 1570, parle d'un « oyseau de proye », comme d'un bruit.{{probable|« pour ung oyseau que le dict Fonteraille et Solan leur avoient prins d'audace » ; « à cause (comme on disoit) de quelque oyseau de proye ». [[monluc-lettres-ruble.a11|Monluc]], [[crespin-1570.a7|Crespin]]}}
+Un oiseau de proie était un bien de prix et un signe de rang : en Couserans même, le comte de Comminges en devait un
+à l'évêque, seigneur de Saint-Lizier ; le prendre à un gentilhomme était un affront, et c'est ainsi qu'on peut
+comprendre qu'il ait armé deux partis.{{plausible|Lecture de contexte, non dite par Monluc ou Crespin. Voir [[querelle-de-l-oiseau]]. [[revue-de-gascogne-1911-samiac-rapports-feodaux.a1|Épervier de 1230]], [[revue-de-comminges-1895-montespan.a1|Revue de Comminges]]}}
+L'agresseur n'était pas un inconnu : Soulan sortait des troubles de Pamiers, où il avait été chef après le massacre
+de juin 1566 jusqu'à l'arrivée des troupes du roi en juillet, et s'était allié depuis au jeune
+Fontrailles.{{probable|Voir [[troubles-de-pamiers-1566]]. [[monluc-lettres-ruble.a35|Monluc]], [[histoire-generale-de-languedoc.a2|HGL]], [[monluc-lettres-ruble.a10|Monluc]]}}
 Les assaillants mirent le feu à la maison ;
 Arnaud y périt avec six autres personnes,{{probable|« bruslé la maison, le dict Rocquemaurel et six autres personnes ». [[monluc-lettres-ruble.a2|Monluc]], [[cabinet-d-hozier-298.a3|Preuves de 1677]]}}
 parmi lesquelles se trouvaient peut-être deux prêtres tués au

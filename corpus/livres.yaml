@@ -1,0 +1,432 @@
+# Corpus : livres numérisés choisis parce qu'ils peuvent contenir quelque chose sur le dossier
+# (thème, période, région). On ne cherche que dans ces livres, dans leur texte déjà existant
+# (couche texte d'archive.org), jamais par OCR ni par image.
+#   ./pq corpus [--fetch]                 liste / télécharge les textes manquants dans cache/texte/archive/
+#   ./pq search corpus <termes…> [--filtre <mot>]   cherche dans tout le corpus (ou les entrées dont le thème/la région contient <mot>)
+# Ajouter un livre : une entrée avec id, titre, archive (identifiants), theme, region, periode, pourquoi.
+- id: lestrade-huguenots-comminges-1900
+  titre: Lestrade, Les Huguenots en Comminges (1900)
+  archive:
+  - leshuguenotsenc00gascgoog
+  theme: guerres de religion
+  region: Comminges, Couserans
+  periode:
+  - 1560
+  - 1600
+  pourquoi: Documents d'archives sur les troubles de 1567 (Fontrailles, Soulan, Roquemaurel).
+- id: lestrade-huguenots-rieux-1904
+  titre: Lestrade, Les Huguenots dans le diocèse de Rieux (1904)
+  archive:
+  - leshuguenotsdans00lest
+  theme: guerres de religion
+  region: diocèse de Rieux (Lézat, Cardonne, Montesquieu-Volvestre)
+  periode:
+  - 1560
+  - 1600
+  pourquoi: Le diocèse des Espinas de Lézat et de Cardonne.
+- id: castillon-comte-de-foix-1852
+  titre: Castillon d'Aspet, Histoire du comté de Foix (1852)
+  archive:
+  - histoireducomt01cast
+  - histoireducomt02cast
+  theme: histoire régionale
+  region: comté de Foix, Couserans
+  periode:
+  - 1000
+  - 1850
+  pourquoi: Histoire de la région de Soueix, avec chartes.
+- id: castillon-nebouzan-comminges-1842
+  titre: Castillon d'Aspet, Histoire des populations pyrénéennes du Nébouzan et du pays de Comminges (1842)
+  archive:
+  - histoiredespopu00castgoog
+  theme: histoire régionale
+  region: Comminges, Nébouzan
+  periode:
+  - 1000
+  - 1840
+  pourquoi: Histoire du Comminges, voisin du Couserans.
+- id: duclos-ariegeois-1886
+  titre: Duclos, Histoire des Ariégeois (1886)
+  archive:
+  - histoiredesarige00ducl
+  theme: histoire régionale
+  region: comté de Foix, vicomté de Couserans
+  periode:
+  - 1000
+  - 1880
+  pourquoi: Histoire du Couserans.
+- id: hgl-t11-t12
+  titre: Devic et Vaissète, Histoire générale de Languedoc, éd. Privat, t. XI-XII (1872-1889)
+  archive:
+  - histoiregnra11viccuoft
+  - histoiregnra12viccuoft
+  theme: histoire régionale
+  region: Languedoc, Toulouse
+  periode:
+  - 1443
+  - 1643
+  pourquoi: Récit et preuves des guerres de religion en Languedoc.
+- id: gaches-memoires-1879
+  titre: Mémoires de Jacques Gaches sur les guerres de religion à Castres et dans le Languedoc, 1555-1610 (1879)
+  archive:
+  - mmoiresdejacque00pradgoog
+  theme: guerres de religion
+  region: Languedoc, Lauragais
+  periode:
+  - 1555
+  - 1610
+  pourquoi: Témoin protestant contemporain.
+- id: rabaud-protestantisme-albigeois-1873
+  titre: Rabaud, Histoire du protestantisme dans l'Albigeois et le Lauragais (1873)
+  archive:
+  - histoireduprote01rabagoog
+  theme: guerres de religion
+  region: Albigeois, Lauragais
+  periode:
+  - 1530
+  - 1685
+  pourquoi: Réseaux protestants du Midi toulousain.
+- id: ruble-antoine-de-bourbon
+  titre: De Ruble, Antoine de Bourbon et Jeanne d'Albret (1881-1886)
+  archive:
+  - antoinedebourbon01rubluoft
+  - antoinedebourbon02rubluoft
+  - antoinedebourbon03rubluoft
+  - antoinedebourbon04rubluoft
+  theme: Navarre, guerres de religion
+  region: Navarre, Foix, Guyenne
+  periode:
+  - 1548
+  - 1562
+  pourquoi: Arnaud de Roquemaurel servit le roi de Navarre (maréchal des logis).
+- id: ruble-jeanne-guerre-civile-1897
+  titre: De Ruble, Jeanne d'Albret et la guerre civile (1897)
+  archive:
+  - jeannedalbretet00rublgoog
+  theme: Navarre, guerres de religion
+  region: Navarre, Foix, Guyenne
+  periode:
+  - 1562
+  - 1568
+  pourquoi: Couvre 1567.
+- id: ruble-memoires-jeanne-1893
+  titre: De Ruble, Mémoires et poésies de Jeanne d'Albret (1893)
+  archive:
+  - mmoiresetposies00rublgoog
+  theme: Navarre, guerres de religion
+  region: Navarre, Foix
+  periode:
+  - 1560
+  - 1572
+  pourquoi: Déjà source de la base (querelle Soulan-Roquemaurel).
+- id: monluc-commentaires-ruble
+  titre: Monluc, Commentaires et lettres, éd. de Ruble (1864-1872)
+  archive:
+  - commentairesetle01monl
+  - commentairesetle02monl
+  - commentairesetle03monl
+  - commentairesetle04monl
+  - commentairesetle05monl
+  theme: guerres de religion
+  region: Guyenne
+  periode:
+  - 1521
+  - 1577
+  pourquoi: Déjà source de la base ; lettres de 1567.
+- id: dubedat-parlement-toulouse-1885
+  titre: Dubédat, Histoire du Parlement de Toulouse (1885)
+  archive:
+  - histoireduparle00dubgoog
+  - histoireduparle01dubgoog
+  theme: Parlement de Toulouse
+  region: Toulouse
+  periode:
+  - 1444
+  - 1790
+  pourquoi: Arrêts de 1567 et 1603 rendus par ce Parlement.
+- id: inventaire-haute-garonne
+  titre: Inventaire sommaire des Archives départementales de la Haute-Garonne (1878-1903)
+  archive:
+  - inventairesommai01garouoft
+  - inventairesommai3v4garo
+  - p1inventairesomm05garo
+  theme: inventaire d'archives
+  region: Haute-Garonne (Toulouse, Rieux, Comminges)
+  periode:
+  - 1200
+  - 1790
+  pourquoi: 'Analyses d''actes : Parlement, notaires, familles.'
+- id: inventaire-ariege-1894
+  titre: Inventaire sommaire des Archives départementales de l'Ariège (1894)
+  archive:
+  - inventairesomma00legrgoog
+  theme: inventaire d'archives
+  region: Ariège
+  periode:
+  - 1200
+  - 1790
+  pourquoi: Déjà source de la base.
+- id: dubourg-grand-prieure-toulouse-1883
+  titre: Du Bourg, Histoire du Grand-Prieuré de Toulouse (1883)
+  archive:
+  - histoiredugrandp00dubo
+  theme: ordre de Malte
+  region: Toulouse, Midi
+  periode:
+  - 1100
+  - 1790
+  pourquoi: Les Roquemaurel firent des preuves de Malte.
+- id: ogilvy-nobiliaire-guienne
+  titre: O'Gilvy, Nobiliaire de Guienne et de Gascogne (1856-1883)
+  archive:
+  - nobiliairedegui04laffgoog
+  - nobiliairedegui03laffgoog
+  - nobiliairedegui00laffgoog
+  - nobiliairedegui01laffgoog
+  - nobiliairedegui02laffgoog
+  theme: généalogie
+  region: Guyenne, Gascogne
+  periode:
+  - 1000
+  - 1850
+  pourquoi: Généalogies de la noblesse gasconne.
+- id: bremond-nobiliaire-toulousain-1863
+  titre: Brémond, Nobiliaire toulousain (1863)
+  archive:
+  - nobiliairetoulou00br
+  theme: généalogie
+  region: Toulouse
+  periode:
+  - 1500
+  - 1789
+  pourquoi: Déjà source de la base (Espinas de Cardonne).
+- id: archives-historiques-gascogne
+  titre: Archives historiques de la Gascogne (série)
+  archive:
+  - archiveshistori00gascgoog
+  - archiveshistori01gascgoog
+  - archiveshistori02gascgoog
+  - archiveshistori03gascgoog
+  - archiveshistori04gascgoog
+  - archiveshistori05gascgoog
+  theme: édition de documents
+  region: Gascogne, Comminges
+  periode:
+  - 1200
+  - 1700
+  pourquoi: "Documents édités, dont Les Huguenots en Bigorre (fasc. 4 : Solan à Pamiers en 1566 et en 1569)."
+- id: revue-de-comminges
+  titre: Revue de Comminges (1885-1928)
+  archive:
+  - revuedecomminge00commgoog
+  - revuedecomminge00juligoog
+  - revuedecomminge00unkngoog
+  - revuedecomminge01commgoog
+  - revuedecomminge01juligoog
+  - revuedecomminge02juligoog
+  - revuedecomminges1
+  - revuedecomminges10
+  - revuedecomminges11
+  - revuedecomminges12
+  - revuedecomminges13
+  - revuedecomminges14
+  - revuedecomminges15
+  - revuedecomminges16
+  - revuedecomminges17
+  - revuedecomminges18
+  - revuedecomminges19
+  - revuedecomminges2
+  - revuedecomminges20
+  - revuedecomminges21
+  - revuedecomminges22
+  - revuedecomminges23
+  - revuedecomminges24
+  - revuedecomminges25
+  - revuedecomminges26
+  - revuedecomminges27
+  - revuedecomminges28
+  - revuedecomminges29
+  - revuedecomminges3
+  - revuedecomminges30
+  - revuedecomminges33
+  - revuedecomminges34
+  - revuedecomminges39
+  - revuedecomminges4
+  - revuedecomminges41
+  - revuedecomminges42
+  - revuedecomminges5
+  - revuedecomminges6
+  - revuedecomminges7
+  - revuedecomminges8
+  - revuedecomminges9
+  theme: revue savante régionale
+  region: Comminges, Couserans
+  periode:
+  - 1000
+  - 1900
+  pourquoi: Articles et documents sur le Comminges et le Couserans.
+- id: revue-de-gascogne
+  titre: Revue de Gascogne (1860-1927)
+  archive:
+  - bub_gb_Rj0VAAAAYAAJ
+  - bub_gb_S2dMAAAAMAAJ
+  - revuedegascogne00gascgoog
+  - revuedegascogne00unkngoog
+  - revuedegascogne01gascgoog
+  - revuedegascogne01unkngoog
+  - revuedegascogne02gascgoog
+  - revuedegascogne02unkngoog
+  - revuedegascogne03gascgoog
+  - revuedegascogne03unkngoog
+  - revuedegascogne04gascgoog
+  - revuedegascogne04unkngoog
+  - revuedegascogne05gascgoog
+  - revuedegascogne05unkngoog
+  - revuedegascogne06gascgoog
+  - revuedegascogne06unkngoog
+  - revuedegascogne07gascgoog
+  - revuedegascogne07unkngoog
+  - revuedegascogne08gascgoog
+  - revuedegascogne08unkngoog
+  - revuedegascogne09gascgoog
+  - revuedegascogne09unkngoog
+  - revuedegascogne10gascgoog
+  - revuedegascogne10unkngoog
+  - revuedegascogne11gascgoog
+  - revuedegascogne11unkngoog
+  - revuedegascogne12gascgoog
+  - revuedegascogne12unkngoog
+  - revuedegascogne13gascgoog
+  - revuedegascogne13unkngoog
+  - revuedegascogne14gascgoog
+  - revuedegascogne14unkngoog
+  - revuedegascogne15gascgoog
+  - revuedegascogne15unkngoog
+  - revuedegascogne16gascgoog
+  - revuedegascogne16unkngoog
+  - revuedegascogne17gascgoog
+  - revuedegascogne17unkngoog
+  - revuedegascogne18gascgoog
+  - revuedegascogne18unkngoog
+  - revuedegascogne19gascgoog
+  - revuedegascogne19unkngoog
+  - revuedegascogne20gascgoog
+  - revuedegascogne20unkngoog
+  - revuedegascogne21gascgoog
+  - revuedegascogne21unkngoog
+  - revuedegascogne22gascgoog
+  - revuedegascogne23gascgoog
+  - revuedegascogne24gascgoog
+  - revuedegascogne25gascgoog
+  - revuedegascogne26gascgoog
+  - revuedegascogne27gascgoog
+  - revuedegascogne28gascgoog
+  - revuedegascogne29gascgoog
+  - revuedegascogne30gascgoog
+  - revuedegascogne31gascgoog
+  - revuedegascogne32gascgoog
+  - revuedegascogne33gascgoog
+  - revuedegascogne34gascgoog
+  - revuedegascogne35gascgoog
+  - revuedegascogne36gascgoog
+  - revuedegascogne37gascgoog
+  - revuedegascogne38gascgoog
+  - revuedegascogne39gascgoog
+  - revuedegascogne40gascgoog
+  - revuedegascogne41gascgoog
+  - revuedegascogne42gascgoog
+  - revuedegascogne43gascgoog
+  - revuedegascogne44gascgoog
+  - revuedegascogne45gascgoog
+  - revuedegascogne46gascgoog
+  - revuedegascogne47gascgoog
+  - revuedegascogne48gascgoog
+  - revuedegascogne49gascgoog
+  - revuedegascogne50gascgoog
+  - revuedegascogne51gascgoog
+  - revuedegascogne52gascgoog
+  - revuedegascogne53gascgoog
+  - revuedegascogne54gascgoog
+  - revuedegascogne55gascgoog
+  - revuedegascogne56gascgoog
+  - revuedegascogne57gascgoog
+  - revuedegascognebullemen5
+  - revuedegascognebullemen50
+  - revuedegascognebullemen51
+  - revuedegascognebullemen52
+  - revuedegascognebullemen53
+  - revuedegascognebullemen54
+  - revuedegascognebullemen55
+  - revuedegascognebullemen56
+  - revuedegascognebullemen57
+  - revuedegascognebullemen58
+  - revuedegascognebullemen59
+  - revuedegascognebullemen60
+  - revuedegascognebullemen61
+  - revuedegascognebullemen62
+  - revuedegascognebullemen63
+  theme: revue savante régionale
+  region: Gascogne, Comminges
+  periode:
+  - 1000
+  - 1900
+  pourquoi: Déjà source de la base (Domenge d'Espinasse et Médrano).
+- id: annales-du-midi
+  titre: Annales du Midi
+  archive:
+  - annalesdumidi11univuoft
+  - annalesdumidi12univuoft
+  - annalesdumidi13univuoft
+  - annalesdumidi14univuoft
+  - annalesdumidi15univuoft
+  - annalesdumidi16univuoft
+  - annalesdumidi17univuoft
+  - annalesdumidi18univuoft
+  - annalesdumidi19univuoft
+  - annalesdumidi20univuoft
+  - annalesdumidi21univuoft
+  - annalesdumidi22univuoft
+  - annalesdumidi23univuoft
+  - annalesdumidi24univuoft
+  - annalesdumidi25univuoft
+  - annalesdumidi26univuoft
+  - annalesdumidi2728univuoft
+  - annalesdumidi2930univuoft
+  - annalesdumidi3132univuoft
+  theme: revue savante régionale
+  region: Midi toulousain
+  periode:
+  - 1000
+  - 1900
+  pourquoi: Revue d'histoire du Midi, documents du XVIe s.
+- id: memoires-societe-archeologique-midi
+  titre: Mémoires de la Société archéologique du Midi de la France
+  archive:
+  - memoiressociarchemidifra1
+  - memoiressociarchemidifra10
+  - memoiressociarchemidifra11
+  - memoiressociarchemidifra12
+  - memoiressociarchemidifra13
+  - memoiressociarchemidifra14
+  - memoiressociarchemidifra15
+  - memoiressociarchemidifra17
+  - memoiressociarchemidifra2
+  - memoiressociarchemidifra3
+  - memoiressociarchemidifra5
+  - memoiressociarchemidifra8
+  theme: revue savante régionale
+  region: Toulouse, Midi
+  periode:
+  - 1000
+  - 1900
+  pourquoi: Travaux toulousains, documents.
+- id: la-popeliniere-vraye-histoire-1572
+  titre: "La Popelinière, La vraye et entiere histoire des troubles et choses memorables (1572)"
+  archive:
+  - lavrayeetentiere00lapo
+  theme: guerres de religion
+  region: France, dont Béarn et comté de Foix
+  periode:
+  - 1562
+  - 1570
+  pourquoi: "Récit contemporain de la campagne de Montgomery en Béarn (1569) ; source du « Lalou beau-frère de Fontrailles » cité par Durier et Carsalade."

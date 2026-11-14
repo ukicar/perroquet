@@ -462,5 +462,16 @@ assertions:
   credibilite: 3
   verifie: agent
   note: "Lu sur l'OCR le 2026-10-22. Ruble le dit aussi « gentilhomme huguenot du comté de Foix » (ruble-ed-memoires-et-poesies-de-jeanne-d-albret-1893.a3)."
+- id: a35
+  texte: "Selon Monluc, Soulan s'était jeté dans Pamiers après le massacre et y demeura chef jusqu'à ce que le roi y envoyât le capitaine Sarlabous."
+  citation: "il s'est ralyé avec le sieur de Solan, qui est son beau- frère et celluy qui s'est jeté dans Pamyer après le massacre, et y a tousjours demeuré chief jusques à ce que vostre Majesté y a envoyé le cappitaine Sar- labous."
+  locus: "t. V, lettre 160 (Agen, 14 févr. 1567), p. 78 (OCR archive.org commentairesetle05monl)"
+  sujets: [jean-francois-de-mauleon, pamiers]
+  date: "1566"
+  preuve: directe
+  information: secondaire
+  credibilite: 3
+  verifie: agent
+  note: "Lu sur l'OCR le 2026-10-26. C'est le roi (par Joyeuse, le 19 juillet 1566 : histoire-generale-de-languedoc.a2), et non Monluc, qui envoie Sarlabous. La lettre ne date pas l'oiseau par rapport à Pamiers."
 ---
 Lettres de Blaise de Monluc publiées par A. de Ruble (Société de l'histoire de France, 5 vol., 1864–1872) ; la lettre 160 à Charles IX (Agen, 14 février 1567, t. V, p. 77-82) est le seul témoignage contemporain connu sur l'incendie de Soueix. Monluc écrit une douzaine de jours après les faits, d'après ce qu'on lui a « mandé », et ne nomme pas la veuve ; il dit les Roquemaurel protestants, ce que contredisent d'autres sources et l'index de Ruble. Les notes et l'index de Ruble (t. V) sont précieux mais attribuent de façon incohérente les mentions de « Tilladet » à Antoine ou à François de Cassagnet. Consultée par l'OCR d'archive.org.

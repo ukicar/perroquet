@@ -6,6 +6,7 @@ date: 1567-02-02~
 fin: null
 relations:
   - {rel: a_lieu_a, vers: soueix, preuves: [cabinet-d-hozier-298.a3, bardies-1903.a6, site-roquemaurel.a4, site-roquemaurel.a5], confiance: probable}
+  - {rel: suite_de, vers: querelle-de-l-oiseau, preuves: [monluc-lettres-ruble.a1, monluc-lettres-ruble.a11], confiance: probable}
 ---
 Selon la lettre de Monluc au roi datée d'Agen le 14 février 1567, « depuis douze jours en çà » Fontrailles et
 Soulan surprirent de nuit le jeune Roquemaurel dans sa maison [[monluc-lettres-ruble.a1]], d'où la date
@@ -17,6 +18,9 @@ la maison de Souis » et du « meurtre » de noble Arnaud de Roquemaurel [[cabin
 remonter la querelle à un oiseau que Fontrailles et Soulan avaient pris de force aux Roquemaurel
 [[monluc-lettres-ruble.a11]] ; Crespin parle, comme d'un bruit, de « quelque oyseau de proye » [[crespin-1570.a7]] ; elle mettait en armes quatorze ou quinze
 cents hommes [[monluc-lettres-ruble.a12]].
+Sur l'origine de cette querelle, ses acteurs et ce qu'un oiseau de proie représentait, voir [[querelle-de-l-oiseau]] ;
+sur ce que Soulan faisait avant (Pamiers, 1566) et après (armée de Montgomery, 1569), voir [[troubles-de-pamiers-1566]]
+et [[campagne-de-montgomery-en-bigorre-1569]].
 
 Le bilan reste incertain. Samiac, en 1914, écrit lui aussi que Soulan fit brûler Arnaud dans son château « avec six
 autres personnes » [[demembrement-vicomte-couserans.a8]], ce qui rejoint Monluc sans en être sans doute indépendant.

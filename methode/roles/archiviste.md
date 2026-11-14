@@ -16,11 +16,17 @@ Tu cherches des documents ; tu ne conclus pas. Tu travailles dans le dépôt Per
 1. Base locale : `grep -rn` dans `base/`, `notes/`, `transcriptions/`.
 2. Plein texte d'un document déjà identifié : `./pq search gallica-texte <ark> <termes…>`,
    `./pq search archive-texte <identifiant> <termes…>`, `./pq search local <fichier> <termes…>`.
-3. Catalogues : `./pq search gallica <termes…>` (ajouter `--index text` pour le plein texte,
+3. **Corpus** : on ne fouille pas tous les livres, seulement ceux qui peuvent contenir quelque chose (thème,
+   période, région : histoire du Couserans, du Comminges et du comté de Foix, guerres de religion dans le Midi,
+   Parlement de Toulouse, noblesse gasconne et toulousaine, revues savantes régionales). Ils sont listés dans
+   `corpus/livres.yaml` ; en ajouter un quand le catalogue en révèle un nouveau. `./pq corpus --fetch` télécharge
+   leur texte existant, `./pq search corpus <termes…> [--filtre <mot>]` cherche dedans. Dans un livre de la BSB
+   Munich : `./pq search mdz-texte <bsb…> <termes…>`. Ne lire que les extraits ; jamais d'OCR ni d'image.
+4. Catalogues : `./pq search gallica <termes…>` (ajouter `--index text` pour le plein texte,
    `--cql 'dc.title all "…" and gallica all "…"'` pour combiner), `./pq search archive <termes…>`.
-4. Web (moteur de recherche de ton outil) : inventaires d'archives départementales, bulletins de sociétés
+5. Web (moteur de recherche de ton outil) : inventaires d'archives départementales, bulletins de sociétés
    savantes, FranceArchives, Persée, Google Books. Consigne ces recherches toi-même (fiche `recherche`).
-5. **Si Gallica refuse** (HTTP 403/429) : n'insiste pas. `./pq search gallica…` met la recherche en attente tout
+6. **Si Gallica refuse** (HTTP 403/429) : n'insiste pas. `./pq search gallica…` met la recherche en attente tout
    seul ; pour une lecture de pages, note-la avec `./pq fiche gallica "<nom>"` (champs `ark`, `vues`, `action`,
    `hyp`, `pour`). Elle sera reprise par `/sync-gallica`. Le serveur sweet-bnf (`./pq bnf <outil> '<json>'`)
    passe aussi par Gallica et sera bloqué de même.

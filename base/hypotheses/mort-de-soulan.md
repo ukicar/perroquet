@@ -23,8 +23,8 @@ predictions:
     attendu: "La tradition de Lunel repose sur un acte ou une chronique contemporaine datée de 1570."
     ou_chercher: "Source de la tradition à identifier (Vuillier 1998 ; généalogies des Mauléon)."
     diagnostique: moyenne
-    statut: non_testee
-    resultat: null
+    statut: infirmee
+    resultat: "La source retrouvée n'est pas un acte sur Soulan : c'est une conjecture des éditeurs des Huguenots en Bigorre (1883), qui rapprochent Solan du « Lalou beau-frère de Fontrailles » de La Popelinière, tué au siège de Lunel en 1570 (durier-carsalade-huguenots-en-bigorre.a6). La Popelinière parle de « la Louë », maréchal de camp, mort près de Montpellier la nuit du 1er avril 1570, sans le dire sieur de Soulan (la-popeliniere-1572.a1)."
     enquetes: []
   - id: P3
     h: H2
@@ -39,13 +39,17 @@ matrice:
   - {preuve: ad31-1b-74.a3, H1: N, H2: N, note: "En 1576, c'est Jean-Antoine de Mauléon, non Jean-François, qui s'oppose à l'exécution du décret : indice possible d'un décès avant 1576, sans plus."}
   - {preuve: roquemaurel-familles-du-midi.a2, H1: N, H2: C, note: "Soulan est dit « feu » dans la remontrance du 22 novembre 1603 : borne haute de sa mort (résumé non vérifié)."}
   - {preuve: demembrement-vicomte-couserans.a9, H1: N, H2: C, note: "Pièce du même 22 novembre 1603 : Marguerite de Béon « s'estoit emparée de toutz les biens dudit feu Jehan-Francoys de Mauléon » (lue par un agent, non relue)."}
+  - {preuve: durier-carsalade-huguenots-en-bigorre.a6, H1: C, H2: I, note: "Conjecture d'éditeur (1883) : si Solan est « Lalou », il fut tué au siège de Lunel le 31 mars 1570. Ressemblance de noms (Lalous / Alos) seulement ; probable origine de la tradition."}
+  - {preuve: la-popeliniere-1572.a1, H1: N, H2: N, note: "La Popelinière : « la Louë », maréchal de camp, beau-frère de Fonterailles, tué près de Montpellier le 1er avril 1570 ; ne nomme pas Soulan. Non diagnostique sans l'identification."}
+  - {preuve: durier-carsalade-huguenots-en-bigorre.a4, H1: N, H2: N, note: "Soulan colonel à Ibos à l'été 1569 : vivant en 1569, ce que les deux hypothèses admettent."}
 contestations: []
 meneur: H2
 confiance: probable
-verdict: "La mort à Lunel en 1570 est contredite par l'accord que Soulan passe avec ses habitants le 5 juin 1571, rapporté par une étude fondée sur les papiers Sentein. Il est dit « feu » le 22 novembre 1603 : il mourut donc entre juin 1571 et novembre 1603, à une date et en un lieu inconnus. H2 est probable ; elle deviendra établie quand ces assertions auront été relues sur les pièces."
+verdict: "La mort à Lunel en 1570 est contredite par l'accord que Soulan passe avec ses habitants le 5 juin 1571, rapporté par une étude fondée sur les papiers Sentein. Il est dit « feu » le 22 novembre 1603 : il mourut donc entre juin 1571 et novembre 1603, à une date et en un lieu inconnus. H2 est probable ; elle deviendra établie quand ces assertions auront été relues sur les pièces. La tradition de Lunel vient sans doute d'une conjecture d'éditeurs de 1883 qui confondaient Soulan avec « la Louë », maréchal de camp tué en 1570."
 historique:
   - {date: "2026-10-08", changement: "création", cause: "migration des notes de recherche des 6-7 octobre 2026"}
   - {date: "2026-10-08", changement: "deux lignes ajoutées ; borne haute 1603 ; confiance inchangée", cause: "propagation : roquemaurel-familles-du-midi.a2, demembrement-vicomte-couserans.a9"}
+  - {date: "2026-10-26", changement: "P2 non_testee → infirmee ; trois lignes de matrice ; confiance inchangée (H2 probable)", cause: "origine de la tradition retrouvée : durier-carsalade-huguenots-en-bigorre.a6, la-popeliniere-1572.a1"}
 sous_questions: []
 ---
 ## La réfutation de Lunel 1570
@@ -69,3 +73,15 @@ reste « probable ».
   n'a pas de source identifiée et n'est pas utilisé.
 
 Voir aussi [[supplique-de-soulan]] : sa supplique au roi est signifiée en mars 1570 ou 1571.
+
+## D'où vient la tradition de Lunel (2026-10-26)
+
+Les éditeurs des *Huguenots en Bigorre* rapprochent le capitaine Solan du « Lalou beau-frère de Fontrailles » de La
+Popelinière, parce que Solan était seigneur d'Alos et que Montamat, un Fontrailles, avait épousé Isabeau de Solan ; ils
+ajoutent que, si c'est le même homme, il fut tué au siège de Lunel dans la nuit du 31 mars 1570
+[[durier-carsalade-huguenots-en-bigorre.a6]]. La Popelinière, relu sur son texte de 1572, parle de « la Louë »,
+maréchal de camp, beau-frère de Fonterailles, tué en son quartier à une lieue de Montpellier la nuit du 1er avril 1570
+[[la-popeliniere-1572.a1]] : il ne le rattache pas à Soulan. La tradition repose donc sur une identification
+conjecturale, que l'accord du 5 juin 1571 contredit [[demembrement-vicomte-couserans.a6]]. Les mêmes éditeurs
+montrent d'ailleurs Soulan vivant et colonel dans l'armée de Montgomery à l'été 1569
+[[durier-carsalade-huguenots-en-bigorre.a4]] ([[campagne-de-montgomery-en-bigorre-1569]]).

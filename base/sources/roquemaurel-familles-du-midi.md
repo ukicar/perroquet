@@ -136,6 +136,28 @@ assertions:
   credibilite: 3
   verifie: agent
   note: "Lu sur l'OCR le 2026-10-22. Contredit la date de 1509 imprimée par Aubais (aubais-pieces-fugitives.a11), qu'une note avait corrigée en 1609 sans source."
+- id: a12
+  texte: "Selon l'auteur, un lieu nommé Caladroy se trouve à 2 km de Bélesta (Pyrénées-Orientales), loin de Lézat ; si les Espinas y avaient des droits, ils pourraient venir d'Antonie de Montesquieu, qu'il suppose de la famille des Montesquieu de Sournia."
+  citation: "Un lieu de ce nom est situé à 2 km de Bélesta (Pyrénées Orientales), éloigné de Lézat. [...] Si des droits sur ce lieu étaient tenus par la famille d’Espinas ils pourraient avoir été amenés par Antonie de Montesquieu"
+  locus: "t. VIII, p. 193 (OCR archive.org, l. 12257-12261)"
+  sujets: [jean-d-espinas-caladroy, antonie-de-montesquieu]
+  date: null
+  preuve: indirecte
+  information: secondaire
+  credibilite: 5
+  verifie: agent
+  note: "Lu sur l'OCR le 2026-10-26. Simple conjecture de l'auteur (« On peut supposer ») : rien ne lie ce Caladroy des Pyrénées-Orientales à la seigneurie de Caladrue tenue à Lézat."
+- id: a13
+  texte: "Selon l'auteur, la branche de Caladrue résida à Lézat jusqu'à l'extinction du dernier mâle, Jean alias Jean Arnaud d'Espinas, au milieu du XVIIe siècle, ce qui explique son absence des maintenues de noblesse de 1669 ; elle s'allia avec les Canals, seigneurs de Lastronques."
+  citation: "Cette branche continua à résider à Lézat jusqu’à l’extinction du dernier mâle, Jean alias Jean Arnaud d’Espinas, au milieu du 17°\" siècle, ce qui explique qu’il ne figure pas dans les maintenues de noblesse de 1669. Cette branche s’allia avec la famille de Canals qui tenait le lieu de Lastronques (à 2 km de Lézat)"
+  locus: "t. VIII, p. 193 (OCR archive.org, l. 12275-12279)"
+  sujets: [jean-arnaud-d-espinas, martin-d-espinas, lezat-sur-leze]
+  date: null
+  preuve: indirecte
+  information: secondaire
+  credibilite: 3
+  verifie: agent
+  note: "Lu sur l'OCR le 2026-10-26. Utile pour origine-de-gabrielle : l'absence de la branche dans les jugements de 1669 ne prouve rien contre elle."
 ---
 Généalogie de 2026 mise en ligne sur archive.org par l'auteur du site de la famille de Roquemaurel. Elle n'est
 **pas indépendante** du site ([[site-roquemaurel]]), dont elle reprend des phrases. Mais pour Gabrielle elle apporte
@@ -150,3 +172,10 @@ elle était morte avant le 3 septembre 1603.
 L'acte cité (AD Ariège, 1 J 94 d'après la note, OCR « | J 94 ») n'a pas été vu : tout repose sur le résumé de l'auteur,
 qui est obscur par endroits. Ce sera la première démarche à faire. Lue sur l'OCR d'archive.org le 8 octobre 2026
 (t. VIII, p. 193-200 ; t. VI, p. 160-162). Les numéros de page sont ceux de l'OCR.
+
+L'auteur signale un lieu nommé Caladroy près de Bélesta (Pyrénées-Orientales) et suppose, sans preuve, que les
+droits des Espinas sur ce nom viendraient d'Antonie de Montesquieu, qu'il rattache aux Montesquieu de Sournia
+[[roquemaurel-familles-du-midi.a12]]. Il explique l'absence de la branche dans les maintenues de 1669 par
+l'extinction de ses mâles au milieu du XVIIe siècle [[roquemaurel-familles-du-midi.a13]]. Dans sa généalogie, les
+enfants de Jean d'Espinas et d'Antonie de Montesquieu sont Martin, Gabrielle, Catherine et « peut-être » Pierre ;
+Anne (femme de Rochefort) et Claire (femme de Galauba) sont les filles de Martin, donc les petites-filles de Jean.

@@ -1,7 +1,7 @@
 ---
 titre: Arnaud II de Roquemaurel
 sous_titre: "Gentilhomme du Couserans, fils semble-t-il de Jean de Roquemaurel et de Catherine d'Ustou, mari de Gabrielle d'Espinas, tué dans l'incendie de sa maison de Soueix vers le 2 février 1567."
-mise_a_jour: "2026-10-22"
+mise_a_jour: "2026-10-26"
 ---
 On ne sait ni quand ni où naquit [[arnaud-ii-de-roquemaurel|Arnaud de Roquemaurel]].{{inconnu|Aucune source de la base ne donne sa naissance. [[cabinet-d-hozier-298.a2|Preuves de 1677]]}}
 L'histoire de la [[famille-de-roquemaurel|famille de Roquemaurel]], seule à le dire, en fait un fils de
@@ -31,6 +31,9 @@ Le couple eut au moins un enfant, dont on ignore le nom.{{probable|« quelque en
 
 Les Roquemaurel étaient en querelle avec [[jean-francois-de-mauleon|Jean-François de Mauléon]], sieur de Soulan,
 et [[le-jeune-fontrailles|Fontrailles]] ; à en croire Monluc, elle était née « pour ung oyseau » que Fontrailles et Soulan « leur avoient prins d'audace ».{{probable|Monluc, et Crespin en 1570 qui le rapporte comme un bruit (« comme on disoit »). [[monluc-lettres-ruble.a11|Monluc]], [[crespin-1570.a7|Crespin]]}}
+Les deux camps étaient protestants ; c'était une guerre privée entre voisins, où Soulan, chassé de Pamiers en
+juillet 1566, et le jeune Fontrailles, allié à lui depuis l'été, s'en prenaient à la maison d'Arnaud ; voir
+[[querelle-de-l-oiseau]].{{probable|[[monluc-lettres-ruble.a6|Monluc]], [[monluc-lettres-ruble.a35|id.]], [[monluc-lettres-ruble.a10|id.]]}}
 Le [[parlement-de-toulouse|Parlement de Toulouse]] avait déjà ajourné les parties ; selon Monluc, « Les
 Roquemaurelz se sont toujours présentés et les autres non ».{{probable|Monluc, de seconde main. [[monluc-lettres-ruble.a32|Monluc]]}}
 Au début de février 1567, vers le 2, Fontrailles et Soulan surprirent Arnaud de nuit dans sa maison, la
